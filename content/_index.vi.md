@@ -7,11 +7,11 @@ chapter: false
 
 # Báo cáo thực tập
 ### Thông tin sinh viên:
-&emsp; **Họ và tên:** Nguyễn Văn A
+&emsp; **Họ và tên:** Nguyễn Trung
 
-&emsp; **Số điện thoại:** 0989888999
+&emsp; **Số điện thoại:** 0349989674
 
-&emsp; **Email:** Anguyenvan@gmail.com
+&emsp; **Email:** nguyentrung.qni411@gmail.com
 
 &emsp; **Trường:** Đại học Sư phạm Kỹ thuật TP.HCM
 

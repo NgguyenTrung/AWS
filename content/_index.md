@@ -1,6 +1,6 @@
 ---
 title: "Internship Report"
-date: 2024-01-01
+date: 2026-04-17
 weight: 1
 chapter: false
 ---
@@ -9,15 +9,14 @@ chapter: false
 # Internship Report
 
 {{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
 {{% /notice %}}
 
 ### Student Information:
-&emsp; **Full Name:** Nguyen Van A
+&emsp; **Full Name:** Nguyen Trung
 
-&emsp; **Phone Number:** 0989888999 
+&emsp; **Phone Number:** 0349989674
 
-&emsp; **Email:** Anguyenvan@gmail.com
+&emsp; **Email:** nguyentrung.qni411@gmail.com
 
 &emsp; **University:** Ho Chi Minh City University of Technology and Education
 
