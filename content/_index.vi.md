@@ -13,17 +13,17 @@ chapter: false
 
 &emsp; **Email:** nguyentrung.qni411@gmail.com
 
-&emsp; **Trường:** Đại học Sư phạm Kỹ thuật TP.HCM
+&emsp; **Trường:** Đại học Công Nghệ TP.HCM(HUTECH)
 
 &emsp; **Ngành:** Công nghệ thông tin
 
-&emsp; **Lớp:** AWS082025
+&emsp; **Lớp:** 22DTHD1
 
 &emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Vietnam
 
 &emsp; **Vị trí thực tập:** FCJ Cloud Intern
 
-&emsp; **Thời gian thực tập:** Từ ngày 12/08/2025 đến ngày 12/11/2025
+&emsp; **Thời gian thực tập:** Từ ngày 17/04/2026 đến ngày 10/07/2026
 
 ![Ảnh đại diện của bạn](/images/avatar.png)
 
