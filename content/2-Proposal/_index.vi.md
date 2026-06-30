@@ -9,8 +9,6 @@ pre: " <b> 2. </b> "
 
 {{% /notice %}}
 
-Tại phần này, bạn cần tóm tắt các nội dung trong workshop mà bạn **dự tính** sẽ làm.
-
 # SMART HOME ENERGY WASTE MONITORING & ALERT SYSTEM 
 ## Giải pháp AWS Serverless cho giám sát và cảnh báo lãng phí điện bằng cảm biến ảo 
 
