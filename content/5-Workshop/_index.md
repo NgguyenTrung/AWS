@@ -1,4 +1,4 @@
----
+﻿---
 title: "Workshop"
 date: 2024-01-01
 weight: 5
@@ -17,15 +17,19 @@ pre: " <b> 5. </b> "
 
 In this lab, you will learn how to create, configure, and test VPC endpoints that enable your workloads to reach AWS services without traversing the Public Internet.
 
-You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoint, and an Interface VPC endpoint. These two types of VPC endpoints offer different benefits depending on if you are accessing Amazon S3 from the cloud or your on-premises location
-+ **Gateway** - Create a gateway endpoint to send traffic to Amazon S3 or DynamoDB using private IP addresses.You route traffic from your VPC to the gateway endpoint using route tables.
-+ **Interface** - Create an interface endpoint to send traffic to endpoint services that use a Network Load Balancer to distribute traffic. Traffic destined for the endpoint service is resolved using DNS.
+You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoint, and an Interface VPC endpoint. These two types of VPC endpoints offer different benefits depending on if you are accessing Amazon S3 from the cloud or your on-premises location.
 
 #### Content
 
-1. [Workshop overview](5.1-Workshop-overview)
-2. [Prerequiste](5.2-Prerequiste/)
-3. [Access S3 from VPC](5.3-S3-vpc/)
-4. [Access S3 from On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (Bonus)](5.5-Policy/)
-6. [Clean up](5.6-Cleanup/)
+1. [Workshop overview](5.1-workshop-overview/)
+2. [Prerequisite](5.2-prerequisite/)
+3. [Budget and region](5.3-budget-and-region/)
+4. [DynamoDB](5.4-dynamodb/)
+5. [SNS email alert](5.5-sns-email-alert/)
+6. [Lambda waste detector](5.6-lambda-waste-detector/)
+7. [Lambda virtual sensor](5.7-lambda-virtual-sensor/)
+8. [IoT Core rule](5.8-iot-core-rule/)
+9. [EventBridge schedule](5.9-eventbridge-schedule/)
+10. [CloudWatch testing](5.10-cloudwatch-testing/)
+11. [API and dashboard](5.11-api-and-dashboard/)
+12. [Cleanup](5.12-cleanup/)
