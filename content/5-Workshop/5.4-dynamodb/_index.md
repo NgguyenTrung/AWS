@@ -1,5 +1,5 @@
 ﻿---
-title : "Access S3 from on-premises"
+title : "DynamoDB"
 date : 2024-01-01
 weight : 4
 chapter : false

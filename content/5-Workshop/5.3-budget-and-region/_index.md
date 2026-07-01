@@ -1,5 +1,5 @@
 ﻿---
-title : "Access S3 from VPC"
+title : "Budget and Region"
 date : 2024-01-01
 weight : 3
 chapter : false

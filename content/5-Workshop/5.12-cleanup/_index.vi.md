@@ -1,9 +1,9 @@
 ﻿---
-title : "Dá»n dáº¹p tÃ i nguyÃªn"
+title : "Cleanup"
 date : 2024-01-01
-weight : 6
+weight : 12
 chapter : false
-pre : " <b> 5.6. </b> "
+pre : " <b> 5.12. </b> "
 ---
 
 #### Dá»n dáº¹p tÃ i nguyÃªn

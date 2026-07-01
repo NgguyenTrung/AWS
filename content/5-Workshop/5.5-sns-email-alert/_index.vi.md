@@ -1,44 +1,47 @@
 ﻿---
-title : "VPC Endpoint Policies"
+title : "SNS Email Alert"
 date : 2024-01-01
 weight : 5
 chapter : false
-pre : " <b> 5.5 </b> "
+pre : " <b> 5.5. </b> "
 ---
 
-Khi báº¡n táº¡o má»™t Interface Endpoint  hoáº·c cá»•ng, báº¡n cÃ³ thá»ƒ Ä‘Ã­nh kÃ¨m má»™t chÃ­nh sÃ¡ch Ä‘iá»ƒm cuá»‘i Ä‘á»ƒ kiá»ƒm soÃ¡t quyá»n truy cáº­p vÃ o dá»‹ch vá»¥ mÃ  báº¡n Ä‘ang káº¿t ná»‘i. ChÃ­nh sÃ¡ch VPC Endpoint lÃ  chÃ­nh sÃ¡ch tÃ i nguyÃªn IAM mÃ  báº¡n Ä‘Ã­nh kÃ¨m vÃ o Ä‘iá»ƒm cuá»‘i. Náº¿u báº¡n khÃ´ng Ä‘Ã­nh kÃ¨m chÃ­nh sÃ¡ch khi táº¡o Ä‘iá»ƒm cuá»‘i, thÃ¬ AWS sáº½ Ä‘Ã­nh kÃ¨m chÃ­nh sÃ¡ch máº·c Ä‘á»‹nh cho báº¡n Ä‘á»ƒ cho phÃ©p toÃ n quyá»n truy cáº­p vÃ o dá»‹ch vá»¥ thÃ´ng qua Ä‘iá»ƒm cuá»‘i.
+Khi bạn tạo một Interface Endpoint hoặc gateway, bạn có thể đính kèm một chính sách điểm cuối để kiểm soát quyền truy cập vào dịch vụ mà bạn đang kết nối. Chính sách VPC Endpoint là chính sách tài nguyên IAM mà bạn đính kèm vào điểm cuối. Nếu bạn không đính kèm chính sách khi tạo điểm cuối, thì AWS sẽ đính kèm chính sách mặc định cho bạn để cho phép toàn quyền truy cập vào dịch vụ thông qua điểm cuối.
 
-Báº¡n cÃ³ thá»ƒ táº¡o chÃ­nh sÃ¡ch chá»‰ háº¡n cháº¿ quyá»n truy cáº­p vÃ o cÃ¡c S3 bucket cá»¥ thá»ƒ. Äiá»u nÃ y há»¯u Ã­ch náº¿u báº¡n chá»‰ muá»‘n má»™t sá»‘ Bá»™ chá»©a S3 nháº¥t Ä‘á»‹nh cÃ³ thá»ƒ truy cáº­p Ä‘Æ°á»£c thÃ´ng qua Ä‘iá»ƒm cuá»‘i.
+Bạn có thể tạo chính sách chỉ hạn chế quyền truy cập vào các S3 bucket cụ thể. Điều này hữu ích nếu bạn chỉ muốn một số Bộ chứa S3 nhất định có thể truy cập được thông qua điểm cuối.
 
-Trong pháº§n nÃ y, báº¡n sáº½ táº¡o chÃ­nh sÃ¡ch VPC Endpoint háº¡n cháº¿ quyá»n truy cáº­p vÃ o S3 bucket Ä‘Æ°á»£c chá»‰ Ä‘á»‹nh trong chÃ­nh sÃ¡ch VPC Endpoint.
+Trong phần này, bạn sẽ tạo chính sách VPC Endpoint hạn chế quyền truy cập vào S3 bucket được chỉ định trong chính sách VPC Endpoint.
 
 ![endpoint diagram](/images/5-Workshop/5.5-sns-email-alert/s3-bucket-policy.png)
 
-#### Káº¿t ná»‘i tá»›i EC2 vÃ  xÃ¡c minh káº¿t ná»‘i tá»›i S3. 
+#### Kết nối tới một EC2 instance và xác minh kết nối tới S3
 
-1. Báº¯t Ä‘áº§u má»™t phiÃªn AWS Session Manager má»›i trÃªn mÃ¡y chá»§ cÃ³ tÃªn lÃ  Test-Gateway-Endpoint. Tá»« phiÃªn nÃ y, xÃ¡c minh ráº±ng báº¡n cÃ³ thá»ƒ liá»‡t kÃª ná»™i dung cá»§a bucket mÃ  báº¡n Ä‘Ã£ táº¡o trong Pháº§n 1: Truy cáº­p S3 tá»« VPC.
+1. Bắt đầu một phiên AWS Session Manager mới trên instance có tên Test-Gateway-Endpoint. Từ phiên này, xác minh rằng bạn có thể liệt kê nội dung của bucket mà bạn đã tạo trong Phần 1: Truy cập S3 từ VPC:
 
-```
+\\\
 aws s3 ls s3://<your-bucket-name>
-```
+\\\
 ![test](/images/5-Workshop/5.5-sns-email-alert/test1.png)
 
-Ná»™i dung cá»§a bucket bao gá»“m hai tá»‡p cÃ³ dung lÆ°á»£ng 1GB Ä‘Ã£ Ä‘Æ°á»£c táº£i lÃªn trÆ°á»›c Ä‘Ã³.
+Nội dung bucket bao gồm hai tệp 1 GB được tải lên trước đó.
 
-2. Táº¡o má»™t bucket S3 má»›i; tuÃ¢n thá»§ máº«u Ä‘áº·t tÃªn mÃ  báº¡n Ä‘Ã£ sá»­ dá»¥ng trong Pháº§n 1, nhÆ°ng thÃªm '-2' vÃ o tÃªn. Äá»ƒ cÃ¡c trÆ°á»ng khÃ¡c lÃ  máº·c Ä‘á»‹nh vÃ  nháº¥p vÃ o **Create**.
+2. Tạo một bucket S3 mới; tuân theo mẫu đặt tên mà bạn đã sử dụng trong Phần 1, nhưng thêm '-2' vào tên. Để các trường khác là mặc định và nhấp vào create
 
 ![create bucket](/images/5-Workshop/5.5-sns-email-alert/create-bucket.png)
 
-3. Táº¡o bucket thÃ nh cÃ´ng.
+Tạo bucket thành công
 
 ![Success](/images/5-Workshop/5.5-sns-email-alert/create-bucket-success.png)
 
-Policy máº·c Ä‘á»‹nh cho phÃ©p truy cáº­p vÃ o táº¥t cáº£ cÃ¡c S3 Buckets thÃ´ng qua VPC endpoint.
+3. Điều hướng đến: Services > VPC > Endpoints, sau đó chọn Gateway VPC endpoint mà bạn đã tạo trước đó. Nhấp vào tab Policy. Nhấp vào Edit policy.
 
-4. Trong giao diá»‡n **Edit Policy**, sao chÃ©p vÃ  dÃ¡n theo policy sau, thay tháº¿ yourbucketname-2 vá»›i tÃªn bucket thá»© hai cá»§a báº¡n. Policy nÃ y sáº½ cho phÃ©p truy cáº­p Ä‘áº¿n bucket má»›i thÃ´ng qua VPC endpoint, nhÆ°ng khÃ´ng cho phÃ©p truy cáº­p Ä‘áº¿n cÃ¡c bucket cÃ²n láº¡i. Chá»n **Save** Ä‘á»ƒ kÃ­ch hoáº¡t policy.
+![policy](/images/5-Workshop/5.5-sns-email-alert/policy1.png)
 
+Chính sách mặc định cho phép truy cập vào tất cả các S3 Buckets thông qua VPC endpoint.
 
-```
+4. Trong bảng điều khiển Edit Policy, sao chép & dán chính sách sau, sau đó thay thế yourbucketname-2 bằng tên bucket thứ hai của bạn. Chính sách này sẽ cho phép truy cập thông qua VPC endpoint vào bucket mới của bạn, nhưng không cho phép truy cập vào bất kỳ bucket nào khác trong Amazon S3. Nhấp vào Save để áp dụng chính sách.
+
+\\\
 {
   "Id": "Policy1631305502445",
   "Version": "2012-10-17",
@@ -48,50 +51,47 @@ Policy máº·c Ä‘á»‹nh cho phÃ©p truy cáº­p vÃ o táº¥t cáº£
       "Action": "s3:*",
       "Effect": "Allow",
       "Resource": [
-      				"arn:aws:s3:::yourbucketname-2",
-       				"arn:aws:s3:::yourbucketname-2/*"
+      "arn:aws:s3:::yourbucketname-2",
+       "arn:aws:s3:::yourbucketname-2/*"
        ],
       "Principal": "*"
     }
   ]
 }
-```
+\\\
 
 ![custom policy](/images/5-Workshop/5.5-sns-email-alert/policy2.png)
 
-Cáº¥u hÃ¬nh policy thÃ nh cÃ´ng.
+Tùy chỉnh chính sách thành công
 
-![success](/images/5-Workshop/5.5-sns-email-alert/success.png)
+![success](/static/images/5-Workshop/5.5-sns-email-alert/success.png)
 
-5. Tá»« session cá»§a báº¡n trÃªn Test-Gateway-Endpoint instance, kiá»ƒm tra truy cáº­p Ä‘áº¿n S3 bucket báº¡n táº¡o á»Ÿ bÆ°á»›c Ä‘áº§u
-
-```
+5. Từ phiên của bạn trên instance Test-Gateway-Endpoint, kiểm tra quyền truy cập vào S3 bucket mà bạn đã tạo trong Phần 1: Truy cập S3 từ VPC
+\\\
 aws s3 ls s3://<yourbucketname>
-```
+\\\
 
-CÃ¢u lá»‡nh tráº£ vá» lá»—i bá»Ÿi vÃ¬ truy cáº­p vÃ o S3 bucket khÃ´ng cÃ³ quyá»n trong VPC endpoint policy.
+Lệnh này sẽ trả về lỗi vì quyền truy cập vào bucket này không được phép bởi chính sách VPC endpoint mới của bạn:
 
-![error](/images/5-Workshop/5.5-sns-email-alert/error.png)
+![error](/static/images/5-Workshop/5.5-sns-email-alert/error.png)
 
-6. Trá»Ÿ láº¡i home directory cá»§a báº¡n trÃªn EC2 instance ```cd~```
+6. Quay lại thư mục home của bạn trên EC2 instance \ cd~ \
 
-+ Táº¡o file ```fallocate -l 1G test-bucket2.xyz ```
-+ Sao chÃ©p file lÃªn bucket thá»©  2 ```aws s3 cp test-bucket2.xyz s3://<your-2nd-bucket-name>```
++ Tạo một tệp \\\allocate -l 1G test-bucket2.xyz \\\
++ Sao chép tệp vào bucket thứ 2 \\\ws s3 cp test-bucket2.xyz s3://<your-2nd-bucket-name>\\\
 
-![success](/images/5-Workshop/5.5-sns-email-alert/test2.png)
+![success](/static/images/5-Workshop/5.5-sns-email-alert/test2.png)
 
-Thao tÃ¡c nÃ y Ä‘Æ°á»£c cho phÃ©p bá»Ÿi VPC endpoint policy.
+Thao tác này thành công vì nó được phép bởi chính sách VPC endpoint.
 
-![success](/images/5-Workshop/5.5-sns-email-alert/test2-success.png)
+![success](/static/images/5-Workshop/5.5-sns-email-alert/test2-success.png)
 
-Sau Ä‘Ã³ chÃºng ta kiá»ƒm tra truy cáº­p vÃ o S3 bucket Ä‘áº§u tiÃªn
++ Sau đó chúng tôi kiểm tra quyền truy cập vào bucket đầu tiên bằng cách sao chép tệp vào bucket thứ 1 \ws s3 cp test-bucket2.xyz s3://<your-1st-bucket-name>\
 
- ```aws s3 cp test-bucket2.xyz s3://<your-1st-bucket-name>```
+![fail](/static/images/5-Workshop/5.5-sns-email-alert/test2-fail.png)
 
- ![fail](/images/5-Workshop/5.5-sns-email-alert/test2-fail.png)
+Lệnh này sẽ trả về lỗi vì quyền truy cập vào bucket này không được phép bởi chính sách VPC endpoint mới của bạn.
 
- CÃ¢u lá»‡nh xáº£y ra lá»—i bá»Ÿi vÃ¬ bucket khÃ´ng cÃ³ quyá»n truy cáº­p bá»Ÿi VPC endpoint policy.
+#### Tóm tắt Phần 3:
 
-Trong pháº§n nÃ y, báº¡n Ä‘Ã£ táº¡o chÃ­nh sÃ¡ch VPC Endpoint cho Amazon S3 vÃ  sá»­ dá»¥ng AWS CLI Ä‘á»ƒ kiá»ƒm tra chÃ­nh sÃ¡ch. CÃ¡c hoáº¡t Ä‘á»™ng AWS CLI liÃªn quan Ä‘áº¿n bucket S3 ban Ä‘áº§u cá»§a báº¡n tháº¥t báº¡i vÃ¬ báº¡n Ã¡p dá»¥ng má»™t chÃ­nh sÃ¡ch chá»‰ cho phÃ©p truy cáº­p Ä‘áº¿n bucket thá»© hai mÃ  báº¡n Ä‘Ã£ táº¡o. CÃ¡c hoáº¡t Ä‘á»™ng AWS CLI nháº¯m vÃ o bucket thá»© hai cá»§a báº¡n thÃ nh cÃ´ng vÃ¬ chÃ­nh sÃ¡ch cho phÃ©p chÃºng. Nhá»¯ng chÃ­nh sÃ¡ch nÃ y cÃ³ thá»ƒ há»¯u Ã­ch trong cÃ¡c tÃ¬nh huá»‘ng khi báº¡n cáº§n kiá»ƒm soÃ¡t quyá»n truy cáº­p vÃ o tÃ i nguyÃªn thÃ´ng qua VPC Endpoint.
-
-
+Trong phần này, bạn đã tạo chính sách VPC endpoint cho Amazon S3 và sử dụng AWS CLI để kiểm tra chính sách. Các hành động AWS CLI nhắm đến bucket S3 ban đầu của bạn đã không thành công vì bạn đã áp dụng chính sách chỉ cho phép truy cập vào bucket thứ hai mà bạn đã tạo. Các hành động AWS CLI nhắm đến bucket thứ hai của bạn đã thành công vì chính sách đã cho phép chúng. Những chính sách này có thể hữu ích trong các tình huống mà bạn cần kiểm soát quyền truy cập vào tài nguyên thông qua VPC endpoints.

@@ -1,8 +1,9 @@
 ﻿---
 title: "EventBridge Schedule"
 date: 2024-01-01
-weight: 1
+weight: 9
 chapter: false
+pre: " <b> 5.9. </b> "
 ---
 
 # EventBridge Schedule
