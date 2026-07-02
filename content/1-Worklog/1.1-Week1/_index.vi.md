@@ -11,48 +11,39 @@ pre: " <b> 1.1. </b> "
 
 ### Mục tiêu tuần 1:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Làm quen với môi trường thực tập và các thành viên trong chương trình First Cloud Journey.
+* Tìm hiểu tổng quan về điện toán đám mây và nền tảng AWS.
+* Làm quen với AWS Management Console.
+* Biết cách tạo và quản lý tài khoản AWS.
+* Tìm hiểu cách kiểm soát chi phí bằng AWS Budgets.
+* Tìm hiểu AWS Support và quản lý quyền truy cập bằng AWS IAM.
+
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 20/04/2026   | 20/04/2026      |
-| 3   | - Tìm hiểu AWS  <br> - Học Module 01-01 - Điện toán đám mây là gì ?<br> - Module 01-02 - Điều Gì Tạo Nên Sự Khác Biệt Của AWS ? <br> - Module 01-03 - Bắt Đầu Hành Trình Lên Mây Như Thế Nào <br> - Module 01-04 - Hạ Tầng Toàn Cầu Của AWS                                            | 21/04/2026   | 21/04/2026      | <https://www.youtube.com/@AWSStudyGroup> |
-| 4   | | 22/04/2026   | 22/04/2026      | <https://www.youtube.com/@AWSStudyGroup> |
-| 5   | | 23/04/2026   | 23/04/2026      | <https://www.youtube.com/@AWSStudyGroup> |
-| 6   | | 24/04/2026   | 24/04/2026      | <https://www.youtube.com/@AWSStudyGroup> |
+
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Làm quen với môi trường thực tập và các thành viên trong First Cloud Journey. <br> - Tìm hiểu tổng quan về chương trình First Cloud Journey. <br> - Đọc và ghi nhớ các nội quy, quy định tại đơn vị thực tập. <br> - Tìm hiểu lộ trình và yêu cầu học tập trong chương trình. | 20/04/2026 | 20/04/2026 | |
+| 3 | - Tìm hiểu tổng quan về điện toán đám mây và nền tảng AWS. <br> - Học Module 01-01: Điện toán đám mây là gì? <br> - Học Module 01-02: Điều gì tạo nên sự khác biệt của AWS? <br> - Học Module 01-03: Bắt đầu hành trình lên mây như thế nào? <br> - Học Module 01-04: Hạ tầng toàn cầu của AWS. | 21/04/2026 | 21/04/2026 | <https://www.youtube.com/@AWSStudyGroup> |
+| 4 | - Hoàn thành bài lab **Creating Your First AWS Account**. <br> - Tìm hiểu quy trình tạo và quản lý tài khoản AWS. <br> - Đăng nhập vào AWS Management Console. <br> - Làm quen với giao diện và thanh tìm kiếm dịch vụ. <br> - Thực hành lựa chọn Region trên AWS Console. | 22/04/2026 | 22/04/2026 | <https://www.youtube.com/@AWSStudyGroup> |
+| 5 | - Hoàn thành bài lab **Managing Costs with AWS Budgets**. <br> - Tìm hiểu cách AWS tính và theo dõi chi phí sử dụng dịch vụ. <br> - Thực hành tạo AWS Budget. <br> - Thiết lập ngưỡng ngân sách và email cảnh báo chi phí. <br> - Kiểm tra thông tin chi phí trong Billing and Cost Management. | 23/04/2026 | 23/04/2026 | <https://www.youtube.com/@AWSStudyGroup> |
+| 6 | - Hoàn thành bài lab **Getting Help with AWS Support**. <br> - Tìm hiểu các hình thức và gói hỗ trợ của AWS. <br> - Tìm hiểu cách tra cứu tài liệu và tìm sự trợ giúp khi gặp lỗi. <br> - Hoàn thành bài lab **Access Management with AWS Identity and Access Management (IAM)**. <br> - Tìm hiểu IAM User, Group, Role và Policy. <br> - Tìm hiểu nguyên tắc cấp quyền tối thiểu trong AWS. | 24/04/2026 | 24/04/2026 | <https://www.youtube.com/@AWSStudyGroup> |
 
 
 ### Kết quả đạt được tuần 1:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Em đã làm quen với môi trường thực tập và các thành viên trong chương trình First Cloud Journey.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Em hiểu được những khái niệm cơ bản về điện toán đám mây và nền tảng AWS.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Em biết cách đăng nhập, tìm kiếm dịch vụ và thực hiện các thao tác cơ bản trên AWS Management Console.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Em đã tìm hiểu quy trình tạo và quản lý tài khoản AWS.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Em hiểu AWS Budgets để thiết lập ngân sách và cảnh báo chi phí.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+* Em hiểu được các hình thức hỗ trợ của AWS và biết cách tìm kiếm tài liệu khi gặp vấn đề.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+
 
 

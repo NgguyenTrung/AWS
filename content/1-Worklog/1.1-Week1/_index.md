@@ -12,47 +12,36 @@ pre: " <b> 1.1. </b> "
 
 ### Week 1 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Become familiar with the internship environment and the members of the First Cloud Journey program.
+* Learn the fundamentals of cloud computing and the AWS platform.
+* Become familiar with the AWS Management Console.
+* Learn how to create and manage an AWS account.
+* Learn how to control costs using AWS Budgets.
+* Learn about AWS Support and access management using AWS IAM.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 17/04/2026 | 17/04/2026      |
-| 3   | - Learn about AWS  <br> - Module 01-01 - What Is Cloud Computing? <br> - Module 01-02 - What Makes AWS Different? <br> - Module 01-03 - How to Begin Your Cloud Journey <br> - Module 01-04 - AWS Global Infrastructure <br>                                              | 18/04/2026 | 18/04/2026      | <https://www.youtube.com/@AWSStudyGroup> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/04/2026 | 08/04/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/04/2026 | 08/04/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/04/2026 | 08/04/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 7   |
+
+### Tasks to Be Completed This Week:
+
+| Day | Tasks | Start Date | Completion Date | Resources |
+| --- | --- | --- | --- | --- |
+| 2 | - Become familiar with the internship environment and the members of First Cloud Journey. <br> - Learn about the First Cloud Journey program. <br> - Read and understand the rules and regulations of the internship organization. <br> - Learn about the study roadmap and program requirements. | 20/04/2026 | 20/04/2026 | |
+| 3 | - Learn the fundamentals of cloud computing and the AWS platform. <br> - Study Module 01-01: What Is Cloud Computing? <br> - Study Module 01-02: What Makes AWS Different? <br> - Study Module 01-03: How to Start the Cloud Journey? <br> - Study Module 01-04: AWS Global Infrastructure. | 21/04/2026 | 21/04/2026 | <https://www.youtube.com/@AWSStudyGroup> |
+| 4 | - Complete the **Creating Your First AWS Account** lab. <br> - Learn the process of creating and managing an AWS account. <br> - Sign in to the AWS Management Console. <br> - Become familiar with the interface and service search bar. <br> - Practice selecting a Region in the AWS Console. | 22/04/2026 | 22/04/2026 | <https://www.youtube.com/@AWSStudyGroup> |
+| 5 | - Complete the **Managing Costs with AWS Budgets** lab. <br> - Learn how AWS calculates and tracks service usage costs. <br> - Practice creating an AWS Budget. <br> - Configure budget thresholds and email cost alerts. <br> - Review cost information in Billing and Cost Management. | 23/04/2026 | 23/04/2026 | <https://www.youtube.com/@AWSStudyGroup> |
+| 6 | - Complete the **Getting Help with AWS Support** lab. <br> - Learn about AWS Support plans and support options. <br> - Learn how to search for documentation and obtain help when errors occur. <br> - Complete the **Access Management with AWS Identity and Access Management (IAM)** lab. <br> - Learn about IAM Users, Groups, Roles, and Policies. <br> - Learn about the principle of least privilege in AWS. | 24/04/2026 | 24/04/2026 | <https://www.youtube.com/@AWSStudyGroup> |
 
 
 ### Week 1 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* I became familiar with the internship environment and the members of the First Cloud Journey program.
 
-* Successfully created and configured an AWS Free Tier account.
+* I understood the fundamental concepts of cloud computing and the AWS platform.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* I learned how to sign in, search for services, and perform basic operations in the AWS Management Console.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* I learned the process of creating and managing an AWS account.
 
-* Used AWS CLI to perform basic operations such as:
+* I understood how AWS Budgets can be used to set budgets and cost alerts.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* I understood the available AWS Support options and learned how to search for documentation when encountering problems.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...

@@ -12,48 +12,51 @@ pre: " <b> 1.5. </b> "
 
 ### Mục tiêu tuần 5:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tìm hiểu các dịch vụ bảo mật và quản lý danh tính trên AWS.
+* Hiểu vai trò của AWS IAM Identity Center trong việc quản lý quyền truy cập tập trung.
+* Tìm hiểu cách AWS Key Management Service quản lý khóa mã hóa và bảo vệ dữ liệu.
+* Làm quen với AWS Security Hub trong việc tổng hợp và quản lý các cảnh báo bảo mật.
+* Tìm hiểu cách tổ chức và quản lý tài nguyên AWS bằng Tags và Resource Groups.
+* Thực hành kiểm soát quyền truy cập dựa trên IAM và Resource Tags.
+* Tìm hiểu cách sử dụng IAM Permission Boundaries để giới hạn quyền tối đa của IAM User và IAM Role.
+
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   |                                                                                            | 18/05/2026   | 18/05/2026      |
-| 3   |                                            | 19/05/2026   | 19/05/2026      |<https://www.youtube.com/@AWSStudyGroup> |
-| 4   | | 20/05/2026   | 20/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   |                   | 21/05/2026   | 21/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   |                                                                                         | 22/05/2026   | 22/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
+
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Học nội dung **AWS IAM Identity Center**. <br> - Tìm hiểu vai trò của AWS IAM Identity Center trong việc quản lý quyền truy cập tập trung. <br> - Tìm hiểu cách quản lý người dùng, nhóm người dùng và quyền truy cập vào nhiều tài khoản AWS. <br> - Phân biệt AWS IAM Identity Center với IAM User trong một tài khoản AWS. | 18/05/2026 | 18/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Học nội dung **AWS Key Management Service (AWS KMS)**. <br> - Tìm hiểu vai trò của AWS KMS trong việc tạo và quản lý khóa mã hóa. <br> - Tìm hiểu AWS managed keys và customer managed keys. <br> - Tìm hiểu cách sử dụng key policy để kiểm soát quyền truy cập vào khóa. | 19/05/2026 | 19/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Học nội dung **AWS Security Hub**. <br> - Tìm hiểu cách AWS Security Hub tổng hợp các cảnh báo và phát hiện bảo mật từ nhiều dịch vụ AWS. <br> - Tìm hiểu khái niệm Security Standard, Control và Finding. | 20/05/2026 | 20/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Làm bài lab **Resource Organization with Tags and Resource Groups**. <br> - Tìm hiểu cách sử dụng Tags để phân loại và quản lý tài nguyên AWS. <br> - Thực hành tạo Tag với Key và Value cho các tài nguyên. | 21/05/2026 | 21/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - Làm bài lab **Access Control with IAM and Resource Tags**. <br> - Tìm hiểu cách kiểm soát quyền truy cập dựa trên Tags của IAM principal và AWS resource. <br> - Tìm hiểu mô hình kiểm soát truy cập dựa trên thuộc tính. <br> - Làm bài lab **Permission Management with IAM Permission Boundaries**. <br> - Tìm hiểu cách sử dụng Permission Boundary để giới hạn quyền tối đa của IAM User hoặc IAM Role. | 22/05/2026 | 22/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 5:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Em đã hiểu được vai trò của AWS IAM Identity Center trong việc quản lý người dùng và quyền truy cập tập trung vào nhiều tài khoản AWS.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Em phân biệt được AWS IAM Identity Center với IAM User được tạo trực tiếp trong một tài khoản AWS.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Em đã hiểu được vai trò của AWS Key Management Service trong việc tạo, lưu trữ và quản lý khóa mã hóa.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Em đã tìm hiểu các loại khóa trong AWS KMS gồm:
+  * AWS managed keys
+  * Customer managed keys
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Em hiểu được cách sử dụng Key Policy để kiểm soát quyền truy cập vào khóa mã hóa.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+* Em đã hiểu được vai trò của AWS Security Hub trong việc tổng hợp, phân tích và quản lý các cảnh báo bảo mật.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Em biết cách sử dụng Tags để phân loại, tìm kiếm và quản lý tài nguyên AWS.
+
+* Em hiểu được cách sử dụng AWS Resource Groups để nhóm các tài nguyên dựa trên Tag hoặc điều kiện tìm kiếm.
+
+* Em đã tìm hiểu cách kiểm soát quyền truy cập bằng IAM Policy kết hợp với Resource Tags.
+
+* Em hiểu được nguyên tắc kiểm soát truy cập dựa trên thuộc tính thông qua việc sử dụng Tags.
+
+* Em đã nắm được vai trò của IAM Permission Boundaries trong việc giới hạn quyền tối đa mà IAM User hoặc IAM Role có thể nhận.
+
 
 
