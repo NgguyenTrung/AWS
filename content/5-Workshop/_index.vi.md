@@ -22,7 +22,7 @@ Chúng ta sẽ tạo hai loại endpoints để truy cập đến Amazon S3: gat
 
 #### Nội dung
 
-1. [Tổng quan về workshop](5.1-workshop-overview/)
+1. [Tổng quan về workshop](5.1-Workshop-overview/)
 2. [Chuẩn bị](5.2-prerequisite/)
 3. [Ngân sách và khu vực](5.3-budget-and-region/)
 4. [DynamoDB](5.4-dynamodb/)
@@ -32,5 +32,12 @@ Chúng ta sẽ tạo hai loại endpoints để truy cập đến Amazon S3: gat
 8. [IoT Core rule](5.8-iot-core-rule/)
 9. [EventBridge schedule](5.9-eventbridge-schedule/)
 10. [Kiểm thử CloudWatch](5.10-cloudwatch-testing/)
-11. [API và dashboard](5.11-api-and-dashboard/)
-12. [Dọn dẹp](5.12-cleanup/)
+11. [Cognito user pool](5.11-cognito-user-pool/)
+12. [API Gateway HTTP API](5.12-api-gateway-http-api/)
+13. [Lambda API handler](5.13-lambda-api-handler/)
+14. [S3 report bucket](5.14-s3-report-bucket/)
+15. [Lambda report generator](5.15-lambda-report-generator/)
+16. [Next.js + Amplify](5.16-nextjs-amplify/)
+17. [CloudFront, WAF, custom domain](5.17-cloudfront-waf-custom-domain/)
+18. [End-to-end testing](5.18-end-to-end-testing/)
+19. [Dọn dẹp](5.19-cleanup/)

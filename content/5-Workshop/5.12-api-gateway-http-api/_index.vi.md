@@ -1,11 +1,11 @@
-﻿---
-title: "API and Dashboard"
+---
+title: "API Gateway HTTP API"
 date: 2024-01-01
-weight: 11
+weight: 12
 chapter: false
-pre: " <b> 5.11. </b> "
+pre: " <b> 5.12. </b> "
 ---
 
-# API và Dashboard
+# API Gateway HTTP API
 
 Phần này đang chờ nội dung workshop của bạn.
