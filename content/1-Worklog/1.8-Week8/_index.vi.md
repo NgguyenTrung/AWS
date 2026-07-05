@@ -9,51 +9,47 @@ pre: " <b> 1.8. </b> "
 
 {{% /notice %}}
 
-
 ### Mục tiêu tuần 8:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tìm hiểu yêu cầu của dự án Smart Home Energy Waste Monitoring and Alert System.
+* Phân tích và thiết kế kiến trúc tổng thể của hệ thống trên AWS.
+* Thiết lập Region và AWS Budget để quản lý tài nguyên và kiểm soát chi phí.
+* Tạo cơ sở dữ liệu dùng chung bằng Amazon DynamoDB.
+* Thiết lập dịch vụ gửi cảnh báo qua email bằng Amazon SNS.
+* Xây dựng Lambda Virtual Sensor để mô phỏng dữ liệu điện năng.
+* Xây dựng Lambda Waste Detector để phát hiện tình trạng lãng phí điện.
+
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   |                                                                                            | 08/06/2026   | 08/06/2026      |
-| 3   |                                            | 09/06/2026   | 09/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | | 10/06/2026   | 10/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   |                 | 11/06/2026   | 11/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   |                                                                                         | 12/06/2026   | 12/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Tìm hiểu yêu cầu của dự án **Smart Home Energy Waste Monitoring and Alert System**. <br> - Xác định các chức năng chính của hệ thống. <br> - Phân tích luồng thu thập dữ liệu, phát hiện lãng phí, gửi cảnh báo và tạo báo cáo. <br> - Thiết kế kiến trúc Serverless sử dụng các dịch vụ AWS. | 08/06/2026 | 08/06/2026 | <https://www.youtube.com/@AWSStudyGroup> |
+| 3 | - Chọn Region **Asia Pacific (Singapore) – ap-southeast-1**. <br> - Thiết lập AWS Budget để theo dõi chi phí. <br> - Kiểm tra các quyền IAM cần thiết để triển khai dự án. | 09/06/2026 | 09/06/2026 | <https://www.youtube.com/@AWSStudyGroup> |
+| 4 | - Tạo bảng Amazon DynamoDB **EnergyWasteData**. <br> - Cấu hình Partition Key là PK và Sort Key là SK. <br> - Chọn chế độ tính phí On-demand. <br> - Thiết kế cấu trúc lưu Room, Telemetry, Alert và Report. | 10/06/2026 | 10/06/2026 | <https://www.youtube.com/@AWSStudyGroup> |
+| 5 | - Tạo Amazon SNS Topic để gửi cảnh báo lãng phí điện. <br> - Tạo Email Subscription. <br> - Xác nhận Subscription từ hộp thư email. <br> - Kiểm tra chức năng gửi thông báo. | 11/06/2026 | 11/06/2026 | <https://www.youtube.com/@AWSStudyGroup> |
+| 6 | - Xây dựng Lambda **energy-virtual-sensor**. <br> - Xây dựng Lambda **energy-waste-detector**. <br> - Cấu hình Environment Variables. <br> - Cấp quyền DynamoDB, SNS và CloudWatch Logs cho Lambda. | 12/06/2026 | 12/06/2026 | <https://www.youtube.com/@AWSStudyGroup> |
 
 
 ### Kết quả đạt được tuần 8:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Em đã hiểu được mục tiêu và yêu cầu của hệ thống giám sát, phát hiện và cảnh báo lãng phí điện năng.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Em đã thiết kế được kiến trúc Serverless tổng thể cho dự án.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Em đã thống nhất sử dụng Region Asia Pacific (Singapore), mã Region ap-southeast-1.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Em đã thiết lập AWS Budget để theo dõi và kiểm soát chi phí.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Em đã tạo thành công bảng DynamoDB EnergyWasteData.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+* Em đã hiểu cách sử dụng Partition Key và Sort Key để lưu nhiều loại dữ liệu trong cùng một bảng.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Em đã tạo Amazon SNS Topic và xác nhận Email Subscription thành công.
 
+* Em đã xây dựng Lambda Virtual Sensor để tạo dữ liệu mô phỏng điện năng.
+
+* Em đã xây dựng Lambda Waste Detector để xử lý dữ liệu, lưu dữ liệu vào DynamoDB và gửi cảnh báo bằng Amazon SNS.
+
+* Những công việc trong tuần 8 đã hoàn thành phần nền tảng lưu trữ, xử lý dữ liệu và gửi cảnh báo của hệ thống.
 
