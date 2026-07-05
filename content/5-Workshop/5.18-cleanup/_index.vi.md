@@ -34,4 +34,5 @@ By creating an interface endpoint you extended S3 connectivity to resources runn
 + Mở bảng điều khiển S3
 + Chọn bucket chúng ta đã tạo cho lab, nhấp chuột và xác nhận là empty. Nhấp Delete và xác nhận delete.
 + 
-![delete s3](/images/5-Workshop/5.12-cleanup/delete-s3.png)
+![delete s3](/images/5-Workshop/5.19
+-cleanup/delete-s3.png)
