@@ -57,13 +57,6 @@ pre: " <b> 1.11. </b> "
 
 * Quá trình đăng ký custom domain chưa hoàn thành do yêu cầu đăng ký tên miền bị thất bại.
 
-* Em đã thực hiện kiểm thử toàn hệ thống với kết quả:
-
-  * Rooms: 1
-  * Telemetry: 20
-  * Alerts: 9
-  * Reports: 1
-
 * Em đã kiểm tra email cảnh báo được gửi thành công qua Amazon SNS.
 
 * Em đã kiểm tra báo cáo JSON được tạo và lưu trong Amazon S3.

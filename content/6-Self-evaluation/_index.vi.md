@@ -10,7 +10,7 @@ pre: " <b> 6. </b> "
 
 {{% /notice %}}
 
-Trong thời gian thực tập tại **Công ty TNHH Amazon Web Services Việt Nam**, từ ngày **17/04/2026** đến ngày **10/07/2026**, em đã có cơ hội tìm hiểu môi trường làm việc thực tế, học hỏi kiến thức về điện toán đám mây và vận dụng những nội dung đã học vào quá trình triển khai dự án trên AWS.
+Trong thời gian thực tập tại **Công ty TNHH Amazon Web Services Việt Nam**, từ ngày **20/04/2026** đến ngày **12/07/2026**, em đã có cơ hội tìm hiểu môi trường làm việc thực tế, học hỏi kiến thức về điện toán đám mây và vận dụng những nội dung đã học vào quá trình triển khai dự án trên AWS.
 
 Trong quá trình thực tập, em đã tham gia các hoạt động của chương trình **First Cloud Journey**, tìm hiểu nhiều dịch vụ AWS và thực hiện dự án **Smart Home Energy Waste Monitoring and Alert System**. Dự án tập trung xây dựng hệ thống giám sát mức tiêu thụ điện, phát hiện các trường hợp lãng phí, gửi cảnh báo và hiển thị dữ liệu trên dashboard.
 

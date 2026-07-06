@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-During my internship at **Amazon Web Services Vietnam Co., Ltd.**, from **April 17, 2026** to **July 10, 2026**, I had the opportunity to experience a professional working environment, acquire knowledge of cloud computing, and apply what I had learned to the implementation of a project on AWS.
+During my internship at **Amazon Web Services Vietnam Co., Ltd.**, from **April 20, 2026** to **July 12, 2026**, I had the opportunity to experience a professional working environment, acquire knowledge of cloud computing, and apply what I had learned to the implementation of a project on AWS.
 
 Throughout the internship, I participated in activities organized under the **First Cloud Journey** program, explored various AWS services, and developed the **Smart Home Energy Waste Monitoring and Alert System** project. The project focused on building a system that monitors electricity consumption, detects energy-wasting situations, sends alerts, and displays data on a dashboard.
 

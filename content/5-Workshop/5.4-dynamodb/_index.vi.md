@@ -22,8 +22,8 @@ pre : " <b> 5.4. </b> "
 
 ![dynamodb-table-active](/images/5-Workshop/5.4-dynamodb/dynamodb-table-active.png)
 
-![dynamodb-create-room-item1](/images/5-Workshop/5.4-dynamodb/dynamodb-create-room-item1.png)
+![dynamodb-create-room-item1](/images/5-Workshop/5.4-dynamodb/Screenshot-2026-07-01170457.png)
 
-![dynamodb-create-room-item2](/images/5-Workshop/5.4-dynamodb/dynamodb-create-room-item2.png)
+![dynamodb-create-room-item2](/images/5-Workshop/5.4-dynamodb/dynamodb-room-item-created.png)
 
 ![dynamodb-room-item-created](/images/5-Workshop/5.4-dynamodb/dynamodb-room-item-created.png)

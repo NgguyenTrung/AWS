@@ -3,36 +3,48 @@ title : "Cleanup"
 date : 2024-01-01
 weight : 19
 chapter : false
-pre : " <b> 5.19. </b> "
+pre : " <b> 5.18. </b> "
 ---
 
 #### Dọn dẹp tài nguyên
 
-Xin chúc mừng bạn đã hoàn thành xong lab này!
-Trong lab này, bạn đã học về các mô hình kiến trúc để truy cập Amazon S3 mà không sử dụng Public Internet.
 
-+ Bằng cách tạo Gateway endpoint, bạn đã cho phép giao tiếp trực tiếp giữa các tài nguyên EC2 và Amazon S3, mà không đi qua Internet Gateway.
-By creating an interface endpoint you extended S3 connectivity to resources running in your on-premises data center via AWS Site-to-Site VPN or Direct Connect.
 
-#### Dọn dẹp
-1. Điều hướng đến Hosted Zones trên phía trái của bảng điều khiển Route 53. Nhấp vào tên của  s3.us-east-1.amazonaws.com zone. Nhấp vào Delete và xác nhận việc xóa bằng cách nhập từ khóa "delete".
+![hosted zone](/images/5-Workshop/5.18-cleanup/Xoa-EventBridge-Scheduler.png)
+![hosted zone](/images/5-Workshop/5.18-cleanup/Xoa-EventBridge-Scheduler2.png)
 
-![hosted zone](/images/5-Workshop/5.12-cleanup/delete-zone.png)
+![hosted zone](/images/5-Workshop/5.18-cleanup/Xoa-Web-ACL.png)
+![hosted zone](/images/5-Workshop/5.18-cleanup/Xoa-Web-ACL2.png)
 
-2. Disassociate Route 53 Resolver Rule - myS3Rule from "VPC Onprem" and Delete it. 
+![hosted zone](/images/5-Workshop/5.18-cleanup/AWS-Amplify.png)
+![hosted zone](/images/5-Workshop/5.18-cleanup/AWS-Amplify2.png)
 
-![hosted zone](/images/5-Workshop/5.12-cleanup/vpc.png)
+![hosted zone](/images/5-Workshop/5.18-cleanup/Xoa-APi-Gateway.png)
+![hosted zone](/images/5-Workshop/5.18-cleanup/Xoa-API-Gateway2.png)
 
-4.Mở console của CloudFormation và xóa hai stack CloudFormation mà bạn đã tạo cho bài thực hành này:
-+ PLOnpremSetup
-+ PLCloudSetup
+![hosted zone](/images/5-Workshop/5.18-cleanup/Xoa-Cognito.png)
+![hosted zone](/images/5-Workshop/5.18-cleanup/Xoa-Cognito2.png)
 
-![delete stack](/images/5-Workshop/5.19-cleanup/delete-stack.png)
+![hosted zone](/images/5-Workshop/5.18-cleanup/Xoa-Rule.png)
+![hosted zone](/images/5-Workshop/5.18-cleanup/Xoa-Rule2.png)
 
-5. Xóa các S3 bucket
+![hosted zone](/images/5-Workshop/5.18-cleanup/Xoa-Lambda.png)
+![hosted zone](/images/5-Workshop/5.18-cleanup/Xoa-Lambda2.png)
 
-+ Mở bảng điều khiển S3
-+ Chọn bucket chúng ta đã tạo cho lab, nhấp chuột và xác nhận là empty. Nhấp Delete và xác nhận delete.
-+ 
-![delete s3](/images/5-Workshop/5.19
--cleanup/delete-s3.png)
+![hosted zone](/images/5-Workshop/5.18-cleanup/Xoa-SNS.png)
+![hosted zone](/images/5-Workshop/5.18-cleanup/Xoa-SNS2.png)
+
+![hosted zone](/images/5-Workshop/5.18-cleanup/Xoa-DynamoDB.png)
+![hosted zone](/images/5-Workshop/5.18-cleanup/Xoa-DynamoDB2.png)
+
+![hosted zone](/images/5-Workshop/5.18-cleanup/Xoa-IAM-Roles.png)
+![hosted zone](/images/5-Workshop/5.18-cleanup/Xoa-IAM-Role2.png)
+
+![hosted zone](/images/5-Workshop/5.18-cleanup/Xoa-CloudWatch.png)
+![hosted zone](/images/5-Workshop/5.18-cleanup/Xoa-CloudWatch2.png)
+
+![hosted zone](/images/5-Workshop/5.18-cleanup/Xoa-S3-1.png)
+![hosted zone](/images/5-Workshop/5.18-cleanup/Xoa-S3-2.png)
+![hosted zone](/images/5-Workshop/5.18-cleanup/Xoa-S3-3.png)
+![hosted zone](/images/5-Workshop/5.18-cleanup/Xoa-S3-4.png)
+

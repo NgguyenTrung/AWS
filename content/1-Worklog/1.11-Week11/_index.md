@@ -55,13 +55,6 @@ pre: " <b> 1.11. </b> "
 
 * The custom domain registration process was not completed because the domain registration request failed.
 
-* I performed end-to-end system testing with the following results:
-
-  * Rooms: 1
-  * Telemetry: 20
-  * Alerts: 9
-  * Reports: 1
-
 * I confirmed that alert emails were successfully sent through Amazon SNS.
 
 * I verified that the JSON report was generated and stored in Amazon S3.
