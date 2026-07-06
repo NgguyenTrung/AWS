@@ -20,10 +20,6 @@ pre: " <b> 4.2. </b> "
 - Cung cấp demo thực tế về các giải pháp AI, DevOps, HR automation và kết nối MCP bảo mật.
 - Minh họa cách ứng dụng AI để tự động hóa vận hành, giảm chi phí và giảm thời gian xử lý sự cố.
 
-### Danh Sách Diễn Giả
-
-- **Jignesh Shah** - Director, Open Source Databases
-- 
 
 ### Nội Dung Nổi Bật
 #### Amazon Quick đem lại những hộ trợ gì cho HR
@@ -53,4 +49,7 @@ Tham gia workshop **“AWS First Cloud AI Journey Community Day”** là một t
 
 #### Một số hình ảnh khi tham gia sự kiện
 * Thêm các hình ảnh của các bạn tại đây
+![Hình ảnh sự kiện 1](/images/4-Event/Event2.1.png)
+![Hình ảnh sự kiện 1](/images/4-Event/Event2.2.png)
+![Hình ảnh sự kiện 1](/images/4-Event/Event2.3.png)
 > Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.

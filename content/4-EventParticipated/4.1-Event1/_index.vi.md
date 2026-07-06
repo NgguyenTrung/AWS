@@ -21,9 +21,6 @@ pre: " <b> 4.1. </b> "
 - Thảo luận các vấn đề kỹ thuật quan trọng của LLM, đặc biệt là tính không hoàn toàn xác định ngay cả khi sử dụng các thiết lập tưởng như deterministic.
 - Giới thiệu mô hình multi-agent system cấp doanh nghiệp và ứng dụng trong bài toán chấm điểm tín dụng cho startup.
 
-### Danh Sách Diễn Giả
-
-- *Thêm tên diễn giả tại đây nếu có.*
 
 ### Nội Dung Nổi Bật
 
@@ -87,5 +84,10 @@ Tham gia **“AWS Cloud AI Journey Community Day”** là một trải nghiệm 
 #### Một số hình ảnh khi tham gia sự kiện
 
 * Thêm các hình ảnh của các bạn tại đây.
+![Hình ảnh sự kiện 1](/images/4-Event/Event1.1.png)
+![Hình ảnh sự kiện 1](/images/4-Event/Event1.2.png)
+![Hình ảnh sự kiện 1](/images/4-Event/Event1.3.png)
+![Hình ảnh sự kiện 1](/images/4-Event/Event1.4.png)
+![Hình ảnh sự kiện 1](/images/4-Event/Event1.5.png)
 
 > Tổng thể, sự kiện giúp tôi hiểu sâu hơn về cách AI, hạ tầng cloud và thiết kế hệ thống doanh nghiệp có thể phối hợp với nhau. Đồng thời, sự kiện cũng giúp tôi cải thiện tư duy khi xây dựng các giải pháp AI thực tế: bảo mật hơn, dễ mở rộng hơn và có giá trị ứng dụng cao hơn trong môi trường thực tế.

@@ -96,21 +96,27 @@ Kiểm tra toàn bộ hệ thống, xem logs trên CloudWatch, test email cảnh
  
 
 ### 5. Ước tính ngân sách  
-Có thể xem chi phí trên [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01)  
+
+Có thể xem chi phí trên [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01).  
 Hoặc tải [tệp ước tính ngân sách](../attachments/budget_estimation.pdf).  
 
-*Chi phí hạ tầng*  
-- AWS Lambda: 0,00 USD/tháng (1.000 request, 512 MB lưu trữ).  
-- S3 Standard: 0,15 USD/tháng (6 GB, 2.100 request, 1 GB quét).  
-- Truyền dữ liệu: 0,02 USD/tháng (1 GB vào, 1 GB ra).  
-- AWS Amplify: 0,35 USD/tháng (256 MB, request 500 ms).  
-- Amazon API Gateway: 0,01 USD/tháng (2.000 request).  
-- AWS Glue ETL Jobs: 0,02 USD/tháng (2 DPU).  
-- AWS Glue Crawlers: 0,07 USD/tháng (1 crawler).  
-- MQTT (IoT Core): 0,08 USD/tháng (5 thiết bị, 45.000 tin nhắn).  
+*Chi phí hạ tầng dự kiến*  
 
-*Tổng*: 0,7 USD/tháng, 8,40 USD/12 tháng  
-- *Phần cứng*: 265 USD một lần (Raspberry Pi 5 và cảm biến).  
+- AWS Lambda: **0,00 USD/tháng**.  
+- Amazon DynamoDB: **0,05 USD/tháng**.  
+- AWS IoT Core: **0,08 USD/tháng**.  
+- Amazon SNS: **0,02 USD/tháng**.  
+- Amazon API Gateway: **0,02 USD/tháng**.  
+- Amazon S3: **0,01 USD/tháng**.  
+- Amazon Cognito: **0,00 USD/tháng**.  
+- Amazon EventBridge: **0,00 USD/tháng**.  
+- AWS Amplify Hosting: **0,50 USD/tháng**.  
+- Amazon CloudWatch: **0,00 USD/tháng**.   
+
+*Tổng*: khoảng **0,70 USD/tháng**, tương đương **8,40 USD/12 tháng**.  
+
+- *AWS WAF*: chỉ bật trong thời gian kiểm thử; nếu duy trì liên tục, chi phí có thể tăng thêm khoảng **23 USD/tháng**.  
+- *Phần cứng*: **0 USD** do dự án sử dụng cảm biến ảo. 
 
 ### 6. Đánh giá rủi ro  
 *Ma trận rủi ro*  

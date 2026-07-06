@@ -12,46 +12,52 @@ pre: " <b> 1.3. </b> "
 
 ### Week 3 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Learn about Amazon Elastic Compute Cloud and the role of virtual servers on AWS.
+* Differentiate between EC2 instance types and select configurations suitable for different usage requirements.
+* Learn about Amazon Machine Images, Key Pairs, and methods for protecting EC2 data.
+* Learn about storage services, including Amazon EBS, Amazon EFS, and Amazon FSx.
+* Learn how resources can be scaled using Amazon EC2 Auto Scaling.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/05/2026 | 08/05/2026      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/05/2026 | 08/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/05/2026 | 08/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/05/2026 | 08/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/05/2026 | 08/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks to Be Completed This Week:
 
+| Day       | Tasks                                                                                                                                                                                                                                                                                                                                                                                                                                          | Start Date | Completion Date | Reference Materials                    |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | -------------------------------------- |
+| Monday    | - Study **Amazon Elastic Compute Cloud (EC2)**. <br> - Learn about the concept and role of Amazon EC2. <br> - Learn about the structure and operation of an EC2 instance. <br> - Learn about EC2 instance type categories. <br> - Differentiate between General Purpose, Compute Optimized, Memory Optimized, Storage Optimized, and Accelerated Computing instances.                                                                          | 04/05/2026 | 04/05/2026      | https://www.youtube.com/@AWSStudyGroup |
+| Tuesday   | - Study **Amazon EC2 – AMI, Backup, and Key Pair**. <br> - Learn about the role of Amazon Machine Images in launching EC2 instances. <br> - Learn how to create and use a Key Pair to securely connect to an EC2 instance. <br> - Learn about methods for backing up EC2 data and configurations. <br> - Learn about snapshots and how to restore resources when an incident occurs.                                                           | 05/05/2026 | 05/05/2026      | https://www.youtube.com/@AWSStudyGroup |
+| Wednesday | - Study **Amazon Elastic Block Store and Amazon EC2 Auto Scaling**. <br> - Learn about the role of Amazon EBS in providing data storage for EC2 instances. <br> - Differentiate between EBS volume types and their intended use cases. <br> - Learn how EC2 Auto Scaling operates. <br> - Learn about Auto Scaling Groups, Launch Templates, and Scaling Policies.                                                                             | 06/05/2026 | 06/05/2026      | https://www.youtube.com/@AWSStudyGroup |
+| Thursday  | - Study **Amazon EFS, Amazon FSx, Amazon Lightsail, and AWS Application Migration Service**. <br> - Learn about Amazon EFS and how it provides a shared file system for multiple resources. <br> - Learn about the file system types supported by Amazon FSx. <br> - Learn about Amazon Lightsail and its suitable use cases. <br> - Learn about AWS Application Migration Service for migrating servers and applications to AWS.              | 07/05/2026 | 07/05/2026      | https://www.youtube.com/@AWSStudyGroup |
+| Friday    | - Complete the **Data Protection with AWS Backup** lab. <br> - Learn how to create a Backup Plan and Backup Vault. <br> - Practise backing up and restoring data using AWS Backup. <br> - Complete the **Hybrid Storage with AWS Storage Gateway** lab. <br> - Learn how AWS Storage Gateway connects on-premises storage systems to the AWS Cloud. <br> - Review the knowledge of EC2, storage, and data protection acquired during the week. | 08/05/2026 | 08/05/2026      | https://www.youtube.com/@AWSStudyGroup |
 
 ### Week 3 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* I understood the role of Amazon EC2 in providing virtual servers on the AWS platform.
 
-* Successfully created and configured an AWS Free Tier account.
+* I learned about the different EC2 instance type categories and how to select suitable configurations for different application requirements.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* I understood the role of Amazon Machine Images in launching and replicating EC2 instances.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* I learned how to use Key Pairs for authentication and secure connections to EC2 servers.
 
-* Used AWS CLI to perform basic operations such as:
+* I learned about methods for backing up and restoring EC2 data using snapshots and AWS Backup.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* I understood the role of Amazon EBS in providing block storage for EC2 instances.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* I learned how Amazon EC2 Auto Scaling operates and understood its main components, including:
+
+  * Auto Scaling Group
+  * Launch Template
+  * Scaling Policy
+
+* I understood the differences between the following storage services:
+
+  * Amazon EBS
+  * Amazon EFS
+  * Amazon FSx
+
+* I learned about the intended use cases of Amazon Lightsail and AWS Application Migration Service.
+
+* I practised creating backup plans, storing backup copies, and restoring data through the **Data Protection with AWS Backup** lab.
+
+* I understood how AWS Storage Gateway supports the connection and integration of data between on-premises storage systems and the AWS Cloud.
+
+* The knowledge gained in Week 3 provided me with a foundation in computing services, storage, system scaling, and data protection on AWS.

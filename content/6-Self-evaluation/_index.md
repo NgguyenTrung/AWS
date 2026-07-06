@@ -6,34 +6,49 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+During my internship at **Amazon Web Services Vietnam Co., Ltd.**, from **April 17, 2026** to **July 10, 2026**, I had the opportunity to experience a professional working environment, acquire knowledge of cloud computing, and apply what I had learned to the implementation of a project on AWS.
 
-During my internship at **[Company/Organization Name]** from **[start date]** to **[end date]**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
-I participated in **[briefly describe the main project or task]**, through which I improved my skills in **[list skills: programming, analysis, reporting, communication, etc.]**.  
+Throughout the internship, I participated in activities organized under the **First Cloud Journey** program, explored various AWS services, and developed the **Smart Home Energy Waste Monitoring and Alert System** project. The project focused on building a system that monitors electricity consumption, detects energy-wasting situations, sends alerts, and displays data on a dashboard.
 
-In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
+Through the project implementation process, I improved my knowledge and skills in:
 
-To objectively reflect on my internship period, I would like to evaluate myself based on the following criteria:
+* Analyzing requirements and designing system architectures on AWS.
+* Using AWS serverless services.
+* Building and testing data-processing workflows.
+* Deploying web applications using Next.js and AWS Amplify.
+* Searching for technical documentation, troubleshooting issues, and completing reports.
+* Communicating, receiving feedback, and collaborating with other members of the program.
 
-| No. | Criteria                            | Description                                                                                      | Good | Fair | Average |
-| --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | ---- | ---- | ------- |
-| 1   | **Professional knowledge & skills** | Understanding of the field, applying knowledge in practice, proficiency with tools, work quality | ✅    | ☐    | ☐       |
-| 2   | **Ability to learn**                | Ability to absorb new knowledge and learn quickly                                                | ☐    | ✅    | ☐       |
-| 3   | **Proactiveness**                   | Taking initiative, seeking out tasks without waiting for instructions                            | ✅    | ☐    | ☐       |
-| 4   | **Sense of responsibility**         | Completing tasks on time and ensuring quality                                                    | ✅    | ☐    | ☐       |
-| 5   | **Discipline**                      | Adhering to schedules, rules, and work processes                                                 | ☐    | ☐    | ✅       |
-| 6   | **Progressive mindset**             | Willingness to receive feedback and improve oneself                                              | ☐    | ✅    | ☐       |
-| 7   | **Communication**                   | Presenting ideas and reporting work clearly                                                      | ☐    | ✅    | ☐       |
-| 8   | **Teamwork**                        | Working effectively with colleagues and participating in teams                                   | ✅    | ☐    | ☐       |
-| 9   | **Professional conduct**            | Respecting colleagues, partners, and the work environment                                        | ✅    | ☐    | ☐       |
-| 10  | **Problem-solving skills**          | Identifying problems, proposing solutions, and showing creativity                                | ☐    | ✅    | ☐       |
-| 11  | **Contribution to project/team**    | Work effectiveness, innovative ideas, recognition from the team                                  | ✅    | ☐    | ☐       |
-| 12  | **Overall**                         | General evaluation of the entire internship period                                               | ✅    | ☐    | ☐       |
+Regarding my working attitude, I always made an effort to complete assigned tasks, proactively conducted research when encountering difficulties, and accepted feedback to improve the quality of my work.
 
-### Needs Improvement
+To objectively reflect on my internship performance, I would like to assess myself according to the following criteria:
 
-* Strengthen discipline and strictly comply with the rules and regulations of the company or any organization  
-* Improve problem-solving thinking  
-* Enhance communication skills in both daily interactions and professional contexts, including handling situations effectively
+| No. | Criterion                             | Description                                                                         | Good | Fair | Average |
+| --- | ------------------------------------- | ----------------------------------------------------------------------------------- | ---- | ---- | ------- |
+| 1   | **Professional knowledge and skills** | Ability to apply AWS knowledge and related technologies to the project              | ✅    | ☐    | ☐       |
+| 2   | **Learning ability**                  | Ability to acquire new knowledge, technologies, and working methods                 | ☐    | ✅    | ☐       |
+| 3   | **Proactiveness**                     | Proactively searching for documentation, completing tasks, and resolving problems   | ✅    | ☐    | ☐       |
+| 4   | **Sense of responsibility**           | Making an effort to complete assigned tasks and ensure work quality                 | ✅    | ☐    | ☐       |
+| 5   | **Discipline**                        | Complying with schedules, regulations, and work plans                               | ☐    | ✅    | ☐       |
+| 6   | **Willingness to improve**            | Receiving feedback and proactively improving personal performance                   | ☐    | ✅    | ☐       |
+| 7   | **Communication skills**              | Ability to communicate, present ideas, and report work progress                     | ☐    | ✅    | ☐       |
+| 8   | **Teamwork skills**                   | Coordinating and communicating with other members during the internship             | ☐    | ✅    | ☐       |
+| 9   | **Professional conduct**              | Demonstrating a respectful, serious, and appropriate attitude at work               | ✅    | ☐    | ☐       |
+| 10  | **Problem-solving skills**            | Ability to identify causes, search for solutions, and select appropriate approaches | ☐    | ✅    | ☐       |
+| 11  | **Contribution to the project**       | Level of completion of the project requirements and functions                       | ✅    | ☐    | ☐       |
+| 12  | **Overall assessment**                | Overall performance throughout the internship                                       | ✅    | ☐    | ☐       |
+
+### Areas for Improvement
+
+* Improve discipline, time management, and compliance with work plans.
+* Develop a more systematic approach to analysis and problem-solving while reducing dependence on guidance.
+* Improve communication, idea presentation, and work progress reporting skills.
+* Continue strengthening professional knowledge of AWS, security, system architecture, and cost management.
+* Improve English technical reading comprehension to become more proactive in learning and working.
+
+### Overall Assessment
+
+Throughout the internship, I gained valuable practical knowledge of cloud computing and the process of deploying a system on AWS. In addition to the results achieved, I recognize that I still need to improve my discipline, communication skills, and problem-solving abilities.
+
+The experience gained during the internship provides an important foundation for me to continue learning, improve my professional skills, and develop my future career orientation.
+

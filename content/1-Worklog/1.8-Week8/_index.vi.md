@@ -25,10 +25,10 @@ pre: " <b> 1.8. </b> "
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
 | 2 | - Tìm hiểu yêu cầu của dự án **Smart Home Energy Waste Monitoring and Alert System**. <br> - Xác định các chức năng chính của hệ thống. <br> - Phân tích luồng thu thập dữ liệu, phát hiện lãng phí, gửi cảnh báo và tạo báo cáo. <br> - Thiết kế kiến trúc Serverless sử dụng các dịch vụ AWS. | 08/06/2026 | 08/06/2026 | <https://www.youtube.com/@AWSStudyGroup> |
-| 3 | - Chọn Region **Asia Pacific (Singapore) – ap-southeast-1**. <br> - Thiết lập AWS Budget để theo dõi chi phí. <br> - Kiểm tra các quyền IAM cần thiết để triển khai dự án. | 09/06/2026 | 09/06/2026 | <https://www.youtube.com/@AWSStudyGroup> |
-| 4 | - Tạo bảng Amazon DynamoDB **EnergyWasteData**. <br> - Cấu hình Partition Key là PK và Sort Key là SK. <br> - Chọn chế độ tính phí On-demand. <br> - Thiết kế cấu trúc lưu Room, Telemetry, Alert và Report. | 10/06/2026 | 10/06/2026 | <https://www.youtube.com/@AWSStudyGroup> |
-| 5 | - Tạo Amazon SNS Topic để gửi cảnh báo lãng phí điện. <br> - Tạo Email Subscription. <br> - Xác nhận Subscription từ hộp thư email. <br> - Kiểm tra chức năng gửi thông báo. | 11/06/2026 | 11/06/2026 | <https://www.youtube.com/@AWSStudyGroup> |
-| 6 | - Xây dựng Lambda **energy-virtual-sensor**. <br> - Xây dựng Lambda **energy-waste-detector**. <br> - Cấu hình Environment Variables. <br> - Cấp quyền DynamoDB, SNS và CloudWatch Logs cho Lambda. | 12/06/2026 | 12/06/2026 | <https://www.youtube.com/@AWSStudyGroup> |
+| 3 | - Chọn Region **Asia Pacific (Singapore) – ap-southeast-1**. <br> - Thiết lập AWS Budget để theo dõi chi phí. <br> - Kiểm tra các quyền IAM cần thiết để triển khai dự án. | 09/06/2026 | 09/06/2026 | <https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-best-practices.html>|
+| 4 | - Tạo bảng Amazon DynamoDB **EnergyWasteData**. <br> - Cấu hình Partition Key là PK và Sort Key là SK. <br> - Chọn chế độ tính phí On-demand. <br> - Thiết kế cấu trúc lưu Room, Telemetry, Alert và Report. | 10/06/2026 | 10/06/2026 | <https://docs.aws.amazon.com/dynamodb/> |
+| 5 | - Tạo Amazon SNS Topic để gửi cảnh báo lãng phí điện. <br> - Tạo Email Subscription. <br> - Xác nhận Subscription từ hộp thư email. <br> - Kiểm tra chức năng gửi thông báo. | 11/06/2026 | 11/06/2026 |  <https://docs.aws.amazon.com/sns/latest/dg/sns-create-topic.html>|
+| 6 | - Xây dựng Lambda **energy-virtual-sensor**. <br> - Xây dựng Lambda **energy-waste-detector**. <br> - Cấu hình Environment Variables. <br> - Cấp quyền DynamoDB, SNS và CloudWatch Logs cho Lambda. | 12/06/2026 | 12/06/2026 | <https://docs.aws.amazon.com/lambda/latest/dg/welcome.html>  |
 
 
 ### Kết quả đạt được tuần 8:

@@ -10,48 +10,45 @@ pre: " <b> 1.8. </b> "
 {{% /notice %}}
 
 
+
 ### Week 8 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Understand the requirements of the **Smart Home Energy Waste Monitoring and Alert System** project.
+* Analyze and design the overall system architecture on AWS.
+* Configure the AWS Region and AWS Budget to manage resources and control costs.
+* Create a shared database using Amazon DynamoDB.
+* Configure an email alert service using Amazon SNS.
+* Develop a Virtual Sensor Lambda function to simulate electricity consumption data.
+* Develop a Waste Detector Lambda function to detect energy waste conditions.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/06/2026 | 08/06/2026      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/06/2026 | 08/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/06/2026 | 08/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/06/2026 | 08/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/06/2026 | 08/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks to Be Completed This Week:
 
+| Day       | Tasks                                                                                                                                                                                                                                                                                                                   | Start Date | Completion Date | Reference Materials                    |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | -------------------------------------- |
+| Monday    | - Study the requirements of the **Smart Home Energy Waste Monitoring and Alert System** project. <br> - Identify the main functions of the system. <br> - Analyze the data collection, energy waste detection, alert delivery, and report generation flows. <br> - Design a serverless architecture using AWS services. | 08/06/2026 | 08/06/2026      | <https://aws.amazon.com/serverless/> |
+| Tuesday   | - Select the **Asia Pacific (Singapore) – ap-southeast-1** Region. <br> - Configure an AWS Budget to monitor costs. <br> - Review the IAM permissions required to deploy the project.                                                                                                                                   | 09/06/2026 | 09/06/2026      | <https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-best-practices.html> |
+| Wednesday | - Create the **EnergyWasteData** Amazon DynamoDB table. <br> - Configure PK as the Partition Key and SK as the Sort Key. <br> - Select the On-Demand billing mode. <br> - Design the data structure for storing Room, Telemetry, Alert, and Report records.                                                             | 10/06/2026 | 10/06/2026      | <https://docs.aws.amazon.com/dynamodb/> |
+| Thursday  | - Create an Amazon SNS Topic for sending energy waste alerts. <br> - Create an Email Subscription. <br> - Confirm the Subscription from the email inbox. <br> - Test the notification delivery function.  | 11/06/2026 | 11/06/2026      |  <https://docs.aws.amazon.com/sns/latest/dg/sns-create-topic.html> |
+| Friday    | - Develop the **energy-virtual-sensor** Lambda function. <br> - Develop the **energy-waste-detector** Lambda function. <br> - Configure Environment Variables. <br> - Grant the Lambda functions permissions to access DynamoDB, SNS, and CloudWatch Logs.                                                              | 12/06/2026 | 12/06/2026      | <https://docs.aws.amazon.com/lambda/latest/dg/welcome.html>  |
 
 ### Week 8 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* I understood the objectives and requirements of the system for monitoring, detecting, and issuing alerts about energy waste.
 
-* Successfully created and configured an AWS Free Tier account.
+* I designed the overall serverless architecture for the project.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* I selected the Asia Pacific (Singapore) Region, with the Region code **ap-southeast-1**.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* I configured an AWS Budget to monitor and control project costs.
 
-* Used AWS CLI to perform basic operations such as:
+* I successfully created the **EnergyWasteData** DynamoDB table.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* I understood how Partition Keys and Sort Keys can be used to store multiple data types within a single table.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* I created an Amazon SNS Topic and successfully confirmed the Email Subscription.
+
+* I developed the Virtual Sensor Lambda function to generate simulated electricity consumption data.
+
+* I developed the Waste Detector Lambda function to process data, store records in DynamoDB, and send alerts through Amazon SNS.
+
+* The tasks completed in Week 8 established the system’s core foundation for data storage, data processing, and alert delivery.

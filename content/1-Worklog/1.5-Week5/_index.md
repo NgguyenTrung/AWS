@@ -10,48 +10,50 @@ pre: " <b> 1.5. </b> "
 {{% /notice %}}
 
 
+
 ### Week 5 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Learn about AWS security and identity management services.
+* Understand the role of AWS IAM Identity Center in centralized access management.
+* Learn how AWS Key Management Service manages encryption keys and protects data.
+* Become familiar with AWS Security Hub for aggregating and managing security alerts.
+* Learn how to organize and manage AWS resources using Tags and Resource Groups.
+* Practise controlling access based on IAM and Resource Tags.
+* Learn how to use IAM Permission Boundaries to limit the maximum permissions of IAM Users and IAM Roles.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/05/2026 | 08/05/2026      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/05/2026 | 08/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/05/2026 | 08/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/05/2026 | 08/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/05/2026 | 08/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks to Be Completed This Week:
 
+| Day       | Tasks                                                                                                                                                                                                                                                                                                                                                                                                       | Start Date | Completion Date | Reference Materials                    |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | -------------------------------------- |
+| Monday    | - Study **AWS IAM Identity Center**. <br> - Learn about the role of AWS IAM Identity Center in centralized access management. <br> - Learn how to manage users, user groups, and access permissions across multiple AWS accounts. <br> - Differentiate between AWS IAM Identity Center and an IAM User within a single AWS account.                                                                         | 18/05/2026 | 18/05/2026      | https://www.youtube.com/@AWSStudyGroup |
+| Tuesday   | - Study **AWS Key Management Service (AWS KMS)**. <br> - Learn about the role of AWS KMS in creating and managing encryption keys. <br> - Learn about AWS managed keys and customer managed keys. <br> - Learn how to use Key Policies to control access to encryption keys.                                                                                                                                | 19/05/2026 | 19/05/2026      | https://www.youtube.com/@AWSStudyGroup |
+| Wednesday | - Study **AWS Security Hub**. <br> - Learn how AWS Security Hub aggregates security alerts and findings from multiple AWS services. <br> - Learn about Security Standards, Controls, and Findings.                                                                                                                                                                                                          | 20/05/2026 | 20/05/2026      | https://www.youtube.com/@AWSStudyGroup |
+| Thursday  | - Complete the **Resource Organization with Tags and Resource Groups** lab. <br> - Learn how to use Tags to classify and manage AWS resources. <br> - Practise creating Tags with Keys and Values for resources.                                                                                                                                                                                            | 21/05/2026 | 21/05/2026      | https://www.youtube.com/@AWSStudyGroup |
+| Friday    | - Complete the **Access Control with IAM and Resource Tags** lab. <br> - Learn how to control access based on the Tags of IAM principals and AWS resources. <br> - Learn about attribute-based access control. <br> - Complete the **Permission Management with IAM Permission Boundaries** lab. <br> - Learn how to use Permission Boundaries to limit the maximum permissions of an IAM User or IAM Role. | 22/05/2026 | 22/05/2026      | https://www.youtube.com/@AWSStudyGroup |
 
 ### Week 5 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* I understood the role of AWS IAM Identity Center in centrally managing users and access permissions across multiple AWS accounts.
 
-* Successfully created and configured an AWS Free Tier account.
+* I differentiated between AWS IAM Identity Center and an IAM User created directly within a single AWS account.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* I understood the role of AWS Key Management Service in creating, storing, and managing encryption keys.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* I learned about the following types of keys in AWS KMS:
 
-* Used AWS CLI to perform basic operations such as:
+  * AWS managed keys
+  * Customer managed keys
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* I understood how Key Policies are used to control access to encryption keys.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* I understood the role of AWS Security Hub in aggregating, analyzing, and managing security alerts and findings.
+
+* I learned how to use Tags to classify, search for, and manage AWS resources.
+
+* I understood how AWS Resource Groups can be used to group resources based on Tags or search criteria.
+
+* I learned how to control access using IAM Policies together with Resource Tags.
+
+* I understood the principles of attribute-based access control through the use of Tags.
+
+* I learned about the role of IAM Permission Boundaries in limiting the maximum permissions that an IAM User or IAM Role can receive.

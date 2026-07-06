@@ -3,7 +3,7 @@ title: "Các events đã tham gia"
 date: 2026-05-23
 weight: 4
 chapter: false
-pre: " <b> 4. </b> "
+pre: " <b> 4.3 </b> "
 ---
 
 
@@ -28,6 +28,16 @@ Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là
 &emsp;**Thời gian:** 09:00 ngày 27/06/2026
 
 &emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
+
+&emsp;**Vai trò trong sự kiện:** Người tham dự 
+
+
+### [Event 3](4.3-Event3/)
+&emsp;**Tên sự kiện:** FCAJ Community Day – “Data Driven, AI Risen
+
+&emsp;**Thời gian:** 09:00 ngày 04/07/2026
+
+&emsp;**Địa điểm:** https://www.youtube.com/watch?v=FKtMkUqyny4
 
 &emsp;**Vai trò trong sự kiện:** Người tham dự 
 
