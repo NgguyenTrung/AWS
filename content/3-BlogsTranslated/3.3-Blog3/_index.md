@@ -5,122 +5,62 @@ weight: 1
 chapter: false
 pre: " <b> 3.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+# SECURING AI AGENTS ON AWS WITH AUTH0 AND AMAZON BEDROCK AGENTCORE
 
-# Getting Started with Healthcare Data Lakes: Using Microservices
+As AI Agents become more capable, they are increasingly trusted to perform tasks such as reading emails, scheduling meetings, accessing CRM systems, and interacting with external APIs. However, the more permissions an AI Agent has, the more attractive it becomes as a target for cyberattacks.
 
-Data lakes can help hospitals and healthcare facilities turn data into business insights, maintain business continuity, and protect patient privacy. A **data lake** is a centralized, managed, and secure repository to store all your data, both in its raw and processed forms for analysis. Data lakes allow you to break down data silos and combine different types of analytics to gain insights and make better business decisions.
+Traditional approaches such as using shared API keys or embedding credentials directly in source code create significant security risks. AWS and Auth0 introduce a modern solution where every AI Agent has its own digital identity, allowing authentication and authorization to be handled in the same way as human users.
 
-This blog post is part of a larger series on getting started with setting up a healthcare data lake. In my final post of the series, *“Getting Started with Healthcare Data Lakes: Diving into Amazon Cognito”*, I focused on the specifics of using Amazon Cognito and Attribute Based Access Control (ABAC) to authenticate and authorize users in the healthcare data lake solution. In this blog, I detail how the solution evolved at a foundational level, including the design decisions I made and the additional features used. You can access the code samples for the solution in this Git repo for reference.
+Unlike traditional applications, AI Agents do not always follow predefined workflows. Instead, they reason dynamically and decide which tools to use based on user requests. If access tokens are exposed during this reasoning process, sensitive credentials may be leaked or misused. Furthermore, traditional Role-Based Access Control (RBAC) is often too rigid to support the dynamic permission requirements of AI Agents.
 
----
+To address these challenges, AWS combines **Amazon Bedrock AgentCore** with **Auth0 for AI Agents**, placing Identity and Access Management (IAM) at the center of AI security.
 
-## Architecture Guidance
+## Key Features of the Solution
 
-The main change since the last presentation of the overall architecture is the decomposition of a single service into a set of smaller services to improve maintainability and flexibility. Integrating a large volume of diverse healthcare data often requires specialized connectors for each format; by keeping them encapsulated separately as microservices, we can add, remove, and modify each connector without affecting the others. The microservices are loosely coupled via publish/subscribe messaging centered in what I call the “pub/sub hub.”
+### User Authentication with OpenID Connect (OIDC)
 
-This solution represents what I would consider another reasonable sprint iteration from my last post. The scope is still limited to the ingestion and basic parsing of **HL7v2 messages** formatted in **Encoding Rules 7 (ER7)** through a REST interface.
+Before an AI Agent can perform any task, it must verify the identity of the user making the request. Amazon Bedrock AgentCore integrates with Auth0 as an OpenID Connect (OIDC) Identity Provider, ensuring users authenticate securely while inheriting security features such as Multi-Factor Authentication (MFA).
 
-**The solution architecture is now as follows:**
+### Just-in-Time Authorization with Auth0 Token Vault
 
-> *Figure 1. Overall architecture; colored boxes represent distinct services.*
+When an AI Agent needs to access external services such as Google Calendar or CRM platforms, Auth0 Token Vault generates temporary access tokens only when required. These tokens are scoped specifically for the authenticated user and remain isolated from the AI reasoning process, reducing the risk of credential exposure.
 
----
+### Zero-Trust Communication Between AI Agents
 
-While the term *microservices* has some inherent ambiguity, certain traits are common:  
-- Small, autonomous, loosely coupled  
-- Reusable, communicating through well-defined interfaces  
-- Specialized to do one thing well  
-- Often implemented in an **event-driven architecture**
+Instead of assuming trust between AI Agents, Auth0 adopts a Zero-Trust model by using Machine-to-Machine (M2M) tokens. Every communication between Supervisor Agents and Sub-Agents must be authenticated according to the Agent-to-Agent (A2A) standard.
 
-When determining where to draw boundaries between microservices, consider:  
-- **Intrinsic**: technology used, performance, reliability, scalability  
-- **Extrinsic**: dependent functionality, rate of change, reusability  
-- **Human**: team ownership, managing *cognitive load*
+### Tool Access Protection with AgentCore Gateway
 
----
+Every outbound request from an AI Agent passes through the Amazon Bedrock AgentCore Gateway before reaching external APIs. The gateway validates the Auth0 access token, including its signature, expiration time, and intended audience, before allowing any tool invocation.
 
-## Technology Choices and Communication Scope
+### Fine-Grained Authorization and Human-in-the-Loop
 
-| Communication scope                       | Technologies / patterns to consider                                                        |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Within a single microservice              | Amazon Simple Queue Service (Amazon SQS), AWS Step Functions                               |
-| Between microservices in a single service | AWS CloudFormation cross-stack references, Amazon Simple Notification Service (Amazon SNS) |
-| Between services                          | Amazon EventBridge, AWS Cloud Map, Amazon API Gateway                                      |
+Auth0 Fine-Grained Authorization (FGA) continuously evaluates user permissions during runtime instead of relying solely on predefined roles. For high-risk operations, Client Initiated Backchannel Authentication (CIBA) pauses the AI Agent and requests explicit user approval before continuing execution, providing an effective Human-in-the-Loop security mechanism.
 
----
+## Conclusion
 
-## The Pub/Sub Hub
+Building secure AI Agents requires more than powerful AI models—it requires a robust identity platform. Rather than implementing custom authentication systems, developers can leverage the integration between Auth0 and Amazon Bedrock AgentCore to focus on building intelligent applications while relying on enterprise-grade identity and security services.
 
-Using a **hub-and-spoke** architecture (or message broker) works well with a small number of tightly related microservices.  
-- Each microservice depends only on the *hub*  
-- Inter-microservice connections are limited to the contents of the published message  
-- Reduces the number of synchronous calls since pub/sub is a one-way asynchronous *push*
+As AI Agents become increasingly common in enterprise environments, adopting an **Identity-First Architecture** enables organizations to scale AI systems securely without sacrificing flexibility. The combination of Auth0 and Amazon Bedrock AgentCore provides a modern foundation for deploying AI Agents safely in production.
 
-Drawback: **coordination and monitoring** are needed to avoid microservices processing the wrong message.
+## Recommendation
 
----
+In the next blog, I plan to explore a practical demonstration of implementing **Auth0 Token Vault** and **Client Initiated Backchannel Authentication (CIBA)** within AWS. These two capabilities stand out because they significantly improve the security of AI Agents while making them suitable for production environments.
 
-## Core Microservice
+## Images
 
-Provides foundational data and communication layer, including:  
-- **Amazon S3** bucket for data  
-- **Amazon DynamoDB** for data catalog  
-- **AWS Lambda** to write messages into the data lake and catalog  
-- **Amazon SNS** topic as the *hub*  
-- **Amazon S3** bucket for artifacts such as Lambda code
+![Architecture Overview](/images/3-blog/3.4-image1.png)
 
-> Only allow indirect write access to the data lake through a Lambda function → ensures consistency.
+![Authentication Flow](/images/3-blog/3.4-image2.png)
 
----
+![Token Vault Workflow](/images/3-blog/3.4-image3.png)
 
-## Front Door Microservice
+![AgentCore Security Architecture](/images/3-blog/3.4-image4.png)
 
-- Provides an API Gateway for external REST interaction  
-- Authentication & authorization based on **OIDC** via **Amazon Cognito**  
-- Self-managed *deduplication* mechanism using DynamoDB instead of SNS FIFO because:  
-  1. SNS deduplication TTL is only 5 minutes  
-  2. SNS FIFO requires SQS FIFO  
-  3. Ability to proactively notify the sender that the message is a duplicate  
+## Reference
 
----
+https://www.facebook.com/groups/660548818043427/?multi_permalinks=2204747060290254&ref=share
 
-## Staging ER7 Microservice
+## Guide
 
-- Lambda “trigger” subscribed to the pub/sub hub, filtering messages by attribute  
-- Step Functions Express Workflow to convert ER7 → JSON  
-- Two Lambdas:  
-  1. Fix ER7 formatting (newline, carriage return)  
-  2. Parsing logic  
-- Result or error is pushed back into the pub/sub hub  
-
----
-
-## New Features in the Solution
-
-### 1. AWS CloudFormation Cross-Stack References
-Example *outputs* in the core microservice:
-```yaml
-Outputs:
-  Bucket:
-    Value: !Ref Bucket
-    Export:
-      Name: !Sub ${AWS::StackName}-Bucket
-  ArtifactBucket:
-    Value: !Ref ArtifactBucket
-    Export:
-      Name: !Sub ${AWS::StackName}-ArtifactBucket
-  Topic:
-    Value: !Ref Topic
-    Export:
-      Name: !Sub ${AWS::StackName}-Topic
-  Catalog:
-    Value: !Ref Catalog
-    Export:
-      Name: !Sub ${AWS::StackName}-Catalog
-  CatalogArn:
-    Value: !GetAtt Catalog.Arn
-    Export:
-      Name: !Sub ${AWS::StackName}-CatalogArn
+https://aws.amazon.com/vi/blogs/apn/securing-enterprise-ready-ai-agents-with-auth0-for-ai-agents-and-amazon-bedrock-agentcore/

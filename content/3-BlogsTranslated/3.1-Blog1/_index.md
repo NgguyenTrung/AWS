@@ -5,122 +5,49 @@ weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+# SUBDOMAIN TAKEOVER: A HIDDEN CLOUD SECURITY RISK
 
-# Getting Started with Healthcare Data Lakes: Using Microservices
+Today, I want to summarize and share a security risk that isn't new but is extremely easy to encounter when managing cloud infrastructure: **Subdomain Takeover**.
 
-Data lakes can help hospitals and healthcare facilities turn data into business insights, maintain business continuity, and protect patient privacy. A **data lake** is a centralized, managed, and secure repository to store all your data, both in its raw and processed forms for analysis. Data lakes allow you to break down data silos and combine different types of analytics to gain insights and make better business decisions.
+When deploying projects, we often create many resources (S3 Buckets, CloudFront, Elastic Beanstalk...) and point DNS records (like Route 53) to these resources. However, when a project ends, many people have the habit of only cleaning up resources to save costs while forgetting to delete the associated DNS records. This negligence unintentionally creates a fatal vulnerability for hackers to exploit.
 
-This blog post is part of a larger series on getting started with setting up a healthcare data lake. In my final post of the series, *“Getting Started with Healthcare Data Lakes: Diving into Amazon Cognito”*, I focused on the specifics of using Amazon Cognito and Attribute Based Access Control (ABAC) to authenticate and authorize users in the healthcare data lake solution. In this blog, I detail how the solution evolved at a foundational level, including the design decisions I made and the additional features used. You can access the code samples for the solution in this Git repo for reference.
+![Normal Architecture](/images/3-blog/3.1-image1.png)
 
----
+### The Attack Mechanism (Dangling DNS)
 
-## Architecture Guidance
+This process is incredibly simple but leaves severe consequences for brand reputation:
 
-The main change since the last presentation of the overall architecture is the decomposition of a single service into a set of smaller services to improve maintainability and flexibility. Integrating a large volume of diverse healthcare data often requires specialized connectors for each format; by keeping them encapsulated separately as microservices, we can add, remove, and modify each connector without affecting the others. The microservices are loosely coupled via publish/subscribe messaging centered in what I call the “pub/sub hub.”
+1. **Orphaned record:** A CNAME record in the DNS system (e.g., `promo.company.com`) points to an S3 bucket or Beanstalk environment (`promo-campaign.s3.amazonaws.com`).
 
-This solution represents what I would consider another reasonable sprint iteration from my last post. The scope is still limited to the ingestion and basic parsing of **HL7v2 messages** formatted in **Encoding Rules 7 (ER7)** through a REST interface.
+![Route 53 Routing](/images/3-blog/3.1-image2.png)
 
-**The solution architecture is now as follows:**
+2. **Deleting resource but keeping DNS:** The administrator deletes the `promo-campaign` bucket when the campaign ends but forgets to delete the CNAME record. At this point, `promo.company.com` is pointing to nowhere (Dangling DNS).
 
-> *Figure 1. Overall architecture; colored boxes represent distinct services.*
+![Deleted Resource](/images/3-blog/3.1-image3.png)
 
----
+3. **Attacker claims it:** Hackers continuously scan subdomains. When they detect a record pointing to a non-existent AWS resource, they immediately log into their AWS account and provision a new resource (e.g., an S3 bucket) with the exact name you deleted (`promo-campaign`).
+4. **Takeover complete:** Now, when customers access `promo.company.com`, they will be directed to content entirely controlled by the hacker (phishing login pages, malware distribution, or bypassing CORS to steal cookies).
 
-While the term *microservices* has some inherent ambiguity, certain traits are common:  
-- Small, autonomous, loosely coupled  
-- Reusable, communicating through well-defined interfaces  
-- Specialized to do one thing well  
-- Often implemented in an **event-driven architecture**
+![Subdomain Takeover Complete](/images/3-blog/3.1-image4.png)
 
-When determining where to draw boundaries between microservices, consider:  
-- **Intrinsic**: technology used, performance, reliability, scalability  
-- **Extrinsic**: dependent functionality, rate of change, reusability  
-- **Human**: team ownership, managing *cognitive load*
+### Best Practices for Prevention
 
----
+Instead of relying on human memory, AWS recommends automated and systematic approaches:
 
-## Technology Choices and Communication Scope
+* **Lifecycle Management:** The golden rule in operations is to always delete DNS records (Route 53) before or at the same time as deleting or releasing the destination resources (S3, CloudFront, ELB, EC2 Elastic IP). Never leave DNS "hanging".
+* **Use Alias Records instead of CNAMEs:** On AWS Route 53, prioritize using Alias Records to point internally between AWS services. Although Alias records do not 100% prevent Subdomain Takeover, they are more tightly managed and deeply integrated with the lifecycle of AWS resources compared to traditional CNAMEs.
+* **Leverage AWS Security Updates:** AWS has continuously released under-the-hood protection mechanisms. For example, with CloudFront today, it is very difficult for an attacker to hijack a cross-account domain because CloudFront requires a valid TLS/SSL certificate or passing Domain Ownership Verification.
+* **Automated Monitoring:** Set up rules in AWS Config or catch events via Amazon EventBridge to immediately alert if a Route 53 record is found pointing to a resource that no longer exists in the account.
 
-| Communication scope                       | Technologies / patterns to consider                                                        |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Within a single microservice              | Amazon Simple Queue Service (Amazon SQS), AWS Step Functions                               |
-| Between microservices in a single service | AWS CloudFormation cross-stack references, Amazon Simple Notification Service (Amazon SNS) |
-| Between services                          | Amazon EventBridge, AWS Cloud Map, Amazon API Gateway                                      |
+![Automated Monitoring Architecture](/images/3-blog/3.1-image5.png)
+
+### Conclusion and Recommendations
+
+Subdomain Takeover is clear proof that misconfigurations can cause devastating consequences on par with high-tech attacks. Cloud security is not just about building firewalls to prevent external intrusions, but also about tight and clean Resource Lifecycle management from the inside.
+
+**Recommendation:** For systems with hundreds of subdomains, DevOps/SecOps should proactively write automated scripts (using Python/Boto3) to run periodically via AWS Lambda. This script will scan the entire Hosted Zone in Route 53 and cross-reference it with the list of currently running resources. If an "orphaned" DNS is detected, the system can automatically send an alert via Slack/Telegram or automatically remove that record to instantly eliminate the risk.
 
 ---
-
-## The Pub/Sub Hub
-
-Using a **hub-and-spoke** architecture (or message broker) works well with a small number of tightly related microservices.  
-- Each microservice depends only on the *hub*  
-- Inter-microservice connections are limited to the contents of the published message  
-- Reduces the number of synchronous calls since pub/sub is a one-way asynchronous *push*
-
-Drawback: **coordination and monitoring** are needed to avoid microservices processing the wrong message.
-
----
-
-## Core Microservice
-
-Provides foundational data and communication layer, including:  
-- **Amazon S3** bucket for data  
-- **Amazon DynamoDB** for data catalog  
-- **AWS Lambda** to write messages into the data lake and catalog  
-- **Amazon SNS** topic as the *hub*  
-- **Amazon S3** bucket for artifacts such as Lambda code
-
-> Only allow indirect write access to the data lake through a Lambda function → ensures consistency.
-
----
-
-## Front Door Microservice
-
-- Provides an API Gateway for external REST interaction  
-- Authentication & authorization based on **OIDC** via **Amazon Cognito**  
-- Self-managed *deduplication* mechanism using DynamoDB instead of SNS FIFO because:  
-  1. SNS deduplication TTL is only 5 minutes  
-  2. SNS FIFO requires SQS FIFO  
-  3. Ability to proactively notify the sender that the message is a duplicate  
-
----
-
-## Staging ER7 Microservice
-
-- Lambda “trigger” subscribed to the pub/sub hub, filtering messages by attribute  
-- Step Functions Express Workflow to convert ER7 → JSON  
-- Two Lambdas:  
-  1. Fix ER7 formatting (newline, carriage return)  
-  2. Parsing logic  
-- Result or error is pushed back into the pub/sub hub  
-
----
-
-## New Features in the Solution
-
-### 1. AWS CloudFormation Cross-Stack References
-Example *outputs* in the core microservice:
-```yaml
-Outputs:
-  Bucket:
-    Value: !Ref Bucket
-    Export:
-      Name: !Sub ${AWS::StackName}-Bucket
-  ArtifactBucket:
-    Value: !Ref ArtifactBucket
-    Export:
-      Name: !Sub ${AWS::StackName}-ArtifactBucket
-  Topic:
-    Value: !Ref Topic
-    Export:
-      Name: !Sub ${AWS::StackName}-Topic
-  Catalog:
-    Value: !Ref Catalog
-    Export:
-      Name: !Sub ${AWS::StackName}-Catalog
-  CatalogArn:
-    Value: !GetAtt Catalog.Arn
-    Export:
-      Name: !Sub ${AWS::StackName}-CatalogArn
+**Sources:**
+*   [AWS Study Group VN | Subdomain Takeover Chiếm quyền điều khiển tên miền phụ](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2202705877161039)
+*   [Threat tactic spotlight: Subdomain takeover | AWS Security Blog](https://aws.amazon.com/blogs/security/threat-tactic-spotlight-subdomain-takeover/)

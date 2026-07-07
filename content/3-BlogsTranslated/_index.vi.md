@@ -6,21 +6,13 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-{{% notice warning %}}  
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+This section will list and introduce the technical blogs I have shared regarding cloud security, data engineering automation, and identity management on AWS.
 
-Tại đây sẽ là phần liệt kê, giới thiệu các blogs mà các bạn đã dịch. Ví dụ:
+###  [Blog 1 - SUBDOMAIN TAKEOVER: RỦI RO BẢO MẬT TỪ CÁC BẢN GHI DNS "MỒ CÔI" TRÊN AWS](3.1-Blog1/)
+Bài viết cảnh báo về lỗ hổng nguy hiểm mang tên Subdomain Takeover (Chiếm quyền điều khiển tên miền phụ) phát sinh từ các bản ghi DNS mồ côi (Dangling DNS) sau khi hủy bỏ tài nguyên AWS (như S3, CloudFront) mà quên xóa bản ghi Route 53. Đồng thời, bài viết chia sẻ các giải pháp phòng ngừa cốt lõi bao gồm đồng bộ quy trình dọn dẹp tài nguyên, ưu tiên dùng Alias Records và xây dựng script kiểm tra tự động định kỳ thông qua AWS Lambda.
 
-###  [Blog 1 - Getting started with healthcare data lakes: Using microservices](3.1-Blog1/)
-Blog này giới thiệu cách bắt đầu xây dựng data lake trong lĩnh vực y tế bằng cách áp dụng kiến trúc microservices. Bạn sẽ tìm hiểu vì sao data lake quan trọng trong việc lưu trữ và phân tích dữ liệu y tế đa dạng (hồ sơ bệnh án điện tử, dữ liệu xét nghiệm, thiết bị IoT y tế…), cách microservices giúp hệ thống linh hoạt, dễ mở rộng và dễ bảo trì hơn. Bài viết cũng hướng dẫn các bước khởi tạo môi trường, tổ chức pipeline xử lý dữ liệu, và đảm bảo tuân thủ các tiêu chuẩn bảo mật & quyền riêng tư như HIPAA.
-###  [Blog 2 - ...](3.2-Blog2/)
-Blog này giới thiệu cách bắt đầu xây dựng data lake trong lĩnh vực y tế bằng cách áp dụng kiến trúc microservices. Bạn sẽ tìm hiểu vì sao data lake quan trọng trong việc lưu trữ và phân tích dữ liệu y tế đa dạng (hồ sơ bệnh án điện tử, dữ liệu xét nghiệm, thiết bị IoT y tế…), cách microservices giúp hệ thống linh hoạt, dễ mở rộng và dễ bảo trì hơn. Bài viết cũng hướng dẫn các bước khởi tạo môi trường, tổ chức pipeline xử lý dữ liệu, và đảm bảo tuân thủ các tiêu chuẩn bảo mật & quyền riêng tư như HIPAA.
-###  [Blog 3 - ...](3.3-Blog3/)
-Blog này giới thiệu cách bắt đầu xây dựng data lake trong lĩnh vực y tế bằng cách áp dụng kiến trúc microservices. Bạn sẽ tìm hiểu vì sao data lake quan trọng trong việc lưu trữ và phân tích dữ liệu y tế đa dạng (hồ sơ bệnh án điện tử, dữ liệu xét nghiệm, thiết bị IoT y tế…), cách microservices giúp hệ thống linh hoạt, dễ mở rộng và dễ bảo trì hơn. Bài viết cũng hướng dẫn các bước khởi tạo môi trường, tổ chức pipeline xử lý dữ liệu, và đảm bảo tuân thủ các tiêu chuẩn bảo mật & quyền riêng tư như HIPAA.
-###  [Blog 4 - ...](3.4-Blog4/)
-Blog này giới thiệu cách bắt đầu xây dựng data lake trong lĩnh vực y tế bằng cách áp dụng kiến trúc microservices. Bạn sẽ tìm hiểu vì sao data lake quan trọng trong việc lưu trữ và phân tích dữ liệu y tế đa dạng (hồ sơ bệnh án điện tử, dữ liệu xét nghiệm, thiết bị IoT y tế…), cách microservices giúp hệ thống linh hoạt, dễ mở rộng và dễ bảo trì hơn. Bài viết cũng hướng dẫn các bước khởi tạo môi trường, tổ chức pipeline xử lý dữ liệu, và đảm bảo tuân thủ các tiêu chuẩn bảo mật & quyền riêng tư như HIPAA.
-###  [Blog 5 - ...](3.5-Blog5/)
-Blog này giới thiệu cách bắt đầu xây dựng data lake trong lĩnh vực y tế bằng cách áp dụng kiến trúc microservices. Bạn sẽ tìm hiểu vì sao data lake quan trọng trong việc lưu trữ và phân tích dữ liệu y tế đa dạng (hồ sơ bệnh án điện tử, dữ liệu xét nghiệm, thiết bị IoT y tế…), cách microservices giúp hệ thống linh hoạt, dễ mở rộng và dễ bảo trì hơn. Bài viết cũng hướng dẫn các bước khởi tạo môi trường, tổ chức pipeline xử lý dữ liệu, và đảm bảo tuân thủ các tiêu chuẩn bảo mật & quyền riêng tư như HIPAA.
-###  [Blog 6 - ...](3.6-Blog6/)
-Blog này giới thiệu cách bắt đầu xây dựng data lake trong lĩnh vực y tế bằng cách áp dụng kiến trúc microservices. Bạn sẽ tìm hiểu vì sao data lake quan trọng trong việc lưu trữ và phân tích dữ liệu y tế đa dạng (hồ sơ bệnh án điện tử, dữ liệu xét nghiệm, thiết bị IoT y tế…), cách microservices giúp hệ thống linh hoạt, dễ mở rộng và dễ bảo trì hơn. Bài viết cũng hướng dẫn các bước khởi tạo môi trường, tổ chức pipeline xử lý dữ liệu, và đảm bảo tuân thủ các tiêu chuẩn bảo mật & quyền riêng tư như HIPAA.
+###  [Blog 2 - TỰ ĐỘNG HÓA TROUBLESHOOTING DMS MIGRATION (ORACLE ➡️ REDSHIFT) VỚI AWS DEVOPS AGENT](3.2-Blog2/)
+Nội dung bài viết tập trung giải quyết bài toán tối ưu quy trình tìm nguyên nhân gốc rễ (RCA) khi pipeline dịch chuyển dữ liệu lớn gặp sự cố hoặc độ trễ cao. Giải pháp đề xuất là kết hợp giám sát truyền thống của CloudWatch Alarms với các tác vụ tự động hóa từ EventBridge, Lambda và AWS DevOps Agent giúp hệ thống chủ động điều tra logs/metrics sâu bên trong hệ thống Oracle/Redshift, tự động đưa ra kịch bản xử lý lỗi nhanh chóng.
+
+###  [Blog 3 - BẢO MẬT AI AGENT TRÊN AWS VỚI AUTH0 VÀ AMAZON BEDROCK AGENTCORE](3.3-Blog3/)
+Bài viết phân tích các thách thức bảo mật khi triển khai AI Agent và giới thiệu giải pháp kết hợp giữa Auth0 và Amazon Bedrock AgentCore. Bằng cách áp dụng mô hình kiến trúc Identity-First, hệ thống giúp kiểm soát chặt chẽ danh tính người dùng qua OIDC, quản lý token "just-in-time" bằng Auth0 Token Vault, phân quyền động (FGA) và tích hợp cơ chế phê duyệt từ con người (Human-in-the-loop) để đảm bảo an toàn tối đa cho môi trường Production.
