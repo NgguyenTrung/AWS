@@ -1,42 +1,68 @@
-﻿---
+---
 title: "Workshop"
-date: 2024-01-01
+date : 2026-07-05
 weight: 5
 chapter: false
-pre: " <b> 5. </b> "
+pre: " <b> 5.</b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# Secure Hybrid Access to S3 using VPC Endpoints
+# Workshop
 
-#### Overview
+## Overview
 
-**AWS PrivateLink** provides private connectivity to AWS services from VPCs and your on-premises networks, without exposing your traffic to the Public Internet.
+This workshop demonstrates how to build a complete **Smart Home Energy Waste Monitoring & Alert System using Virtual Sensors on AWS** based on a fully Serverless architecture.
 
-In this lab, you will learn how to create, configure, and test VPC endpoints that enable your workloads to reach AWS services without traversing the Public Internet.
+Throughout this workshop, participants will deploy a cloud-native solution capable of monitoring household energy consumption, detecting electricity waste automatically, and delivering real-time notifications to users.
 
-You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoint, and an Interface VPC endpoint. These two types of VPC endpoints offer different benefits depending on if you are accessing Amazon S3 from the cloud or your on-premises location.
+The entire solution leverages AWS managed services, enabling high scalability, reduced operational costs, improved availability, and eliminating the need to manage servers.
 
-#### Content
+Besides implementing the core application, this workshop also covers system monitoring, authentication, API development, report generation, frontend deployment, security best practices, and resource cleanup.
 
-1. [Workshop overview](5.1-workshop-overview/)
-2. [Prerequisite](5.2-prerequisite/)
-3. [Budget and region](5.3-budget-and-region/)
-4. [DynamoDB](5.4-dynamodb/)
-5. [SNS email alert](5.5-sns-email-alert/)
-6. [Lambda waste detector](5.6-lambda-waste-detector/)
-7. [Lambda virtual sensor](5.7-lambda-virtual-sensor/)
-8. [IoT Core rule](5.8-iot-core-rule/)
-9. [EventBridge schedule](5.9-eventbridge-schedule/)
-10. [CloudWatch testing](5.10-cloudwatch-testing/)
-11. [Cognito user pool](5.11-cognito-user-pool/)
-12. [API Gateway HTTP API](5.12-api-gateway-http-api/)
-13. [Lambda API handler](5.13-lambda-api-handler/)
-14. [S3 report bucket](5.14-s3-report-bucket/)
-15. [Lambda report generator](5.15-lambda-report-generator/)
-16. [Next.js + Amplify](5.16-nextjs-amplify/)
-17. [CloudFront, WAF, custom domain](5.17-cloudfront-waf-custom-domain/)
-18. [End-to-end testing](5.18-end-to-end-testing/)
-19. [Cleanup](5.19-cleanup/)
+During this workshop, participants will work with the following AWS services:
+
+- Amazon DynamoDB
+- AWS Lambda
+- Amazon SNS
+- AWS IoT Core
+- Amazon EventBridge Scheduler
+- Amazon Cognito
+- Amazon API Gateway
+- Amazon S3
+- Amazon CloudWatch
+- Amazon CloudFront
+- AWS WAF
+- AWS Amplify
+
+After completing this workshop, participants will be able to:
+
+- Understand how to build an end-to-end Serverless solution on AWS.
+- Simulate IoT sensor data using AWS Lambda.
+- Detect electricity waste automatically and generate real-time alerts.
+- Develop secure REST APIs using Amazon Cognito and API Gateway.
+- Generate automated reports and store them in Amazon S3.
+- Deploy a frontend application using AWS Amplify.
+- Deliver static content through Amazon CloudFront while protecting the application with AWS WAF.
+- Remove all deployed AWS resources to minimize unnecessary cloud costs.
+
+---
+
+# Workshop Content
+
+1. [Workshop Overview](5.1-Workshop-overview/)
+2. [Prerequisites](5.2-Prerequiste/)
+3. [Create AWS Budget](5.3-create-budget/)
+4. [Create Amazon DynamoDB](5.4-dynamodb/)
+5. [Create Amazon SNS](5.5-sns/)
+6. [Deploy Lambda Waste Detector](5.6-lambda-waste-detector/)
+7. [Deploy Lambda Virtual Sensor](5.7-lambda-virtual-sensor/)
+8. [Configure AWS IoT Core](5.8-AWS-IoT-Core/)
+9. [Configure EventBridge Scheduler](5.9-EventBridge-Scheduler/)
+10. [Configure Amazon CloudWatch Logs](5.10-CloudWatch-Logs/)
+11. [Configure Amazon Cognito](5.11-Amazon-Cognito/)
+12. [Create HTTP API Gateway](5.12-api-gateway-http-api/)
+13. [Deploy Lambda API Handler](5.13-lambda-api-handler/)
+14. [Create Amazon S3 Report Bucket](5.14-s3-report-bucket/)
+15. [Deploy Lambda Report Generator](5.15-lambda-report-generator/)
+16. [Deploy Frontend Application](5.16-Deploy-Frontend-Application/)
+17. [Configure Amazon CloudFront & AWS WAF](5.17-cloudfront-waf-custom/)
+18. [Clean Up Resources](5.18-CleanUp/)

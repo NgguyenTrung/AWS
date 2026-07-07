@@ -1,29 +1,16 @@
-﻿---
-title : "DynamoDB"
-date : 2024-01-01 
-weight : 4 
-chapter : false
-pre : " <b> 5.4. </b> "
+---
+title: "5.4 Khởi tạo Cơ sở Dữ liệu DynamoDB"
+weight: 4
+value: 54
+description: "Hướng dẫn từng bước để truy cập dịch vụ Amazon DynamoDB và bắt đầu tạo bảng dữ liệu."
 ---
 
-#### Tổng quan
+Trong bài thực hành này, chúng ta sẽ bắt đầu làm việc với dịch vụ cơ sở dữ liệu NoSQL **Amazon DynamoDB** để lưu trữ thông tin cho dự án[cite: 1].
 
-+ Trong phần này, bạn sẽ tạo một Interface Endpoint để truy cập Amazon S3 từ môi trường truyền thống mô phỏng. Interface Endpoint sẽ cho phép bạn định tuyến đến Amazon S3 qua kết nối VPN từ môi trường truyền thống mô phỏng của bạn.
+Trong phần này, chúng ta sẽ thực hiện hai bước chính:
 
-+ Tại sao nên sử dụng **Interface Endpoint**:
-    + Các Gateway endpoints chỉ hoạt động với các tài nguyên đang chạy trong VPC nơi chúng được tạo. Interface Endpoint hoạt động với tài nguyên chạy trong VPC và cả tài nguyên chạy trong môi trường truyền thống. Khả năng kết nối từ môi trường truyền thống của bạn với aws cloud có thể được cung cấp bởi AWS Site-to-Site VPN hoặc AWS Direct Connect.
-    + Interface Endpoint cho phép bạn kết nối với các dịch vụ do AWS PrivateLink cung cấp. Các dịch vụ này bao gồm một số dịch vụ AWS, dịch vụ do các đối tác và khách hàng AWS lưu trữ trong VPC của riêng họ (gọi tắt là Dịch vụ PrivateLink endpoints) và các dịch vụ đối tác AWS Marketplace. Đối với workshop này, chúng ta sẽ tập trung vào việc kết nối với Amazon S3.
-    
-![dynamodb-open-create-table](/images/5-Workshop/5.4-dynamodb/dynamodb-open-create-table.png)
+### 1. [Cấu hình Chi tiết Bảng](5.4.1-table-details/)
+Hướng dẫn cách truy cập giao diện điều khiển DynamoDB, bắt đầu quy trình tạo bảng và thiết lập các khóa chính (Partition Key và Sort Key).
 
-![dynamodb-table-details](/images/5-Workshop/5.4-dynamodb/dynamodb-table-details.png)
-
-![dynamodb-on-demand-settings](/images/5-Workshop/5.4-dynamodb/dynamodb-on-demand-settings.png)
-
-![dynamodb-table-active](/images/5-Workshop/5.4-dynamodb/dynamodb-table-active.png)
-
-![dynamodb-create-room-item1](/images/5-Workshop/5.4-dynamodb/Screenshot-2026-07-01170457.png)
-
-![dynamodb-create-room-item2](/images/5-Workshop/5.4-dynamodb/dynamodb-room-item-created.png)
-
-![dynamodb-room-item-created](/images/5-Workshop/5.4-dynamodb/dynamodb-room-item-created.png)
+### 2. [Tạo và Quản lý Item](5.4.2-create-item/)
+Hướng dẫn từng bước cách chèn, xem và quản lý các dòng dữ liệu (items) bên trong bảng DynamoDB vừa khởi tạo.

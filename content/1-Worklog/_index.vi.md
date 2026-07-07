@@ -34,4 +34,4 @@ pre: " <b> 1. </b> "
 
 **Tuần 11:** [Xây dựng dashboard, triển khai AWS Amplify và kiểm thử toàn hệ thống](1.11-week11/)
 
-**Tuần 12:** [Làm công việc N...](1.12-week12/)
+**Tuần 12:** [Viết báo cáo thực tập](1.12-week12/)

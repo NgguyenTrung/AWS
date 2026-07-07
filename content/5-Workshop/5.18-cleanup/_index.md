@@ -1,32 +1,20 @@
 ---
-title : "Cleanup"
-date : 2024-01-01
-weight : 19
+title : "Clean Up"
+date : 2026-07-05 
+weight : 18
 chapter : false
-pre : " <b> 5.19. </b> "
+pre : " <b> 5.18. </b> "
 ---
-Congratulations on completing this workshop! 
-In this workshop, you learned architecture patterns for accessing Amazon S3 without using the Public Internet. 
-+ By creating a gateway endpoint, you enabled direct communication between EC2 resources and Amazon S3, without traversing an Internet Gateway. 
-+ By creating an interface endpoint you extended S3 connectivity to resources running in your on-premises data center via AWS Site-to-Site VPN or Direct Connect. 
 
-#### clean up
-1. Navigate to Hosted Zones on the left side of Route 53 console. Click the name of *s3.us-east-1.amazonaws.com* zone. Click Delete and confirm deletion by typing delete. 
+#### Clean Up Resources
 
-![hosted zone](/images/5-Workshop/5.12-cleanup/delete-zone.png)
+To avoid incurring future charges, it is important to delete all the resources created during this workshop.
 
-2. Disassociate the Route 53 Resolver Rule - myS3Rule from "VPC Onprem" and Delete it. 
+#### Content
 
-![hosted zone](/images/5-Workshop/5.12-cleanup/vpc.png)
-
-4. Open the CloudFormation console  and delete the two CloudFormation Stacks that you created for this lab:
-+ PLOnpremSetup
-+ PLCloudSetup
-
-![delete stack](/images/5-Workshop/5.12-cleanup/delete-stack.png)
-
-5. Delete S3 buckets
-+ Open S3 console
-+ Choose the bucket we created for the lab, click and confirm empty. Click delete and confirm delete.
-
-![delete s3](/images/5-Workshop/5.12-cleanup/delete-s3.png)
+- [Delete EventBridge Scheduler](5.18.1-delete-eventbridge/)
+- [Remove AWS WAF from Amplify](5.18.2-remove-waf/)
+- [Delete AWS Amplify app](5.18.3-delete-amplify/)
+- [Delete API Gateway](5.18.4-delete-api-gateway/)
+- [Delete Cognito User Pool](5.18.5-delete-cognito/)
+- [Delete AWS IoT Rule](5.18.6-delete-iot-rule/)

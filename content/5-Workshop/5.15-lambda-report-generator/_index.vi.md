@@ -1,27 +1,24 @@
 ---
-title: "Lambda Report Generator"
-date: 2024-01-01
-weight: 15
-chapter: false
-pre: " <b> 5.15. </b> "
+title : "Lambda Report Generator"
+date : 2024-01-01
+weight : 15
+chapter : false
+pre : " <b> 5.15. </b> "
 ---
 
-# Lambda Report Generator
+#### Tổng quan
 
-Placeholder tiếng Việt cho Lambda report generator.
-![Anh](/images/5-Workshop/5.15-lambda-report-generator/01-tao-lambda-report-generator.png)
-![Anh](/images/5-Workshop/5.15-lambda-report-generator/Timeout-Memory.png)
-![Anh](/images/5-Workshop/5.15-lambda-report-generator/02-environment-variables-report-generator.png)
-![Anh](/images/5-Workshop/5.15-lambda-report-generator/03-iam-report-generator-policy.png)
-![Anh](/images/5-Workshop/5.15-lambda-report-generator/trien-khai-ma-nguon.png)
-![Anh](/images/5-Workshop/5.15-lambda-report-generator/04-test-report-generator.png)
-![Anh](/images/5-Workshop/5.15-lambda-report-generator/05-report-file-in-s3.png)
-![Anh](/images/5-Workshop/5.15-lambda-report-generator/06-report-metadata-dynamodb.png)
-![Anh](/images/5-Workshop/5.15-lambda-report-generator/Tao-Schedule1.png)
-![Anh](/images/5-Workshop/5.15-lambda-report-generator/Tao-Schedule2.png)
-![Anh](/images/5-Workshop/5.15-lambda-report-generator/Tao-Schedule3.png)
-![Anh](/images/5-Workshop/5.15-lambda-report-generator/Tao-Schedule4.png)
-![Anh](/images/5-Workshop/5.15-lambda-report-generator/Kiem-tra-Schedule.png)
-![Anh](/images/5-Workshop/5.15-lambda-report-generator/Kiem-tra-Schedule2.png)
-![Anh](/images/5-Workshop/5.15-lambda-report-generator/07-report-schedule-disabled.png)
-![Anh](/images/5-Workshop/5.15-lambda-report-generator/API-Gateway-Invoke-URL.png)
+Trong phần này, bạn sẽ tạo và cấu hình **Lambda Report Generator**. Hàm này có nhiệm vụ truy xuất dữ liệu từ DynamoDB, tổng hợp thông tin và tạo các báo cáo tiêu thụ năng lượng hàng ngày để lưu trữ lên S3.
+
+#### Nội dung
+
+- [Tạo Lambda Report Generator](5.15.1-create-lambda/)
+- [Cấu hình Timeout và Memory](5.15.2-config-timeout-memory/)
+- [Cấu hình biến môi trường](5.15.3-config-env-vars/)
+- [Cấp quyền IAM](5.15.4-grant-iam-permissions/)
+- [Triển khai mã nguồn](5.15.5-deploy-source-code/)
+- [Tạo Test Event](5.15.6-create-test-event/)
+- [Kiểm tra file trên S3](5.15.7-check-s3-file/)
+- [Kiểm tra metadata trên DynamoDB](5.15.8-check-ddb-metadata/)
+- [Tạo lịch chạy hàng ngày](5.15.9-create-daily-schedule/)
+- [Vô hiệu hóa lịch chạy](5.15.10-disable-schedule/)

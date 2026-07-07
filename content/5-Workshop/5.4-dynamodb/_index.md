@@ -1,32 +1,16 @@
-﻿---
-title : "DynamoDB"
-date : 2024-01-01
-weight : 4
-chapter : false
-pre : " <b> 5.4. </b> "
+---
+title: "5.4 Initialize DynamoDB Database"
+weight: 4
+value: 4
+description: "Step-by-step guide to open Amazon DynamoDB service and start creating a data table."
 ---
 
-#### Overview
+In this practical lab, we will start working with the NoSQL database service **Amazon DynamoDB** to store information for our project[cite: 1].
 
-+ In this section, you will create an Interface endpoint to access Amazon S3 from a simulated on-premises environment. The Interface endpoint will allow you to route to Amazon S3 over a VPN connection from your simulated on-premises environment.
+In this section, we will perform two main steps:
 
-+ Why using **Interface endpoint**: 
-    + Gateway endpoints only work with resources running in the VPC where they are created. Interface endpoints work with resources running in VPC, and also resources running in on-premises environments. Connectivty from your on-premises environment to the cloud can be provided by AWS Site-to-Site VPN or AWS Direct Connect.
-    + Interface endpoints allow you to connect to services powered by AWS PrivateLink. These services include some AWS services, services hosted by other AWS customers and partners in their own VPCs (referred to as PrivateLink Endpoint Services), and supported AWS Marketplace Partner services. For this workshop, we will focus on connecting to Amazon S3.
+### 1. [Table Details Configuration](5.4.1-table-details/)
+Learn how to access the DynamoDB console, initiate the table creation process, and configure the primary keys (Partition Key and Sort Key).
 
-![dynamodb-open-create-table](/images/5-Workshop/5.4-dynamodb/dynamodb-open-create-table.png)
-
-![dynamodb-table-details](/images/5-Workshop/5.4-dynamodb/dynamodb-table-details.png)
-
-![dynamodb-on-demand-settings](/images/5-Workshop/5.4-dynamodb/dynamodb-on-demand-settings.png)
-
-![dynamodb-table-active](/images/5-Workshop/5.4-dynamodb/dynamodb-table-active.png)
-
-![dynamodb-create-room-item1](/images/5-Workshop/5.4-dynamodb/dynamodb-create-room-item1.png)
-
-![dynamodb-create-room-item2](/images/5-Workshop/5.4-dynamodb/dynamodb-create-room-item2.png)
-
-![dynamodb-room-item-created](/images/5-Workshop/5.4-dynamodb/dynamodb-room-item-created.png)
-
-
-
+### 2. [Create and Manage Items](5.4.2-create-item/)
+Step-by-step guidance on how to insert, view, and manage data rows (items) inside your newly created DynamoDB table.
