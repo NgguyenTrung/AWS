@@ -25,7 +25,7 @@ To objectively reflect on my internship performance, I would like to assess myse
 
 | No. | Criterion                             | Description                                                                         | Good | Fair | Average |
 | --- | ------------------------------------- | ----------------------------------------------------------------------------------- | ---- | ---- | ------- |
-| 1   | **Professional knowledge and skills** | Ability to apply AWS knowledge and related technologies to the project              | ✅    | ☐    | ☐       |
+| 1   | **Professional knowledge and skills** | Ability to apply AWS knowledge and related technologies to the project              | ☐ | ✅ | ☐ |
 | 2   | **Learning ability**                  | Ability to acquire new knowledge, technologies, and working methods                 | ☐    | ✅    | ☐       |
 | 3   | **Proactiveness**                     | Proactively searching for documentation, completing tasks, and resolving problems   | ✅    | ☐    | ☐       |
 | 4   | **Sense of responsibility**           | Making an effort to complete assigned tasks and ensure work quality                 | ✅    | ☐    | ☐       |
@@ -40,7 +40,6 @@ To objectively reflect on my internship performance, I would like to assess myse
 
 ### Areas for Improvement
 
-* Improve discipline, time management, and compliance with work plans.
 * Develop a more systematic approach to analysis and problem-solving while reducing dependence on guidance.
 * Improve communication, idea presentation, and work progress reporting skills.
 * Continue strengthening professional knowledge of AWS, security, system architecture, and cost management.

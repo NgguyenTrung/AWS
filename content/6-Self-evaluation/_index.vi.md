@@ -30,7 +30,7 @@ Về tác phong làm việc, em luôn cố gắng hoàn thành các nhiệm vụ
 
 | STT | Tiêu chí | Mô tả | Tốt | Khá | Trung bình |
 | --- | --- | --- | --- | --- | --- |
-| 1 | **Kiến thức và kỹ năng chuyên môn** | Khả năng vận dụng kiến thức AWS và công nghệ liên quan vào dự án | ✅ | ☐ | ☐ |
+| 1 | **Kiến thức và kỹ năng chuyên môn** | Khả năng vận dụng kiến thức AWS và công nghệ liên quan vào dự án | ☐ | ✅ | ☐ |
 | 2 | **Khả năng học hỏi** | Khả năng tiếp thu kiến thức, công nghệ và phương pháp làm việc mới | ☐ | ✅ | ☐ |
 | 3 | **Tính chủ động** | Chủ động tìm kiếm tài liệu, thực hiện nhiệm vụ và xử lý vấn đề | ✅ | ☐ | ☐ |
 | 4 | **Tinh thần trách nhiệm** | Cố gắng hoàn thành công việc được giao và đảm bảo chất lượng | ✅ | ☐ | ☐ |
@@ -46,7 +46,7 @@ Về tác phong làm việc, em luôn cố gắng hoàn thành các nhiệm vụ
 
 ### Những nội dung cần cải thiện
 
-* Nâng cao ý thức kỷ luật, quản lý thời gian và tuân thủ kế hoạch làm việc chặt chẽ hơn.
+
 * Rèn luyện tư duy phân tích và giải quyết vấn đề theo trình tự rõ ràng, hạn chế phụ thuộc vào hướng dẫn.
 * Cải thiện kỹ năng giao tiếp, trình bày ý tưởng và báo cáo tiến độ công việc.
 * Tiếp tục củng cố kiến thức chuyên môn về AWS, bảo mật, kiến trúc hệ thống và quản lý chi phí.
