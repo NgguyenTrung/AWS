@@ -16,4 +16,4 @@ Dashboard giám sát phòng lab chỉ nên dành cho người được cấp tà
 
 Khi self-registration bị tắt, người dùng không thể tự đăng ký tài khoản; tài khoản phải được tạo bởi quản trị viên trong Cognito Console hoặc qua API[cite: 14].
 
-![Disable Sign up](/images/5-Workshop/5.11-Cognito/Enable self-registration.png)
+![Disable Sign up](/images/5-Workshop/5.11-Cognito/Enable-self-registration.png)
