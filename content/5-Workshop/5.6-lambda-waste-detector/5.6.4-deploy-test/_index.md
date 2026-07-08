@@ -5,13 +5,13 @@ weight: 1
 
 
 
-Now that configurations and permissions are set, we will inject the core Python processing script into our Lambda function, invoke a manual mock testing payload, and audit the results across downstream AWS components.
+After completing the system configuration and security permissions, we will add the core Python processing logic to the Lambda function, run a test using simulated data, and verify the results in the output services.
 
-### Step-by-Step Instructions:
+### Steps:
 
-1. Return to your active **energy-waste-detector** Lambda function page, and click on the **Code** tab.
-2. In the file explorer panel on the left, open `lambda_function.py`.
-3. Select and clear all existing placeholder template code, then paste the full production core logic below:
+1. Return to the **energy-waste-detector** Lambda function page and select the **Code** tab.
+2. In the file explorer on the left, double-click the `lambda_function.py` file.
+3. Delete all default placeholder code in the editor, then paste the complete core processing logic below:
 
 ```python
 import json
@@ -159,3 +159,100 @@ def lambda_handler(event, context):
             "powerW": power_w
         }
     }
+```
+
+![](/images/5-Workshop/5.6-lambda-waste-detector/lambda-waste-detector-code-deployed.png)
+
+### 4. Test the Lambda Waste Detector
+
+On the Lambda function page:
+
+```text
+energy-waste-detector
+```
+
+Click:
+
+```text
+Test
+```
+
+Select:
+
+```text
+Create new event
+```
+
+Enter the event name:
+
+```text
+test_waste_event
+```
+
+In the **Event JSON** section, enter:
+
+```json
+{
+  "sensorId": "virtual-sensor-01",
+  "roomId": "lab-01",
+  "timestamp": "2026-07-01T10:00:00Z",
+  "deviceId": "aircon-01",
+  "deviceName": "Air Conditioner",
+  "deviceStatus": "ON",
+  "occupancy": false,
+  "powerW": 180,
+  "voltageV": 220,
+  "currentA": 0.82,
+  "energyKwh": 1.25
+}
+```
+
+Click:
+
+```text
+Save
+```
+
+Then click:
+
+```text
+Test
+```
+
+![](/images/5-Workshop/5.6-lambda-waste-detector/lambda-waste-detector-test-event.png)
+
+After running the test:
+
+![](/images/5-Workshop/5.6-lambda-waste-detector/lambda-waste-detector-test-success.png)
+
+### 5. Verify the data in DynamoDB
+
+Go to:
+
+```text
+DynamoDB
+→ Tables
+→ EnergyWasteData
+→ Explore table items
+```
+
+Verify that the table contains new items in the following formats:
+
+```text
+TELEMETRY#2026-07-01T10:00:00Z#virtual-sensor-01
+```
+
+```text
+ALERT#2026-07-01T10:00:00Z#...
+```
+
+Where:
+
+- The `TELEMETRY` item stores the sensor data that was submitted.
+- The `ALERT` item is created when the Lambda Waste Detector detects that a device is turned on while the room is unoccupied.
+
+![](/images/5-Workshop/5.6-lambda-waste-detector/ambda-waste-detector-dynamodb-items.png)
+
+Open Gmail. You should receive a new alert email from Amazon SNS:
+
+![](/images/5-Workshop/5.6-lambda-waste-detector/ambda-waste-detector-email-alert.png)

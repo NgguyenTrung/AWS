@@ -5,15 +5,22 @@ weight: 1
 
 
 
-By default, an AWS Lambda function does not have permission to write to DynamoDB or publish notifications to Amazon SNS. We must attach an inline security policy to grant these operational privileges.
+By default, an AWS Lambda function does not have permission to write data to DynamoDB or send notifications through Amazon SNS. Therefore, we need to attach an inline policy to grant the required permissions.
 
-### Step-by-Step Instructions:
+### Steps:
 
-1. Inside your **energy-waste-detector** function dashboard, navigate to **Configuration** -> **Permissions**.
-2. Under the **Execution role** section, click on the active role name hyperlink (it will look similar to `energy-waste-detector-role-pmsoahv7`). This will safely open the IAM Management dashboard in a new tab.
-3. In the IAM Role summary screen, click on **Add permissions** and select **Create inline policy** from the dropdown menu.
-4. Switch the editor mode to the **JSON** tab.
-5. Completely wipe out any default template content inside the editor and paste the following strict policy:
+1. On the **energy-waste-detector** function page, go to the **Configuration** tab and select **Permissions**.
+2. In the **Execution role** section, click the current role name. The role name will look similar to:
+
+```text
+energy-waste-detector-role-pmsoahv7
+```
+
+The system will open the IAM Role page in a new browser tab.
+
+3. On the IAM Role page, click **Add permissions** and select **Create inline policy** from the drop-down menu.
+4. Switch to the **JSON** tab.
+5. Delete all default content in the editor and paste the following permission policy:
 
 ```json
 {
@@ -37,3 +44,14 @@ By default, an AWS Lambda function does not have permission to write to DynamoDB
     }
   ]
 }
+```
+
+![](/images/5-Workshop/5.6-lambda-waste-detector/lambda-waste-detector-iam-policy-json.png)
+
+Click:
+
+```text
+Create policy
+```
+
+![](/images/5-Workshop/5.6-lambda-waste-detector/lambda-waste-detector-iam-policy-created.png)

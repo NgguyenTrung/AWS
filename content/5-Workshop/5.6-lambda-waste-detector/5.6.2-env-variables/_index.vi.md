@@ -18,3 +18,5 @@ Thay vì viết cứng (hardcode) các thông số hệ thống như tên bảng
    * **Key:** `SNS_TOPIC_ARN` | **Value:** `arn:aws:sns:ap-southeast-1:347685737655:energy-waste-alert-topic`
    * **Key:** `POWER_THRESHOLD_W` | **Value:** `120`
 6. Nhấn nút **Save** để lưu lại toàn bộ cấu hình biến môi trường.
+
+![](/images/5-Workshop/5.6-lambda-waste-detector/lambda-waste-detector-env.png)

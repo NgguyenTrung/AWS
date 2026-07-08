@@ -37,3 +37,8 @@ Mặc định, một hàm AWS Lambda sẽ không có quyền ghi dữ liệu và
     }
   ]
 }
+```
+![](/images/5-Workshop/5.6-lambda-waste-detector/lambda-waste-detector-iam-policy-json.png)
+Bấm:
+Create policy
+![](/images/5-Workshop/5.6-lambda-waste-detector/lambda-waste-detector-iam-policy-created.png)

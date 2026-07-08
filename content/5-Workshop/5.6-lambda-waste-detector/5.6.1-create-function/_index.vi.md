@@ -13,8 +13,12 @@ weight: 1
 2. Chọn dịch vụ **Lambda** từ danh sách kết quả tìm kiếm.
 3. Ở danh mục menu bên trái, nhấn chọn vào mục **Functions**.
 4. Nhấp chọn nút **Create function** ở góc trên bên phải.
-5. Tại màn hình **Create function**, thiết lập các thông số cấu hình sau:
+![](/images/5-Workshop/5.6-lambda-waste-detector/lambda-open-create-function.png)
+
+1. Tại màn hình **Create function**, thiết lập các thông số cấu hình sau:
    * Chọn tùy chọn **Author from scratch**.
    * **Function name:** `energy-waste-detector`
    * **Runtime:** Chọn phiên bản `Python 3.14`.
-6. Cuối cùng, nhấn nút **Create function** ở góc dưới để hoàn tất khởi tạo hàm.
+ ![](/images/5-Workshop/5.6-lambda-waste-detector/lambda-waste-detector-additional-settings.png)
+2. Cuối cùng, nhấn nút **Create function** ở góc dưới để hoàn tất khởi tạo hàm.
+ ![](/images/5-Workshop/5.6-lambda-waste-detector/lambda-waste-detector-created.png)

@@ -159,3 +159,97 @@ def lambda_handler(event, context):
             "powerW": power_w
         }
     }
+
+```
+![](/images/5-Workshop/5.6-lambda-waste-detector/lambda-waste-detector-code-deployed.png)
+
+ 4. Test Lambda Waste Detector
+
+Trong trang Lambda Function:
+
+```text
+energy-waste-detector
+```
+
+Bấm:
+
+```text
+Test
+```
+
+Chọn:
+
+```text
+Create new event
+```
+
+Nhập tên sự kiện:
+
+```text
+test_waste_event
+```
+
+Tại phần **Event JSON**, nhập:
+
+```json
+{
+  "sensorId": "virtual-sensor-01",
+  "roomId": "lab-01",
+  "timestamp": "2026-07-01T10:00:00Z",
+  "deviceId": "aircon-01",
+  "deviceName": "Air Conditioner",
+  "deviceStatus": "ON",
+  "occupancy": false,
+  "powerW": 180,
+  "voltageV": 220,
+  "currentA": 0.82,
+  "energyKwh": 1.25
+}
+```
+
+Bấm:
+
+```text
+Save
+```
+
+Sau đó bấm:
+
+```text
+Test
+```
+![](/images/5-Workshop/5.6-lambda-waste-detector/lambda-waste-detector-test-event.png)
+
+Sau khi chạy test:
+
+![](/images/5-Workshop/5.6-lambda-waste-detector/lambda-waste-detector-test-success.png)
+
+5. Kiểm tra dữ liệu trong DynamoDB
+
+Vào:
+
+```text
+DynamoDB
+→ Tables
+→ EnergyWasteData
+→ Explore table items
+```
+
+Kiểm tra bảng có thêm các item dạng:
+
+```text
+TELEMETRY#2026-07-01T10:00:00Z#virtual-sensor-01
+```
+
+```text
+ALERT#2026-07-01T10:00:00Z#...
+```
+
+Trong đó:
+
+- Item `TELEMETRY` lưu dữ liệu cảm biến vừa gửi.
+- Item `ALERT` được tạo khi Lambda Waste Detector phát hiện thiết bị đang bật nhưng phòng không có người.
+
+![](/images/5-Workshop/5.6-lambda-waste-detector/ambda-waste-detector-dynamodb-items.png)
+Mở Gmail, bạn sẽ nhận thêm email mới từ SNS:
+![](/images/5-Workshop/5.6-lambda-waste-detector/ambda-waste-detector-email-alert.png)

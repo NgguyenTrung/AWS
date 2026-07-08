@@ -5,16 +5,24 @@ weight: 1
 
 
 
-To start processing our IoT ecosystem's telemetry stream, we need to initialize a serverless compute function using AWS Lambda.
+To begin processing the telemetry data flow from the IoT system, we need to create a serverless compute function using AWS Lambda.
 
-### Step-by-Step Instructions:
+### Steps:
 
-1. On the **AWS Management Console**, type `Lambda` into the top search bar.
+1. In the search bar at the top of the **AWS Management Console**, enter `Lambda`.
 2. Select the **Lambda** service from the search results.
-3. In the left navigation menu, click on **Functions**.
-4. Click the **Create function** button at the top right.
-5. On the **Create function** screen, configure the following settings:
+3. In the left navigation menu, select **Functions**.
+4. Click the **Create function** button in the upper-right corner.
+
+![](/images/5-Workshop/5.6-lambda-waste-detector/lambda-open-create-function.png)
+
+1. On the **Create function** page, configure the following settings:
    * Select **Author from scratch**.
    * **Function name:** `energy-waste-detector`
    * **Runtime:** Select `Python 3.14`.
-6. Click the **Create function** button at the bottom to initialize your workspace.
+
+![](/images/5-Workshop/5.6-lambda-waste-detector/lambda-waste-detector-additional-settings.png)
+
+2. Finally, click the **Create function** button at the bottom of the page to complete the function creation process.
+
+![](/images/5-Workshop/5.6-lambda-waste-detector/lambda-waste-detector-created.png)
