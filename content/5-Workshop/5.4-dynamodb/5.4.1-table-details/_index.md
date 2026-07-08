@@ -4,7 +4,7 @@ weight: 1
 description: "Set up core parameters including Partition key, Sort key, and Capacity mode for DynamoDB."
 ---
 
-# 5.4.1 Configure Table Details
+
 
 On the table creation page, proceed to fill in the core configuration details exactly as follows:
 

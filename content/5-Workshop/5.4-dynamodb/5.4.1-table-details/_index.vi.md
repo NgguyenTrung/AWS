@@ -4,7 +4,7 @@ weight: 1
 description: "Thiết lập các thông số chính như Partition key, Sort key và Capacity mode cho DynamoDB."
 ---
 
-# 5.4.1 Cấu hình Table details
+
 
 Tại giao diện khởi tạo bảng, bạn tiến hành điền chính xác các thông tin cấu hình cốt lõi dưới đây:
 
