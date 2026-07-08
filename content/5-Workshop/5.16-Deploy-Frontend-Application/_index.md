@@ -1,11 +1,12 @@
 
 ---
-title : "Deploy Frontend Application"
+title : "Triển khai Ứng dụng Frontend"
 date : 2024-01-01
-weight : 16
+weight : 17
 chapter : false
 pre : " <b> 5.16. </b> "
 ---
+
 
 AWS Amplify Hosting is utilized to deploy, secure, and scale the frontend application automatically, allowing users to interact with real-time smart home metrics seamlessly.
 

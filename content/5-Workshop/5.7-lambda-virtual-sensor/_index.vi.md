@@ -2,7 +2,7 @@
 title: "5.7. Tạo Cảm biến Ảo bằng Lambda"
 date: 2026-07-05
 weight: 7
-chapter: true
+chapter: false
 description: "Tổng quan và điều hướng cấu trúc để xây dựng cảm biến ảo bằng Lambda nhằm giả lập dữ liệu tiêu thụ điện năng IoT."
 ---
 

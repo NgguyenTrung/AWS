@@ -5,7 +5,7 @@ value: 4
 description: "Step-by-step guide to open Amazon DynamoDB service and start creating a data table."
 ---
 
-In this practical lab, we will start working with the NoSQL database service **Amazon DynamoDB** to store information for our project[cite: 1].
+In this practical lab, we will start working with the NoSQL database service **Amazon DynamoDB** to store information for our project.
 
 In this section, we will perform two main steps:
 

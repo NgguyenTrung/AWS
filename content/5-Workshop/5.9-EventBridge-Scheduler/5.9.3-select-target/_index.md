@@ -23,6 +23,7 @@ pre : " <b> 5.9.3 </b> "
     }
 
    + Click: **Next**
+      ![Target](/images/5-Workshop/5.9-EventBridge/02-lambda-target-va-payload.png)
 
 4. **Schedule Settings**
    + **Enable schedule**: Enable
@@ -32,6 +33,7 @@ pre : " <b> 5.9.3 </b> "
    + **Permissions**: Create new role for this schedule
    + **Role name**: `eventbridge-scheduler-energy-virtual-sensor-role`
    + Click: **Next**
+   ![Target](/images/5-Workshop/5.9-EventBridge/setting-optinal.png)
 
 5. **Review and Create**
    + Review the configuration and click: **Create schedule**

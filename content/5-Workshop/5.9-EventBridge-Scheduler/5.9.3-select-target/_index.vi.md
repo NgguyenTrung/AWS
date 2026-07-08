@@ -23,6 +23,7 @@ pre : " <b> 5.9.3 </b> "
     }
 
    + Bấm: **Next**
+    ![Target](/images/5-Workshop/5.9-EventBridge/02-lambda-target-va-payload.png)
 
 4. **Cấu hình Schedule Settings**
    + **Enable schedule**: Enable
@@ -32,7 +33,7 @@ pre : " <b> 5.9.3 </b> "
    + **Permissions**: Create new role for this schedule
    + **Role name**: `eventbridge-scheduler-energy-virtual-sensor-role`
    + Bấm: **Next**
-
+ ![Target](/images/5-Workshop/5.9-EventBridge/setting-optinal.png)
 5. **Review and Create**
    + Kiểm tra lại cấu hình và bấm: **Create schedule**
 

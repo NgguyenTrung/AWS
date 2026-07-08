@@ -5,7 +5,7 @@ value: 54
 description: "Hướng dẫn từng bước để truy cập dịch vụ Amazon DynamoDB và bắt đầu tạo bảng dữ liệu."
 ---
 
-Trong bài thực hành này, chúng ta sẽ bắt đầu làm việc với dịch vụ cơ sở dữ liệu NoSQL **Amazon DynamoDB** để lưu trữ thông tin cho dự án[cite: 1].
+Trong bài thực hành này, chúng ta sẽ bắt đầu làm việc với dịch vụ cơ sở dữ liệu NoSQL **Amazon DynamoDB** để lưu trữ thông tin cho dự án.
 
 Trong phần này, chúng ta sẽ thực hiện hai bước chính:
 

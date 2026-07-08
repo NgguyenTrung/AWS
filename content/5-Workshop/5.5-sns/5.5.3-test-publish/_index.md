@@ -12,9 +12,9 @@ To verify that the communication pipeline works correctly, we will manually publ
 1. On the **energy-waste-alert-topic** detail page, click the **Publish message** button at the top right.
 2. In the **Message details** section, configure the subject:
    * **Subject - optional:** `Test energy waste alert`
-3. Scroll down to the **Message body** section[cite: 2]:
-   * Select **Identical payload for all delivery protocols**[cite: 2].
-   * Copy the following JSON payload (which simulates an energy waste event) and paste it into the text box[cite: 2]:
+3. Scroll down to the **Message body** section:
+   * Select **Identical payload for all delivery protocols**.
+   * Copy the following JSON payload (which simulates an energy waste event) and paste it into the text box:
 
 ```json
 {

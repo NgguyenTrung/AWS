@@ -2,9 +2,10 @@
 title: "5.7. Create Lambda Virtual Sensor"
 date: 2026-07-05
 weight: 7
-chapter: true
+chapter: false
 description: "Overview and structural routing for building a Lambda-based virtual sensor to simulate IoT power consumption data."
 ---
+
 
 The Lambda Virtual Sensor is responsible for simulating real-world power consumption data from laboratory equipment and publishing these telemetry payloads directly to AWS IoT Core.
 

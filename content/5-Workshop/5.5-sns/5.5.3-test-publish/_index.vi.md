@@ -6,16 +6,16 @@ description: "Mô phỏng phát tín hiệu cảnh báo lãng phí năng lượn
 
 
 
-Nhằm đảm bảo luồng tin tức luân chuyển chính xác, chúng ta sẽ thực hiện kiểm thử thủ công tính năng xuất bản thông điệp trực tiếp từ bảng điều khiển quản trị[cite: 2].
+Nhằm đảm bảo luồng tin tức luân chuyển chính xác, chúng ta sẽ thực hiện kiểm thử thủ công tính năng xuất bản thông điệp trực tiếp từ bảng điều khiển quản trị.
 
 ### Các bước thực hiện:
 
-1. Tại màn hình làm việc của topic `energy-waste-alert-topic`, nhấn chọn nút **Publish message** ở góc bên phải[cite: 2].
-2. Trong hộp thoại cấu hình chi tiết thông điệp (Message details), thiết lập tiêu đề thư[cite: 2]:
-   * **Subject - optional:** `Test energy waste alert`[cite: 2]
-3. Di chuyển tiếp đến phần cấu hình thân bài viết (**Message body**)[cite: 2]:
-   * Chọn cấu hình mặc định: **Identical payload for all delivery protocols**[cite: 2].
-   * Sao chép đoạn mã JSON mô phỏng gói tin sự kiện lãng phí điện năng của phòng thiết bị dưới đây và dán vào ô nhập liệu[cite: 2]:
+1. Tại màn hình làm việc của topic `energy-waste-alert-topic`, nhấn chọn nút **Publish message** ở góc bên phải.
+2. Trong hộp thoại cấu hình chi tiết thông điệp (Message details), thiết lập tiêu đề thư:
+   * **Subject - optional:** `Test energy waste alert`
+3. Di chuyển tiếp đến phần cấu hình thân bài viết (**Message body**):
+   * Chọn cấu hình mặc định: **Identical payload for all delivery protocols**.
+   * Sao chép đoạn mã JSON mô phỏng gói tin sự kiện lãng phí điện năng của phòng thiết bị dưới đây và dán vào ô nhập liệu:
 
 ```json
 {

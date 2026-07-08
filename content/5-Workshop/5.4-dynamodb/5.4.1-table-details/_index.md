@@ -6,15 +6,15 @@ description: "Set up core parameters including Partition key, Sort key, and Capa
 
 # 5.4.1 Configure Table Details
 
-On the table creation page, proceed to fill in the core configuration details exactly as follows[cite: 1]:
+On the table creation page, proceed to fill in the core configuration details exactly as follows:
 
 ### 1. Table Details
-* **Table name:** `EnergyWasteData`[cite: 1]
-* **Partition key:** `PK` (Data type: **String**)[cite: 1]
-* **Sort key - optional:** `SK` (Data type: **String**)[cite: 1]
+* **Table name:** `EnergyWasteData`
+* **Partition key:** `PK` (Data type: **String**)
+* **Sort key - optional:** `SK` (Data type: **String**)
 
 > ⚠️ **CRITICAL NOTE:** 
-> You must capitalize **PK** and **SK** exactly as shown[cite: 1]. DO NOT write them as lower-case `pk`, `sk`, `roomId`, or `id`[cite: 1]. The backend Lambda function code will interact directly with these exact capitalized keys later on[cite: 1].
+> You must capitalize **PK** and **SK** exactly as shown. DO NOT write them as lower-case `pk`, `sk`, `roomId`, or `id`. The backend Lambda function code will interact directly with these exact capitalized keys later on.
 
 ![Table Details Configuration](/images/5-Workshop/5.4-dynamodb/dynamodb-open-create-table.png)
 
@@ -22,22 +22,22 @@ On the table creation page, proceed to fill in the core configuration details ex
 
 ### 2. Table Settings
 
-Scroll down to configure advanced options optimized for this workshop environment[cite: 1]:
+Scroll down to configure advanced options optimized for this workshop environment:
 
-* Under **Table settings**, select **Customize settings**[cite: 1].
-* Under **Table class**, select **DynamoDB Standard**[cite: 1].
-* Under **Read/write capacity settings** ➔ **Capacity mode**, select: **On-demand**[cite: 1].
+* Under **Table settings**, select **Customize settings**.
+* Under **Table class**, select **DynamoDB Standard**.
+* Under **Read/write capacity settings** ➔ **Capacity mode**, select: **On-demand**.
 
-> 💡 **Why choose On-demand?** This demo project does not require pre-provisioned read/write capacity limits[cite: 1]. Selecting On-demand reduces configuration steps and fits perfectly for workshop execution[cite: 1].
+> 💡 **Why choose On-demand?** This demo project does not require pre-provisioned read/write capacity limits. Selecting On-demand reduces configuration steps and fits perfectly for workshop execution.
 
 ![On-demand Capacity Mode Configuration](/images/5-Workshop/5.4-dynamodb/dynamodb-table-details.png)
 
 ### 3. Finalize Other Default Settings
-* **Secondary indexes:** Leave blank (Do not create)[cite: 1].
-* **Encryption:** Keep *AWS owned key* or default[cite: 1].
-* **Deletion protection:** Temporarily set to **Off**[cite: 1].
-* **Tags:** Can be skipped[cite: 1].
+* **Secondary indexes:** Leave blank (Do not create).
+* **Encryption:** Keep *AWS owned key* or default.
+* **Deletion protection:** Temporarily set to **Off**.
+* **Tags:** Can be skipped.
 
-After reviewing all properties, click the **Create table** button at the bottom[cite: 1]. The system will initialize the table until its status switches to **Active**[cite: 1].
+After reviewing all properties, click the **Create table** button at the bottom. The system will initialize the table until its status switches to **Active**.
 
 ![DynamoDB Table in Active Status](/images/5-Workshop/5.4-dynamodb/dynamodb-on-demand-settings.png)

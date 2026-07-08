@@ -15,9 +15,9 @@ Now, let's create a sample item to verify that our newly created table is workin
 
 ![Accessing Explore Table Items Interface](/images/5-Workshop/5.4-dynamodb/11.png)
 
-3. Click the **Create item** button[cite: 1].
-4. In the Attributes section, switch the view mode toggle to **JSON view**[cite: 1].
-5. Copy and paste the following JSON block into the editor[cite: 1]:
+1. Click the **Create item** button.
+2. In the Attributes section, switch the view mode toggle to **JSON view**.
+3. Copy and paste the following JSON block into the editor:
 
 ```json
 {

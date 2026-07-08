@@ -1,5 +1,5 @@
 ---
-title : "Configure App Build and Environment Variables"
+title : "nextjs"
 date : 2024-01-01
 weight : 3
 chapter : false
