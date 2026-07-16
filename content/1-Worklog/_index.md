@@ -33,4 +33,6 @@ pre: " <b> 1. </b> "
 
 **Week 11:** [Building the Dashboard, Deploying with AWS Amplify, and Testing the Entire System](1.11-week11/)
 
-**Week 12:** [Write an internship report.](1.12-week12/)
+**Week 12:** [Write an internship report](1.12-week12/)
+
+**Week 13:** [Record the project demonstration video](1.13-week13/)
