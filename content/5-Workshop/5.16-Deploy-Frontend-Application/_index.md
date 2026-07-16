@@ -2,7 +2,7 @@
 ---
 title : "Triển khai Ứng dụng Frontend"
 date : 2024-01-01
-weight : 17
+weight : 16
 chapter : false
 pre : " <b> 5.16. </b> "
 ---

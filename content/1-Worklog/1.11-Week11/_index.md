@@ -41,10 +41,6 @@ pre: " <b> 1.11. </b> "
 
 * I successfully deployed the application using AWS Amplify Hosting.
 
-* The production dashboard is available at:
-
-  * https://main.d2ppdnlr5ik3e8.amplifyapp.com
-
 * I confirmed that AWS Amplify uses CloudFront in the background and that a separate CloudFront Distribution was not required.
 
 * I enabled AWS WAF protection for the Amplify application.

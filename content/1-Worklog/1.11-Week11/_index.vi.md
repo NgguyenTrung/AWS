@@ -43,10 +43,6 @@ pre: " <b> 1.11. </b> "
 
 * Em đã triển khai ứng dụng thành công bằng AWS Amplify Hosting.
 
-* Dashboard production hoạt động tại:
-
-  * https://main.d2ppdnlr5ik3e8.amplifyapp.com
-
 * Em đã xác nhận AWS Amplify sử dụng CloudFront phía sau và không cần tạo thêm CloudFront Distribution riêng.
 
 * Em đã bật AWS WAF cho ứng dụng Amplify.
