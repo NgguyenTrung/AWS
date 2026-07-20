@@ -24,10 +24,10 @@ Với mỗi Role tìm được khớp thông tin lọc ở trên, thực hiện 
 1. Bấm trực tiếp vào liên kết văn bản hiển thị tên của Role để truy cập giao diện thông tin chi tiết.
 2. Kiểm tra mốc thời gian hoạt động cuối cùng tại mục **Last activity** kết hợp chính sách đính kèm để chắc chắn Role này chỉ thuộc phạm vi dự án bài Lab hiện tại.
 
-![Kiểm tra thông tin IAM Role](/images/5-Workshop/5.18-CleanUp/Picture13.png)
+![Kiểm tra thông tin IAM Role](/images/5-Workshop/5.18-CleanUp/picture13.png)
 
 3. Quay trở lại giao diện danh mục tổng hợp danh sách **Roles**.
 4. Đánh dấu tích chọn vào hộp kiểm đứng trước Role cần giải phóng hạ tầng và chọn **Delete**.
 5. Nhập chính xác chuỗi ký tự định danh tên Role đó vào trường văn bản xác thực và chọn **Delete**.
 
-![Xác nhận cấu hình xóa IAM Role](/images/5-Workshop/5.18-CleanUp/Picture14.png)
+![Xác nhận cấu hình xóa IAM Role](/images/5-Workshop/5.18-CleanUp/picture14.png)
