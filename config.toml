@@ -1,4 +1,4 @@
-baseURL = "https://NgguyenTrung.github.io/AWS/"
+baseURL = "https://ngguyentrung.github.io/AWS/"
 relativeURLs = false
 canonifyURLs = true
 defaultContentLanguage = "en"
