@@ -24,10 +24,10 @@ For each identified matching role candidate instance:
 1. Click the specific unique Role name link text path to inspect its properties.
 2. Check the **Last activity** and policy metrics parameters to confirm it belongs exclusively to this project ecosystem workspace.
 
-![Inspect IAM Role Properties](/images/5-Workshop/5.18-CleanUp/picture13.png)
+![Inspect IAM Role Properties](/images/5-Workshop/5.18-CleanUp/5.18_picture13.png)
 
 3. Go back to the main **Roles** directory.
 4. Check the row checkbox selector for the target role resource and click **Delete**.
 5. Type the exact role identifier string into the validation input pop-up field and click **Delete**.
 
-![Confirm IAM Role Deletion](/images/5-Workshop/5.18-CleanUp/picture14.png)
+![Confirm IAM Role Deletion](/images/5-Workshop/5.18-CleanUp/5.18_picture14.png)

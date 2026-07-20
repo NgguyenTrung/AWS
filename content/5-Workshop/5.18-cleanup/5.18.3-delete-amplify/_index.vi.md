@@ -12,5 +12,5 @@ pre : " <b> 5.18.3 </b> "
 4. Trong hộp thoại xác nhận, nhập `delete` và chọn **Delete app**.
 5. Quay lại danh sách và kiểm tra ứng dụng không còn xuất hiện.
 
-![Xóa Amplify 1](/images/5-Workshop/5.18-CleanUp/AWS-Amplify.png)
-![Xóa Amplify 2](/images/5-Workshop/5.18-CleanUp/AWS-Amplify2.png)
+![Xóa Amplify 1](/images/5-Workshop/5.18-CleanUp/5.18_aWS_Amplify.png)
+![Xóa Amplify 2](/images/5-Workshop/5.18-CleanUp/5.18_aWS_Amplify2.png)

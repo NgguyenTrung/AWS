@@ -20,5 +20,5 @@ Phải xóa lịch chạy trước để Lambda Virtual Sensor và Lambda Report
    * Tìm và đánh dấu `schedule_report_daily_0005`.
    * Chọn **Delete**.
 
-![Xóa Schedule 1](/images/5-Workshop/5.18-CleanUp/Xoa-EventBridge-Scheduler.png)
-![Xóa Schedule 2](/images/5-Workshop/5.18-CleanUp/Xoa-EventBridge-Scheduler2.png)
+![Xóa Schedule 1](/images/5-Workshop/5.18-CleanUp/5.18_xoa_EventBridge_Scheduler.png)
+![Xóa Schedule 2](/images/5-Workshop/5.18-CleanUp/5.18_xoa_EventBridge_Scheduler2.png)

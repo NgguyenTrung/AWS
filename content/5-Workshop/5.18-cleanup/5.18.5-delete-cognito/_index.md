@@ -14,5 +14,5 @@ pre : " <b> 5.18.5 </b> "
    * Choose `energy-waste-user-pool`.
    * Click **Delete**, confirm, and verify it is removed from the list.
 
-![Delete Cognito 1](/images/5-Workshop/5.18-CleanUp/Xoa-Cognito.png)
-![Delete Cognito 2](/images/5-Workshop/5.18-CleanUp/Xoa-Cognito2.png)
+![Delete Cognito 1](/images/5-Workshop/5.18-CleanUp/5.18_xoa_Cognito.png)
+![Delete Cognito 2](/images/5-Workshop/5.18-CleanUp/5.18_xoa_Cognito2.png)

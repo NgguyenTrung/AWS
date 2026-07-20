@@ -11,8 +11,8 @@ Xóa bảng DynamoDB sẽ xóa vĩnh viễn toàn bộ các thực thể dữ li
 3. Đánh dấu tích chọn vào bảng dữ liệu: `EnergyWasteData`.
 4. Chọn nút hành động **Delete**.
 
-![Chọn bảng DynamoDB](/images/5-Workshop/5.18-CleanUp/Picture9.png)
+![Chọn bảng DynamoDB](/images/5-Workshop/5.18-CleanUp/5.18_picture9.png)
 
 5. Nhập từ khóa xác nhận `confirm` và chọn **Delete table** để hoàn tất dọn dẹp cơ sở dữ liệu.
 
-![Bảng DynamoDB đã xóa thành công](/images/5-Workshop/5.18-CleanUp/Picture10.png)****
+![Bảng DynamoDB đã xóa thành công](/images/5-Workshop/5.18-CleanUp/5.18_picture10.png)****

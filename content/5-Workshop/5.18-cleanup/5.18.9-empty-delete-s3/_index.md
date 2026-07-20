@@ -13,8 +13,8 @@ Amazon S3 only allows a bucket to be deleted if it is completely empty. The Empt
 4. Confirm by typing the bucket name as requested and click **Empty**.
 5. Wait for the success page to show the process is finished. Do not close the browser while execution is active.
 
-![Empty S3 Bucket](/images/5-Workshop/5.18-CleanUp/Picture5.png)
-![S3 Bucket Empty Status](/images/5-Workshop/5.18-CleanUp/Picture6.png)
+![Empty S3 Bucket](/images/5-Workshop/5.18-CleanUp/5.18_picture5.png)
+![S3 Bucket Empty Status](/images/5-Workshop/5.18-CleanUp/5.18_picture6.png)
 
 #### Step 2: Delete the Bucket Container
 1. Go back to the **General purpose buckets** list directory.
@@ -22,5 +22,5 @@ Amazon S3 only allows a bucket to be deleted if it is completely empty. The Empt
 3. Type the exact name of the target bucket to verify.
 4. Click **Delete bucket** and confirm it no longer appears in your resource list.
 
-![Delete S3 Bucket](/images/5-Workshop/5.18-CleanUp/Picture7.png)
-![S3 Bucket List Cleared](/images/5-Workshop/5.18-CleanUp/Picture8.png)
+![Delete S3 Bucket](/images/5-Workshop/5.18-CleanUp/5.18_picture7.png)
+![S3 Bucket List Cleared](/images/5-Workshop/5.18-CleanUp/5.18_picture8.png)

@@ -16,8 +16,8 @@ Hành vi gỡ bỏ Lambda function không tự động dọn dẹp các Log Grou
    * `/aws/amplify/d2ppdnlr5ik3e8`
 4. Chọn thanh công cụ **Actions** $\rightarrow$ **Delete log group(s)**.
 
-![Chọn CloudWatch Log Groups](/images/5-Workshop/5.18-CleanUp/Picture11.png)
+![Chọn CloudWatch Log Groups](/images/5-Workshop/5.18-CleanUp/5.18_picture11.png)
 
 5. Kiểm tra kỹ lưỡng lại danh sách bản ghi và xác nhận bấm chọn **Delete**.
 
-![Xác nhận xóa Log Groups](/images/5-Workshop/5.18-CleanUp/Picture12.png)
+![Xác nhận xóa Log Groups](/images/5-Workshop/5.18-CleanUp/5.18_picture12.png)

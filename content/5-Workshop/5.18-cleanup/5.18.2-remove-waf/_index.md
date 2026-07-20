@@ -22,5 +22,5 @@ You cannot delete a Web ACL while it is associated with an Amplify app. You must
    * Set the Region to **Global (CloudFront)** and select **Web ACLs**.
    * Select your Web ACL, click **Delete**, and confirm.
 
-![Remove WAF 1](/images/5-Workshop/5.18-CleanUp/Xoa-Web-ACL.png)
-![Remove WAF 2](/images/5-Workshop/5.18-CleanUp/Xoa-Web-ACL2.png)
+![Remove WAF 1](/images/5-Workshop/5.18-CleanUp/5.18_xoa_Web_ACL.png)
+![Remove WAF 2](/images/5-Workshop/5.18-CleanUp/5.18_xoa-Web_ACL2.png)

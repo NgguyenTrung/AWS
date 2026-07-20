@@ -12,5 +12,5 @@ pre : " <b> 5.18.3 </b> "
 4. In the confirmation dialog, type `delete` and click **Delete app**.
 5. Go back to the app list to verify it is deleted.
 
-![Delete Amplify 1](/images/5-Workshop/5.18-CleanUp/AWS-Amplify.png)
-![Delete Amplify 2](/images/5-Workshop/5.18-CleanUp/AWS-Amplify2.png)
+![Delete Amplify 1](/images/5-Workshop/5.18-CleanUp/5.18_aWS_Amplify.png)
+![Delete Amplify 2](/images/5-Workshop/5.18-CleanUp/5.18_aWS_Amplify2.png)

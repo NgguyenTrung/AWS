@@ -16,5 +16,5 @@ Phải xóa IoT Rule trước khi xóa Lambda Waste Detector để tránh giữ 
    * Chọn Rule `iot_rule_energy_telemetry_to_waste_detector`.
    * Chọn **Delete**, nhập xác nhận và kiểm tra Rule đã biến mất khỏi danh sách.
 
-![Xóa Rule 1](/images/5-Workshop/5.18-CleanUp/Xoa-Rule.png)
-![Xóa Rule 2](/images/5-Workshop/5.18-CleanUp/Xoa-Rule2.png)
+![Xóa Rule 1](/images/5-Workshop/5.18-CleanUp/5.18_xoa_Rule.png)
+![Xóa Rule 2](/images/5-Workshop/5.18-CleanUp/5.18_xoa_Rule2.png)
