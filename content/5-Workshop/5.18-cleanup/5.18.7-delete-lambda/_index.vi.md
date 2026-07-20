@@ -13,9 +13,9 @@ weight: 7
    * `energy-report-generator`
 4. Chọn **Actions** $\rightarrow$ **Delete**.
 
-![Chọn các Lambda function](/images/5-Workshop/5.18-CleanUp/5.18_picture1.png)
+![Chọn các Lambda function](/images/5-Workshop/5.18-CLeanUP/5.18_picture1.png)
 
 5. Nhập chuỗi văn bản xác nhận theo yêu cầu của hộp thoại AWS hiển thị và chọn **Delete**.
 6. Kiểm tra lại danh sách đảm bảo các function đã được xóa hoàn toàn.
 
-![Xóa các Lambda function thành công](/images/5-Workshop/5.18-CleanUp/5.18_picture2.png)
+![Xóa các Lambda function thành công](/images/5-Workshop/5.18-CLeanUP/5.18_picture2.png)

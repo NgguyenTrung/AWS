@@ -15,5 +15,5 @@ pre : " <b> 5.18.4 </b> "
    * Chọn **Actions** -> **Delete**.
    * Xác nhận xóa và chờ API biến mất khỏi danh sách.
 
-![Xóa API 1](/images/5-Workshop/5.18-CleanUp/5.18_xoa_APi_Gateway.png)
-![Xóa API 2](/images/5-Workshop/5.18-CleanUp/5.18_xoa_API_Gateway2.png)
+![Xóa API 1](/images/5-Workshop/5.18-CLeanUP/5.18_xoa_APi_Gateway.png)
+![Xóa API 2](/images/5-Workshop/5.18-CLeanUP/5.18_xoa_API_Gateway2.png)

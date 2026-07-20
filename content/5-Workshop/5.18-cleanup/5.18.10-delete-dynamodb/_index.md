@@ -11,8 +11,8 @@ Deleting the DynamoDB table will wipe out all underlying project data categories
 3. Check the box next to the target table: `EnergyWasteData`.
 4. Click the **Delete** action button.
 
-![Select DynamoDB Table](/images/5-Workshop/5.18-CleanUp/5.18_picture9.png)
+![Select DynamoDB Table](/images/5-Workshop/5.18-CLeanUP/5.18_picture9.png)
 
 5. Type `confirm` into the validation field and click **Delete table**.
 
-![DynamoDB Tables Cleared](/images/5-Workshop/5.18-CleanUp/5.18_picture10.png)
+![DynamoDB Tables Cleared](/images/5-Workshop/5.18-CLeanUP/5.18_picture10.png)

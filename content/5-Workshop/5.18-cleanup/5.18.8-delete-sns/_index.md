@@ -11,8 +11,8 @@ When you delete an SNS Topic, any subscriptions belonging to that Topic are auto
 3. Select the topic: `energy-waste-alert-topic`.
 4. Click the **Delete** button.
 
-![Select SNS Topic](/images/5-Workshop/5.18-CleanUp/5.18_picture3.png)
+![Select SNS Topic](/images/5-Workshop/5.18-CLeanUP/5.18_picture3.png)
 
 5. Type `delete me` into the confirmation field and click **Delete**.
 
-![SNS Topic Cleared](/images/5-Workshop/5.18-CleanUp/5.18_picture4.png)
+![SNS Topic Cleared](/images/5-Workshop/5.18-CLeanUP/5.18_picture4.png)

@@ -38,3 +38,7 @@ chapter: false
 5.  [Workshop](5-Workshop/)
 6.  [Tự đánh giá](6-Self-evaluation/)
 7.  [Chia sẻ, đóng góp ý kiến](7-Feedback/)
+
+
+### Link Demo WorkShop
+<https://drive.google.com/drive/folders/10XQNVaO9AZtIU9Ekfz7rjhWBC09gREjp?usp=sharing>

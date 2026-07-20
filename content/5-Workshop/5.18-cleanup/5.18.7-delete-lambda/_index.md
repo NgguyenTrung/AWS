@@ -13,9 +13,9 @@ weight: 7
    * `energy-report-generator`
 4. Click the **Actions** dropdown menu and select **Delete**.
 
-![Select Lambda Functions](/images/5-Workshop/5.18-CleanUp/5.18_picture1.png)
+![Select Lambda Functions](/images/5-Workshop/5.18-CLeanUP/5.18_picture1.png)
 
 5. Type the confirmation string required by the AWS dialog box and click **Delete**.
 6. Verify that the function list has been cleared successfully.
 
-![Lambda Functions Cleared](/images/5-Workshop/5.18-CleanUp/5.18_picture2.png)
+![Lambda Functions Cleared](/images/5-Workshop/5.18-CLeanUP/5.18_picture2.png)
