@@ -7,90 +7,46 @@ chapter: false
 pre: " <b> 4.3. </b> "
 ---
 
-{{% notice warning %}}
 
-{{% /notice %}}
+# Bài thu hoạch: Study Tour: AWS — Enterprise Cloud Architectures & Industry Applications
 
-# Bài thu hoạch “Study Tour: AWS — Enterprise Cloud Architectures & Industry Applications”
+### 1. Mục đích tham gia chuyến Study Tour
+Chuyến tham quan thực tế (Study Tour) hợp tác cùng các chuyên gia hàng đầu là cơ hội lớn để tôi:
+- Thu hẹp khoảng cách giữa lý thuyết giảng đường và môi trường doanh nghiệp (Enterprise), hiểu cách các hệ thống lớn vận hành trên AWS.
+- Định hình rõ ràng hơn về bức tranh toàn cảnh của thị trường việc làm, từ đó xây dựng lộ trình học tập để hướng tới các vị trí như Cloud Engineer, Data Engineer hay AI Engineer.
+- Gặp gỡ, giao lưu và lắng nghe chia sẻ từ các anh chị đi trước tại AWS Việt Nam, Renova Cloud và Cloud Kinetics.
 
-### Mục Đích Của Sự Kiện
+---
 
-- Giúp sinh viên tìm hiểu tổng quan về điện toán đám mây, trí tuệ nhân tạo tạo sinh và kiến trúc hệ thống doanh nghiệp trên AWS.
-- Cập nhật các xu hướng tuyển dụng và lộ trình phát triển nghề nghiệp trong lĩnh vực Cloud Computing, Data Engineering và GenAI.
-- Chia sẻ kinh nghiệm thực tế về cách các doanh nghiệp xây dựng, vận hành và tối ưu hệ thống dữ liệu quy mô lớn.
-- Giúp sinh viên hiểu cách chuyển đổi kiến thức lý thuyết trên giảng đường thành các giải pháp công nghệ thực tế.
-- Tạo cơ hội kết nối, trao đổi và học hỏi trực tiếp từ các chuyên gia đến từ AWS Việt Nam, Renova Cloud, Cloud Kinetics và các kỹ sư GenAI.
-- Truyền cảm hứng cho sinh viên chủ động học tập, thực hành và phát triển tư duy giải quyết vấn đề trong lĩnh vực công nghệ.
+### 2. Trải nghiệm thực tế và Những góc nhìn đắt giá
 
+#### 🔹 Xu hướng tuyển dụng và Lộ trình nghề nghiệp "xương máu"
+Qua phiên chia sẻ về thị trường việc làm, tôi đã tự giải đáp được bài toán "Sinh viên mới ra trường cần chuẩn bị những gì?". Các diễn giả nhấn mạnh rằng bằng cấp thôi là chưa đủ; doanh nghiệp hiện nay đánh giá rất cao những ứng viên chủ động, sở hữu các chứng chỉ AWS (như AWS Certified Solutions Architect) và có các sản phẩm cá nhân (Pet projects) thực tế. Lộ trình từ một sinh viên trở thành kỹ sư Cloud/Data đòi hỏi một tinh thần tự học cực cao vì công nghệ thay đổi theo từng ngày.
 
-### Nội Dung Nổi Bật
+#### 🔹 Từ giảng đường đến bài toán thực tế của doanh nghiệp
+Nghe các kỹ sư dữ liệu chia sẻ về trải nghiệm "vấp ngã" thời gian đầu đi làm giúp tôi tỉnh ngộ nhiều điều. Trong trường học, các bài tập lớn thường chỉ xử lý dữ liệu nhỏ, sạch sẽ. Nhưng ở môi trường doanh nghiệp, hệ thống phải đối mặt với dữ liệu quy mô lớn (Big Data), hỗn loạn và liên tục. Lúc này, tư duy thiết kế kiến trúc hệ thống để cân bằng giữa Hiệu năng (Performance), Bảo mật (Security) và Tối ưu chi phí (Cost Optimization) mới là thước đo năng lực của một Kỹ sư Cloud.
 
-#### Tổng quan về thị trường việc làm trong lĩnh vực Cloud Computing
+#### 🔹 Fireside Chat: Giá trị của sự chủ động
+Buổi trò chuyện bàn tròn (Fireside Chat) giữa nhà trường và các đại diện doanh nghiệp đã mang lại nhiều cảm hứng. Bài học lớn nhất tôi rút ra được là **"Tư duy giải quyết vấn đề" (Problem-solving mindset)**. Công nghệ hay các mô hình GenAI có thể thay đổi sau vài tháng, nhưng tư duy logic, khả năng thích nghi và kỹ năng tự làm lab, tự fix bug sẽ là chiếc chìa khóa vạn năng giúp tôi không bị tụt hậu.
 
-- Cập nhật xu hướng tuyển dụng trong các lĩnh vực Cloud Computing, Data Engineering và Artificial Intelligence.
-- Giới thiệu những kiến thức, kỹ năng và chứng chỉ cần thiết để phát triển sự nghiệp trong ngành công nghệ đám mây.
-- Chia sẻ lộ trình phát triển từ sinh viên đến các vị trí như Cloud Engineer, Data Engineer và AI Engineer.
+---
 
-#### Từ kiến thức trên giảng đường đến môi trường doanh nghiệp
+### 3. Những hành động tôi sẽ triển khai sau sự kiện
 
-- Chia sẻ kinh nghiệm chuyển đổi từ sinh viên thành kỹ sư dữ liệu trong môi trường thực tế.
-- Giới thiệu cách doanh nghiệp thiết kế, quản lý và tối ưu kiến trúc dữ liệu.
-- Nhấn mạnh vai trò của các dự án cá nhân, bài lab và kinh nghiệm thực hành đối với sinh viên mới tốt nghiệp.
+- **Chủ động làm Lab và Project cá nhân:** Thay vì chỉ học lý thuyết suông, tôi sẽ bắt tay vào tự xây dựng các hệ thống nhỏ trên AWS Free Tier để tích lũy kinh nghiệm thực chiến.
+- **Lập lộ trình ôn thi chứng chỉ:** Đặt mục tiêu đạt được chứng chỉ AWS phù hợp trong thời gian tới để làm đẹp CV và chuẩn hóa kiến thức nền tảng về Cloud.
+- **Rèn luyện kỹ năng tự học:** Chủ động cập nhật các tài liệu kỹ thuật chuẩn (Whitepapers) của AWS và theo dõi sát sao các xu hướng kết hợp Cloud với GenAI.
 
-#### Ứng dụng kiến trúc AWS trong doanh nghiệp
+---
 
-- Tìm hiểu cách các dịch vụ AWS được kết hợp để xây dựng hệ thống có khả năng mở rộng.
-- Hiểu thêm về các yếu tố quan trọng khi thiết kế kiến trúc doanh nghiệp như bảo mật, độ tin cậy, hiệu năng và chi phí.
-- Tìm hiểu mối liên hệ giữa Cloud Computing, hệ thống dữ liệu và các giải pháp GenAI.
+### 4. Nhật ký bằng hình ảnh của chuyến đi
 
-#### Fireside Chat về phát triển nhân lực công nghệ
+Dưới đây là những hình ảnh ghi lại kỷ niệm đáng nhớ và các khoảnh khắc giao lưu cùng chuyên gia trong chuyến Study Tour:
 
-- Thảo luận về cách nuôi dưỡng và phát triển các thế hệ tài năng công nghệ tiếp theo tại Việt Nam.
-- Chia sẻ vai trò của nhà trường, doanh nghiệp và sinh viên trong việc thu hẹp khoảng cách giữa đào tạo và nhu cầu thực tế.
-- Nhấn mạnh tinh thần chủ động học tập, khả năng thích nghi và tư duy giải quyết vấn đề.
+![Toàn cảnh không gian buổi Study Tour cùng các chuyên gia](/images/4-Event/Event3.1.png)
+![Diễn giả chia sẻ về lộ trình thăng tiến trong ngành Cloud](/images/4-Event/Event3.2.png)
+![Phiên thảo luận Fireside Chat đầy sôi nổi giữa Doanh nghiệp và Sinh viên](/images/4-Event/Event3.3.png)
+![Slide phân tích về các trụ cột kiến trúc Enterprise trên AWS](/images/4-Event/Event3.4.png)
+![Bức ảnh kỷ niệm cuối buổi chụp cùng các anh chị mentor](/images/4-Event/Event3.5.png)
 
-
-### Trải nghiệm trong event
-
-Tham gia sự kiện **“Study Tour: AWS — Enterprise Cloud Architectures & Industry Applications”** là một trải nghiệm rất hữu ích, giúp tôi hiểu rõ hơn cách điện toán đám mây, hệ thống dữ liệu và trí tuệ nhân tạo được ứng dụng trong môi trường doanh nghiệp.
-
-Thông qua các phần trình bày và trao đổi với chuyên gia, tôi nhận thấy việc xây dựng một hệ thống thực tế không chỉ phụ thuộc vào khả năng sử dụng các dịch vụ AWS mà còn yêu cầu người thiết kế phải hiểu rõ bài toán, nhu cầu người dùng, yêu cầu bảo mật, khả năng mở rộng và chi phí vận hành.
-
-
-#### Một số trải nghiệm nổi bật:
-
-- Được tìm hiểu về cách các doanh nghiệp xây dựng và vận hành kiến trúc cloud quy mô lớn.
-- Hiểu thêm về vai trò của AWS trong việc lưu trữ, xử lý và quản lý dữ liệu doanh nghiệp.
-- Biết thêm các xu hướng tuyển dụng mới trong lĩnh vực Cloud Computing, Data Engineering và GenAI.
-- Hiểu rõ hơn lộ trình phát triển từ sinh viên đến các vị trí kỹ thuật trong ngành công nghệ.
-- Được lắng nghe kinh nghiệm thực tế từ các chuyên gia đến từ AWS Việt Nam, Renova Cloud và Cloud Kinetics.
-- Nhận thức rõ hơn về tầm quan trọng của việc kết hợp kiến thức lý thuyết với các bài lab và dự án thực tế.
-- Hiểu rằng một kiến trúc cloud tốt cần cân bằng giữa scalability, security, reliability, performance và cost optimization.
-- Có thêm động lực để tiếp tục học tập, thực hành AWS và hoàn thiện các dự án cá nhân.
-
-
-#### Bài học rút ra
-
-- Kiến thức lý thuyết cần được kết hợp với các bài lab, workshop và dự án thực tế để nâng cao khả năng ứng dụng.
-- Khi thiết kế một hệ thống cloud, cần xác định rõ bài toán và giá trị mà giải pháp mang lại trước khi lựa chọn dịch vụ AWS.
-- Sinh viên cần chủ động xây dựng dự án cá nhân để chứng minh kiến thức và khả năng giải quyết vấn đề.
-- Kỹ năng tự học và khả năng thích nghi rất quan trọng vì công nghệ cloud và GenAI liên tục thay đổi.
-- Tư duy giải quyết vấn đề và tinh thần chủ động thực hành là những yếu tố quan trọng để chuyển từ kiến thức học thuật sang công việc thực tế.
-
-
-#### Một số hình ảnh khi tham gia sự kiện
-
-* Thêm các hình ảnh của các bạn tại đây.
-
-![Hình ảnh sự kiện 1](/images/4-Event/Event3.1.png)
-
-![Hình ảnh sự kiện 2](/images/4-Event/Event3.2.png)
-
-![Hình ảnh sự kiện 3](/images/4-Event/Event3.3.png)
-
-![Hình ảnh sự kiện 3](/images/4-Event/Event3.4.png)
-
-![Hình ảnh sự kiện 3](/images/4-Event/Event3.5.png)
-
-> Tổng thể, sự kiện giúp tôi hiểu rõ hơn về cách kiến trúc cloud, hệ thống dữ liệu và trí tuệ nhân tạo được ứng dụng trong doanh nghiệp. Đồng thời, sự kiện cũng giúp tôi xác định rõ hơn những kiến thức, kỹ năng và kinh nghiệm thực hành cần tiếp tục phát triển để chuẩn bị cho công việc trong lĩnh vực điện toán đám mây.
-
+> **Chốt lại:** Chuyến Study Tour này giống như một chiếc kim chỉ nam giúp tôi định vị lại bản thân. Nó không chỉ mở rộng thế giới quan của tôi về sức mạnh của Điện toán đám mây trong doanh nghiệp, mà quan trọng hơn, nó thôi thúc tôi phải hành động ngay lập tức — tắt lý thuyết đi, bật terminal lên và bắt đầu làm Lab!

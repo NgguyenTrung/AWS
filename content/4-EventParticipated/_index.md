@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-During my internship, I participated in two events. Each event was a memorable experience that provided me with new, interesting, and useful knowledge, along with meaningful gifts and wonderful moments.
+During my internship, I participated in three events. Each event was a memorable experience that provided me with new, interesting, and useful knowledge, along with meaningful gifts and wonderful moments.
 
 ### [Event 1](4.1-Event1/)
 &emsp;**Event Name:** AWS First Cloud AI Journey – Community Day (Conference Call)

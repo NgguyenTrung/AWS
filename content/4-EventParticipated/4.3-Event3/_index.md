@@ -6,89 +6,47 @@ chapter: false
 pre: " <b> 4.3. </b> "
 ---
 
-{{% notice warning %}}
-
-{{% /notice %}}
-
-# Event Reflection: “Study Tour: AWS — Enterprise Cloud Architectures & Industry Applications”
-
-### Purpose of the Event
-
-- Help students gain an overview of cloud computing, generative artificial intelligence, and enterprise system architectures on AWS.
-- Provide updates on recruitment trends and career development paths in Cloud Computing, Data Engineering, and GenAI.
-- Share practical experience on how enterprises build, operate, and optimize large-scale data systems.
-- Help students understand how to transform theoretical knowledge from university into practical technology solutions.
-- Create opportunities to connect, exchange ideas, and learn directly from experts from AWS Vietnam, Renova Cloud, Cloud Kinetics, and experienced GenAI engineers.
-- Inspire students to actively study, practice, and develop problem-solving skills in the technology field.
 
 
-### Key Highlights
+# Event Report: Study Tour: AWS — Enterprise Cloud Architectures & Industry Applications
 
-#### Overview of the Job Market in Cloud Computing
+### 1. Purpose of Attendance
+This field trip (Study Tour) organized in collaboration with industry experts was a major opportunity for me to:
+- Bridge the gap between university theory and the enterprise environment, understanding how large-scale systems operate on AWS.
+- Define a clear career roadmap, aligning my academic path towards becoming a Cloud Engineer, Data Engineer, or AI Engineer.
+- Connect, network, and learn directly from seasoned professionals at AWS Vietnam, Renova Cloud, and Cloud Kinetics.
 
-- Updated recruitment trends in Cloud Computing, Data Engineering, and Artificial Intelligence.
-- Introduced the knowledge, skills, and certifications required to develop a career in cloud technology.
-- Shared career development paths from student level to positions such as Cloud Engineer, Data Engineer, and AI Engineer.
+---
 
-#### From University Knowledge to the Enterprise Environment
+### 2. Practical Experiences and Key Insights
 
-- Shared practical experience on transitioning from a student to a data engineer in a professional environment.
-- Introduced how enterprises design, manage, and optimize data architectures.
-- Emphasized the importance of personal projects, hands-on labs, and practical experience for new graduates.
+#### 🔹 Job Market Trends and the "Battle-Tested" Career Roadmap
+The session on the IT job market answered a burning question: "What do fresh graduates need to prepare?". The speakers emphasized that a degree alone is no longer enough; companies heavily favor proactive candidates who possess AWS certifications (such as AWS Certified Solutions Architect) and showcase real-world pet projects. The journey from a student to a Cloud/Data engineer requires a self-learning mindset, as cloud technologies evolve daily.
 
-#### Applying AWS Architectures in Enterprises
+#### 🔹 From the Classroom to Real-World Enterprise Challenges
+Listening to data engineers share their early-career struggles was an eye-opening experience. In university, assignments usually deal with small, clean datasets. In the corporate world, however, systems must handle massive, chaotic, and continuous flows of Big Data. At this scale, the ability to design architectures that balance Performance, Security, and Cost Optimization becomes the true measure of a Cloud Engineer's capability.
 
-- Learned how AWS services can be combined to build scalable systems.
-- Gained a better understanding of important factors in enterprise architecture design, including security, reliability, performance, and cost.
-- Explored the relationship between Cloud Computing, data systems, and GenAI solutions.
+#### 🔹 Fireside Chat: The Value of Proactivity
+The panel discussion (Fireside Chat) between academic representatives and enterprise leaders was deeply inspiring. The biggest takeaway for me was the **"Problem-solving mindset."** Modern technologies and GenAI models may shift in a matter of months, but core logical thinking, adaptability, and the ability to spin up labs and debug independently will keep me ahead of the curve.
 
-#### Fireside Chat on Developing Technology Talent
+---
 
-- Discussed how to nurture and develop the next generation of technology talent in Vietnam.
-- Shared the roles of universities, enterprises, and students in reducing the gap between education and real-world industry requirements.
-- Emphasized proactive learning, adaptability, and problem-solving skills.
+### 3. Action Items Following the Event
 
+- **Focus on Hands-on Labs and Personal Projects:** Instead of just reading theory, I will immediately start building small architectures on the AWS Free Tier to accumulate practical engineering experience.
+- **Establish a Certification Roadmap:** Set a concrete goal to achieve an AWS certification in the near future to validate my foundational cloud knowledge and enhance my resume.
+- **Cultivate Self-Learning Habits:** Keep up with official AWS documentation (Whitepapers) and closely monitor the convergence of Cloud Infrastructure and Generative AI.
 
-### Experience During the Event
+---
 
-Participating in the **“Study Tour: AWS — Enterprise Cloud Architectures & Industry Applications”** event was a highly valuable experience that helped me better understand how cloud computing, data systems, and artificial intelligence are applied in enterprise environments.
+### 4. Event Photo Log
 
-Through the presentations and discussions with experts, I realized that building a practical system does not only depend on the ability to use AWS services. It also requires system designers to clearly understand the problem, user requirements, security requirements, scalability, and operating costs.
+Below are some memorable moments and snapshots taken during the Study Tour:
 
+![Overview of the Study Tour venue with the experts](/images/4-Event/Event3.1.png)
+![Speaker sharing career advancement roadmaps in the Cloud industry](/images/4-Event/Event3.2.png)
+![Engaging Fireside Chat session between Enterprises and Students](/images/4-Event/Event3.3.png)
+![Slide analyzing the pillars of Enterprise Architecture on AWS](/images/4-Event/Event3.4.png)
+![Group photo taken with the mentors at the end of the day](/images/4-Event/Event3.5.png)
 
-#### Some Outstanding Experiences
-
-- Learned how enterprises build and operate large-scale cloud architectures.
-- Gained a better understanding of the role of AWS in storing, processing, and managing enterprise data.
-- Learned about current recruitment trends in Cloud Computing, Data Engineering, and GenAI.
-- Better understood the career path from being a student to working in technical positions in the technology industry.
-- Had the opportunity to listen to practical experiences from experts from AWS Vietnam, Renova Cloud, and Cloud Kinetics.
-- Became more aware of the importance of combining theoretical knowledge with hands-on labs and practical projects.
-- Understood that a good cloud architecture must balance scalability, security, reliability, performance, and cost optimization.
-- Gained more motivation to continue learning, practicing AWS, and improving personal projects.
-
-
-#### Lessons Learned
-
-- Theoretical knowledge should be combined with hands-on labs, workshops, and practical projects to improve its applicability.
-- When designing a cloud system, it is necessary to clearly identify the problem and the value of the solution before selecting AWS services.
-- Students should proactively build personal projects to demonstrate their knowledge and problem-solving ability.
-- Self-learning skills and adaptability are very important because cloud and GenAI technologies are constantly changing.
-- Problem-solving skills and a proactive hands-on mindset are essential for transforming academic knowledge into practical work experience.
-
-
-#### Some Photos from the Event
-
-* Add your event photos here.
-
-![Event photo 1](/images/4-Event/Event3.1.png)
-
-![Event photo 2](/images/4-Event/Event3.2.png)
-
-![Event photo 3](/images/4-Event/Event3.3.png)
-
-![Event photo 4](/images/4-Event/Event3.4.png)
-
-![Event photo 5](/images/4-Event/Event3.5.png)
-
-> Overall, the event helped me better understand how cloud architectures, data systems, and artificial intelligence are applied in enterprises. At the same time, it also helped me identify the knowledge, skills, and practical experience that I need to continue developing in preparation for a career in cloud computing.
+> **Conclusion:** This Study Tour acted as a compass, helping me evaluate where I stand. It didn't just expand my horizon regarding the power of Cloud Computing in enterprises; more importantly, it urged me to take immediate action—to step away from the textbooks, open the terminal, and start building!

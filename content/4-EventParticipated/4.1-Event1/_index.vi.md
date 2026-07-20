@@ -6,88 +6,54 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
 
-{{% /notice %}}
+# Bài thu hoạch: AWS Cloud AI Journey – Community Day (Conference Call)
 
-# Bài thu hoạch “AWS First Cloud AI Journey – Community Day (Conference Call)”
+### 1. Mục đích tham gia sự kiện
+Là một người đang học tập và nghiên cứu trong lĩnh vực Công nghệ thông tin, việc tiếp cận với các xu hướng Cloud và AI thực tế là cực kỳ cần thiết. Tôi tham gia sự kiện **AWS Community Day** lần này với các mục tiêu lớn:
+- Tìm hiểu cách tối ưu hóa sức mạnh của các mô hình AI (LLM) thông qua việc quản lý ngữ cảnh (Context) và xây dựng quy trình làm việc (Workflow) thực tế.
+- Học hỏi kinh nghiệm thực chiến từ các bạn sinh viên/lập trình viên khác thông qua các dự án Hackathon chạy đua với thời gian (như dự án UTMorpho tại LotusHacks).
+- Cập nhật các kiến thức hạ tầng Cloud hiện đại của AWS, đặc biệt là cơ chế tăng tốc, bảo mật ở lớp Edge (Amazon CloudFront) và các giải pháp AI trợ lý doanh nghiệp thế hệ mới (Amazon Q, Amazon QuickSight).
 
-### Mục Đích Của Sự Kiện
+---
 
-- Chia sẻ kiến thức thực tiễn về cách sử dụng AI hiệu quả thông qua ngữ cảnh, bộ nhớ và quy trình làm việc phù hợp.
-- Giới thiệu trải nghiệm thực tế trong việc xây dựng sản phẩm AI dưới áp lực thời gian, điển hình là dự án UTMorpho tại LotusHacks.
-- Cung cấp cái nhìn tổng quan về Amazon CloudFront trong việc hỗ trợ hiệu năng, độ tin cậy, bảo mật và tối ưu chi phí cho ứng dụng hiện đại.
-- Giới thiệu các giải pháp AI assistant như Amazon Quick trong việc khám phá dữ liệu, tự động hóa quy trình, cộng tác nhóm và tạo báo cáo.
-- Thảo luận các vấn đề kỹ thuật quan trọng của LLM, đặc biệt là tính không hoàn toàn xác định ngay cả khi sử dụng các thiết lập tưởng như deterministic.
-- Giới thiệu mô hình multi-agent system cấp doanh nghiệp và ứng dụng trong bài toán chấm điểm tín dụng cho startup.
+### 2. Những nội dung ấn tượng và trải nghiệm thực tế
 
+#### 🔹 Context Is Everything: Câu chuyện đưa AI vào thực tế
+Phiên chia sẻ này làm tôi thay đổi khá nhiều về tư duy làm Prompt. Diễn giả đã chứng minh rất rõ: AI chỉ thực sự thông minh khi được cung cấp đầy đủ "ngữ cảnh" (Context) và "bộ nhớ" (Memory). Nếu chỉ ném cho AI một câu lệnh trống không, kết quả nhận về sẽ rất chung chung. Khái niệm **“Second AI Brain”** được giới thiệu trong buổi call giúp tôi hiểu ra cách xây dựng một hệ thống trợ lý biết tự học và hiểu nhu cầu của người dùng theo thời gian.
 
-### Nội Dung Nổi Bật
+#### 🔹 Trải nghiệm 36 giờ tại LotusHacks – Từ Ý tưởng đến sản phẩm UTMorpho
+Đây là phần chia sẻ mang lại nhiều năng lượng nhất cho tôi. Nghe diễn giả kể về hành trình ăn ngủ cùng code, áp lực hoàn thiện dự án **UTMorpho** chỉ trong 36 giờ ngắn ngủi giúp tôi rút ra bài học lớn: Trong các kỳ cuộc ngắn hạn (Sprint/Hackathon), kỹ năng làm việc nhóm, việc dám buông bỏ các tính năng phụ để tập trung vào Core Value (giá trị cốt lõi) và khả năng ra quyết định nhanh mới là thứ quyết định sự sống còn của dự án.
 
-#### Context Is Everything: Making AI Actually Work for You
+#### 🔹 Hạ tầng cốt lõi: Tối ưu từ Edge đến Origin với Amazon CloudFront
+Ở phần này, tôi được tiếp cận góc nhìn hạ tầng sâu hơn. **Amazon CloudFront** không đơn thuần chỉ là một dịch vụ CDN để cache ảnh hay video thông thường. Diễn giả đã phân tích sâu về vai trò của nó như một "tấm khiên" bảo mật ở vòng ngoài cùng, kết hợp với AWS WAF để chặn các cuộc tấn công, đồng thời giúp giảm tải đáng kể chi phí cho các server gốc (Origin) ở phía sau. 
 
-- Phiên chia sẻ giải thích vì sao AI thường hoạt động kém hiệu quả khi thiếu ngữ cảnh.
-- Tôi hiểu rằng sử dụng AI hiệu quả không chỉ là viết prompt, mà còn cần cung cấp bối cảnh, bộ nhớ, mục tiêu và yêu cầu rõ ràng.
-- Khái niệm “Second AI Brain” cho thấy AI có thể trở nên hữu ích hơn khi hiểu được ngữ cảnh và nhu cầu của người dùng theo thời gian.
+#### 🔹 Trợ lý AI thế hệ mới: Trải nghiệm hệ sinh thái Amazon Q & QuickSight
+Một trong những phần demo cuốn hút nhất là cách AWS đưa Generative AI vào hỗ trợ công việc hàng ngày qua các công cụ:
+- **Amazon Q (Developer/Business):** Trợ lý đắc lực giúp code, tạo các luồng tự động hóa bằng ngôn ngữ tự nhiên (Quick Flows) và thiết kế không gian làm việc chung (Quick Spaces).
+- **Amazon QuickSight:** Công cụ Business Intelligence cực mạnh, tích hợp AI cho phép người dùng chỉ cần gõ câu hỏi bằng ngôn ngữ tự nhiên là hệ thống tự động quét data thô và vẽ ra các biểu đồ (Dashboard) phân tích cực kỳ trực quan.
 
-#### 36 hrs with LotusHacks – Building UTMorpho from Idea to Reality
+#### 🔹 Bản chất của AI: Tính "Không xác định" (Non-Determinism) của LLM
+Đây là kiến thức kỹ thuật tôi thấy tâm đắc nhất. Trước đây tôi cứ nghĩ nếu chỉnh tham số `temperature = 0` thì AI sẽ luôn trả ra một kết quả duy nhất cho cùng một câu hỏi (Mang tính Deterministic). Tuy nhiên, các chuyên gia AWS đã "bóc trần" rằng do cấu trúc tính năng ở tầng hệ thống (Inference) và phần cứng, LLM vẫn có xác suất trả ra kết quả khác nhau. Điều này nhắc nhở các nhà phát triển phải luôn có chiến lược kiểm thử và thiết lập các Guardrails (hàng rào bảo vệ) thật chặt chẽ.
 
-- Diễn giả chia sẻ quá trình tham gia LotusHacks và xây dựng UTMorpho trong vòng 36 giờ.
-- Nội dung trình bày thể hiện toàn bộ hành trình từ lên ý tưởng, xác định vấn đề, phát triển sản phẩm, demo và định hướng tiếp theo.
-- Tôi học được rằng trong một sprint ngắn, kỹ năng làm việc nhóm, ra quyết định nhanh và xử lý vấn đề là rất quan trọng.
+---
 
-#### From Edge To Origin: CloudFront as Your Foundation
+### 3. Bài học cốt lõi tôi rút ra được
 
-- Amazon CloudFront được giới thiệu như một nền tảng quan trọng trong việc phân phối ứng dụng hiện đại.
-- Phiên chia sẻ nhấn mạnh vai trò của CloudFront trong tối ưu chi phí, tăng cường bảo mật, cải thiện độ tin cậy và nâng cao hiệu năng.
-- Tôi hiểu rằng CloudFront không chỉ là một CDN, mà còn là một lớp quan trọng trong kiến trúc cloud hiện đại.
+- **Làm chủ Prompt là làm chủ ngữ cảnh:** Đừng mong đợi AI chạy tốt nếu mình không cung cấp đủ dữ liệu nền tảng và mục tiêu rõ ràng.
+- **Tư duy MVP (Minimum Viable Product):** Khi làm sản phẩm công nghệ dưới áp lực thời gian, hãy tập trung giải quyết triệt để một bài toán nhức nhối trước, thay vì ôm đồm rồi không hoàn thiện được gì.
+- **Kiến trúc Cloud phải toàn diện:** Một hệ thống tốt không chỉ cần chạy được, mà phải đáp ứng đồng thời 4 yếu tố: Tốc độ (Performance), Bảo mật (Security), Độ tin cậy (Reliability) và Tối ưu hóa chi phí (Cost Optimization).
+- **Ứng dụng Multi-Agent trong doanh nghiệp:** Xu hướng tương lai không còn là một con Chatbot đơn độc, mà là sự phối hợp của nhiều Agent (mỗi con đảm nhận một vai trò: kế toán, kỹ thuật, chấm điểm tín dụng...) dưới sự giám sát chặt chẽ về mặt Compliance (tuân thủ).
 
-#### Friendly AI Assistant with Amazon Quick
+---
 
-- Amazon Quick được giới thiệu như một nền tảng AI assistant hỗ trợ người dùng khám phá dữ liệu, phân tích insight và xây dựng quy trình thông minh.
-- Quick Chat Agent hỗ trợ khám phá dữ liệu và phân tích thông tin.
-- Quick Flows cho phép tạo workflow bằng ngôn ngữ tự nhiên mà không cần viết code.
-- Quick Spaces hỗ trợ tạo không gian cộng tác, biến kiến thức cá nhân thành tri thức chung của nhóm.
-- Quick Sight hỗ trợ xây dựng dashboard và báo cáo từ dữ liệu thô bằng ngôn ngữ tự nhiên.
-
-#### Non-Determinism of “Deterministic” LLM Settings
-
-- Phiên chia sẻ giải thích cách LLM lựa chọn token tiếp theo trong quá trình sinh câu trả lời.
-- Một điểm quan trọng là việc đặt temperature = 0 không phải lúc nào cũng đảm bảo kết quả hoàn toàn giống nhau.
-- Tôi hiểu rằng các tối ưu hóa trong quá trình inference và các yếu tố ở tầng hệ thống vẫn có thể khiến phản hồi của mô hình thay đổi.
-- Phiên này cũng đưa ra một số chiến lược giảm thiểu sự khác biệt không mong muốn trong kết quả của LLM.
+### 4. Một số hình ảnh tôi ghi lại khi tham gia sự kiện
 
 
-### Trải nghiệm trong event
+![Hình ảnh diễn giả chia sẻ slide kiến trúc](/images/4-Event/Event1.1.png)
+![Giao diện demo tính năng trợ lý ảo Amazon Q](/images/4-Event/Event1.2.png)
+![Slide phân tích tính Non-Determinism của LLM](/images/4-Event/Event1.3.png)
+![Sơ đồ phân phối dữ liệu qua Amazon CloudFront](/images/4-Event/Event1.4.png)
+![Hình ảnh toàn cảnh buổi call cùng cộng đồng AWS](/images/4-Event/Event1.5.png)
 
-Tham gia **“AWS Cloud AI Journey Community Day”** là một trải nghiệm rất hữu ích, giúp tôi hiểu rõ hơn về AI và cloud computing dưới cả góc nhìn kỹ thuật lẫn thực tiễn. Sự kiện bao quát nhiều chủ đề quan trọng, từ cách sử dụng AI hiệu quả với ngữ cảnh, xây dựng sản phẩm trong môi trường hackathon, tối ưu phân phối ứng dụng với CloudFront, cho đến việc hiểu hành vi của LLM và thiết kế hệ thống multi-agent cấp doanh nghiệp.
-
-#### Một số trải nghiệm nổi bật:
-
-- Tôi hiểu rõ hơn rằng AI sẽ hoạt động hiệu quả hơn khi có đủ ngữ cảnh, bộ nhớ và hướng dẫn cụ thể.
-- Qua phiên chia sẻ về LotusHacks, tôi nhận thấy việc xây dựng một sản phẩm thực tế không chỉ cần kỹ năng kỹ thuật mà còn cần khả năng làm việc nhóm, quản lý thời gian và thích nghi nhanh.
-- Tôi hiểu cách Amazon CloudFront có thể cải thiện hiệu năng, bảo mật, độ tin cậy và tối ưu chi phí cho các ứng dụng hiện đại.
-- Tôi được giới thiệu về Amazon Quick và cách AI assistant có thể hỗ trợ phân tích dữ liệu, tự động hóa workflow, cộng tác nhóm và tạo dashboard.
-- Tôi học được rằng kết quả của LLM vẫn có thể thay đổi dù đã sử dụng các thiết lập deterministic như temperature = 0.
-- Tôi hiểu thêm cách multi-agent system có thể được áp dụng trong các bài toán doanh nghiệp phức tạp, đặc biệt là những quy trình ra quyết định như chấm điểm tín dụng startup.
-
-#### Bài học rút ra
-
-- AI không thể hoạt động hiệu quả chỉ nhờ prompt; ngữ cảnh, bộ nhớ và mục tiêu rõ ràng là yếu tố quan trọng để tạo ra kết quả hữu ích.
-- Xây dựng sản phẩm AI cần tư duy thực tế: xác định đúng vấn đề, kiểm chứng ý tưởng nhanh và thích nghi tốt trong điều kiện áp lực.
-- CloudFront đóng vai trò quan trọng trong kiến trúc cloud hiện đại nhờ khả năng cải thiện hiệu năng, độ tin cậy, bảo mật và tối ưu chi phí.
-- AI assistant như Amazon Quick có thể boost productivity bằng cách hỗ trợ phân tích dữ liệu, tự động hóa workflow và tạo báo cáo bằng ngôn ngữ tự nhiên.
-- Hành vi của LLM không phải lúc nào cũng hoàn toàn deterministic, kể cả khi dùng temperature = 0, vì vậy nhà phát triển cần có chiến lược kiểm thử và giảm thiểu rủi ro phù hợp.
-- Multi-agent system phù hợp với các bài toán doanh nghiệp phức tạp vì nhiều agent có thể đảm nhiệm nhiều vai trò khác nhau, nhưng cần được thiết kế cùng guardrails, compliance và đánh giá ROI rõ ràng.
-- Các giải pháp cloud và AI hiện đại cần được thiết kế xoay quanh các yếu tố scalability, security, reliability và business value.
-
-#### Một số hình ảnh khi tham gia sự kiện
-
-* Thêm các hình ảnh của các bạn tại đây.
-![Hình ảnh sự kiện 1](/images/4-Event/Event1.1.png)
-![Hình ảnh sự kiện 1](/images/4-Event/Event1.2.png)
-![Hình ảnh sự kiện 1](/images/4-Event/Event1.3.png)
-![Hình ảnh sự kiện 1](/images/4-Event/Event1.4.png)
-![Hình ảnh sự kiện 1](/images/4-Event/Event1.5.png)
-
-> Tổng thể, sự kiện giúp tôi hiểu sâu hơn về cách AI, hạ tầng cloud và thiết kế hệ thống doanh nghiệp có thể phối hợp với nhau. Đồng thời, sự kiện cũng giúp tôi cải thiện tư duy khi xây dựng các giải pháp AI thực tế: bảo mật hơn, dễ mở rộng hơn và có giá trị ứng dụng cao hơn trong môi trường thực tế.
+> **Tóm lại:** Buổi Community Day này không chỉ cho em kiến thức sách vở, mà nó mang lại những bài học "xương máu" từ thực tế triển khai của các chuyên gia. Những góc nhìn về bảo mật của CloudFront, sự bất ổn định của LLM hay sức mạnh của Amazon Q chắc chắn sẽ là những chất liệu cực tốt để tôi áp dụng trực tiếp vào các bài tập lớn và dự án cá nhân sắp tới của mình.
