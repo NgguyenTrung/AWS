@@ -15,5 +15,5 @@ pre : " <b> 5.18.4 </b> "
    * Click **Actions** -> **Delete**.
    * Confirm deletion and wait for it to disappear from the list.
 
-![Delete API 1](/images/5-Workshop/5.18-CLeanUP/5.18_xoa_APi_Gateway.png)
-![Delete API 2](/images/5-Workshop/5.18-CLeanUP/5.18_xoa_API_Gateway2.png)
+![Delete API 1](/images/5-Workshop/5.18-CleanUP/5.18_xoa_APi_Gateway.png)
+![Delete API 2](/images/5-Workshop/5.18-CleanUP/5.18_xoa_API_Gateway2.png)

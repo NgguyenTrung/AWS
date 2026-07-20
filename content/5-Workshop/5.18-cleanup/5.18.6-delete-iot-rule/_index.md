@@ -16,5 +16,5 @@ You must delete the IoT Rule before deleting the Lambda Waste Detector to avoid 
    * Select `iot_rule_energy_telemetry_to_waste_detector`.
    * Click **Delete**, enter the confirmation string, and verify it is removed.
 
-![Delete Rule 1](/images/5-Workshop/5.18-CLeanUP/5.18_xoa_Rule.png)
-![Delete Rule 2](/images/5-Workshop/5.18-CLeanUP/5.18_xoa_Rule2.png)
+![Delete Rule 1](/images/5-Workshop/5.18-CleanUP/5.18_xoa_Rule.png)
+![Delete Rule 2](/images/5-Workshop/5.18-CleanUP/5.18_xoa_Rule2.png)

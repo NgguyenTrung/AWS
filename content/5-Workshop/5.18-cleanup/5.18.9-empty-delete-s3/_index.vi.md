@@ -13,8 +13,8 @@ S3 chỉ cho phép xóa bucket sau khi bucket đó đã hoàn toàn trống rỗ
 4. Kiểm tra lại thông tin, nhập chính xác chuỗi văn bản xác nhận và chọn **Empty**.
 5. Chờ trang trạng thái hiển thị quá trình dọn dẹp hoàn tất. Tuyệt đối không đóng trang khi hệ thống đang xử lý object.
 
-![Làm rỗng S3 Bucket](/images/5-Workshop/5.18-CLeanUP/5.18_picture5.png)
-![Trạng thái làm rỗng thành công](/images/5-Workshop/5.18-CLeanUP/5.18_picture6.png)
+![Làm rỗng S3 Bucket](/images/5-Workshop/5.18-CleanUP/5.18_picture5.png)
+![Trạng thái làm rỗng thành công](/images/5-Workshop/5.18-CleanUP/5.18_picture6.png)
 
 #### Bước 2: Thực thi xóa hẳn Bucket
 1. Quay lại giao diện danh sách bucket hệ thống.
@@ -22,5 +22,5 @@ S3 chỉ cho phép xóa bucket sau khi bucket đó đã hoàn toàn trống rỗ
 3. Nhập chính xác tên của bucket để xác thực bảo mật.
 4. Chọn **Delete bucket** và kiểm tra đảm bảo thực thể không còn xuất hiện trong danh sách.
 
-![Cấu hình xóa S3 Bucket](/images/5-Workshop/5.18-CleanUp/5.18_picture7.png)
-![Hệ thống S3 đã dọn dẹp xong bucket](/images/5-Workshop/5.18-CLeanUP/5.18_picture8.png)
+![Cấu hình xóa S3 Bucket](/images/5-Workshop/5.18-CleanUP/5.18_picture7.png)
+![Hệ thống S3 đã dọn dẹp xong bucket](/images/5-Workshop/5.18-CleanUP/5.18_picture8.png)

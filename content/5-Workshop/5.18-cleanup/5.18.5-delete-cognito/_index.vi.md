@@ -14,5 +14,5 @@ pre : " <b> 5.18.5 </b> "
    * Chọn `energy-waste-user-pool`.
    * Bấm **Delete**, xác nhận xóa, sau đó quay lại danh sách để kiểm tra.
 
-![Xóa Cognito 1](/images/5-Workshop/5.18-CLeanUP/5.18_xoa_Cognito.png)
-![Xóa Cognito 2](/images/5-Workshop/5.18-CLeanUP/5.18_xoa_Cognito2.png)
+![Xóa Cognito 1](/images/5-Workshop/5.18-CleanUP/5.18_xoa_Cognito.png)
+![Xóa Cognito 2](/images/5-Workshop/5.18-CleanUP/5.18_xoa_Cognito2.png)

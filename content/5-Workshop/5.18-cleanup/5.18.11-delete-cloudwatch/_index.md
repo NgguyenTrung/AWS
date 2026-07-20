@@ -16,8 +16,8 @@ Deleting your Lambda functions does not automatically delete their corresponding
    * `/aws/amplify/d2ppdnlr5ik3e8`
 4. Click **Actions** $\rightarrow$ **Delete log group(s)**.
 
-![Select CloudWatch Log Groups](/images/5-Workshop/5.18-CleanUp/5.18_picture11.png)
+![Select CloudWatch Log Groups](/images/5-Workshop/5.18-CleanUP/5.18_picture11.png)
 
 5. Review the target items and click **Delete** to confirm permanent removal.
 
-![Confirm CloudWatch Deletion](/images/5-Workshop/5.18-CleanUp/5.18_picture12.png)
+![Confirm CloudWatch Deletion](/images/5-Workshop/5.18-CleanUP/5.18_picture12.png)
