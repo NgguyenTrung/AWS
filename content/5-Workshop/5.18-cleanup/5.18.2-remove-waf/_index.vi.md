@@ -22,5 +22,5 @@ Không thể xóa Web ACL khi nó vẫn đang liên kết với ứng dụng Amp
    * Đổi Region thành **Global (CloudFront)** và chọn **Web ACLs**.
    * Chọn Web ACL vừa gỡ, bấm **Delete** và xác nhận.
 
-![Gỡ WAF 1](/images/5-Workshop/5.18-CleanUP/5.18_xoa_web_ACL.png)
+![Gỡ WAF 1](/images/5-Workshop/5.18-CleanUP/5.18_xoa_Web_ACL.png)
 ![Gỡ WAF 2](/images/5-Workshop/5.18-CleanUP/5.18_xoa_Web_ACL2.png)
