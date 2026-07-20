@@ -11,7 +11,7 @@ Khi xóa SNS Topic, các subscription thuộc Topic đó cũng tự động bị
 3. Chọn chính xác kênh thông báo: `energy-waste-alert-topic`.
 4. Chọn nút **Delete**.
 
-![Chọn SNS Topic](/images/5-Workshop/5.18-CleanUP/5.18_picture3.png)
+![Chọn SNS Topic](/images/5-Workshop/5.18-CleanUP/5.18_aicture3.png)
 
 5. Nhập chuỗi văn bản xác nhận `delete me` và chọn **Delete** để kết thúc dọn dẹp.
 

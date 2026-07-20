@@ -20,5 +20,5 @@ You must delete the schedules first so that the Virtual Sensor and Report Genera
    * Find and select `schedule_report_daily_0005`.
    * Click **Delete**.
 
-![Delete Schedule 1](/images/5-Workshop/5.18-CleanUp/5.18_xoa_EventBridge_Scheduler.png)
-![Delete Schedule 2](/images/5-Workshop/5.18-CleanUp/5.18_xoa_EventBridge_Scheduler2.png)
+![Delete Schedule 1](/images/5-Workshop/5.18-CleanUP/5.18_xoa_EventBridge_Scheduler.png)
+![Delete Schedule 2](/images/5-Workshop/5.18-CleanUP/5.18_xoa_EventBridge_Scheduler2.png)
