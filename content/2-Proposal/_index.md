@@ -54,7 +54,7 @@ The reporting layer uses an EventBridge rule that runs daily at 00:05 AM to trig
 
 Amazon CloudWatch is used to collect logs and metrics and provide monitoring support for components such as Lambda, API Gateway, EventBridge, IoT Core, and SNS. This allows the team to verify whether the system runs according to schedule, whether Lambda functions encounter errors, whether the IoT Rule invokes Waste Detector, and whether SNS sends alerts successfully.
 
-![Smart Home Energy Waste Monitoring Architecture](/images/2-Proposal/Screenshot 2026-07-02 105425.png)
+ ![Smart Home Energy Waste Monitoring Architecture](/images/2-Proposal/ANH.jpeg)
 
 *AWS Services Used*
 
